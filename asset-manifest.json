@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/sdc-website/static/css/main.073c9b0a.css",
+    "main.js": "/sdc-website/static/js/main.5873db71.js",
+    "static/js/787.5f9283ce.chunk.js": "/sdc-website/static/js/787.5f9283ce.chunk.js",
+    "static/media/logo.svg": "/sdc-website/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/sdc-website/index.html",
+    "main.073c9b0a.css.map": "/sdc-website/static/css/main.073c9b0a.css.map",
+    "main.5873db71.js.map": "/sdc-website/static/js/main.5873db71.js.map",
+    "787.5f9283ce.chunk.js.map": "/sdc-website/static/js/787.5f9283ce.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.5873db71.js"
+  ]
+}
