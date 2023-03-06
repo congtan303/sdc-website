@@ -1,3 +1,4 @@
+
 .carousel-control-next, .carousel-control-prev{
     width: initial;
     opacity: 1;
@@ -6,3 +7,8 @@
 .carousel-control-next-icon:after, .carousel-control-prev-icon:after{
     font-size: 3rem;
 }
+
+.carousel .control-next.control-arrow:before {
+  border-left: 8px solid #fff;
+}
+

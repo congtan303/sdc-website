@@ -1,0 +1,240 @@
+/* ------------  header------------------ */
+.top-header {
+  background: #fff;
+  transition: all 0.5s;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.4);
+}
+.top-header .logo h1 {
+  line-height: 30px;
+  margin: 0;
+  padding: 13px 0;
+}
+.top-header .logo h1 a {
+  display: inline-block;
+  width: 230px;
+  height: 30px;
+  text-indent: -10000px;
+  background-repeat: no-repeat;
+  background-image: url(../assets/image/logo/logo-bkap-edu.png);
+}
+.top-header nav {
+  height: 100%;
+}
+.top-header .main-menu,
+.bot-header-menu {
+  display: flex;
+  height: 100%;
+  justify-content: end;
+  align-items: center;
+  margin: 0;
+}
+.top-header .main-menu li a {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #5807ba;
+  padding: 0 20px;
+  font-weight: 700;
+}
+.main-menu > li:last-child a {
+  padding-right: 0;
+}
+.main-menu li:hover > a {
+  color: var(--orange);
+}
+
+.main-menu .sub-menu {
+  background: #fff;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.6);
+}
+.sub-menu {
+  position: absolute;
+  width: 250px;
+  z-index: 999;
+  top: 100%;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  content: "";
+  transform-origin: 0 0;
+  transform: scale(1, 0);
+  transition: transform 0.5s;
+  padding: 0;
+}
+.dropdownmenu:hover > ul.sub-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1, 1);
+}
+/* .nav__bottom-main ul.dropdown-list ul.dropdown-list, */
+ul.sub-menu ul.sub-menu {
+  top: 0;
+  left: 100%;
+}
+.sub-menu li a {
+  padding: 10px 10px !important;
+  display: block;
+  border-left: 3px solid transparent;
+}
+.sub-menu li:hover > a {
+  border-left: 3px solid #fb8b1c;
+}
+.bot-header-menu li,
+.main-menu li {
+  position: relative;
+}
+
+/* bot header */
+.bot-header {
+  background-image: linear-gradient(17deg, #2a015b 0, #7b2d8a 100%);
+  box-shadow: 1px 2px 10px rgb(0 0 0 / 40%);
+}
+.bot-header-menu li a {
+  font-size: 16px;
+  display: inline-block;
+  padding: 15px 25px 15px;
+  color: #fff;
+}
+.bot-header-menu li:hover > a {
+  color: #fb8b1c;
+}
+.bot-header-menu > li:last-child a {
+  padding-right: 0;
+}
+.bot-header-menu .sub-menu {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.marquee {
+  background: var(--color-bg-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  animation: marquee 20s linear infinite;
+  font-size: 1.25rem;
+  color: var(--color-white);
+  font-weight: 400;
+  padding: 8px 0;
+  height: 46px;
+  width: 100%;
+}
+
+@keyframes marquee {
+  0% {
+    text-indent: 100%;
+  }
+  100% {
+    text-indent: -100%;
+  }
+}
+
+/* nut menu */
+.menuToggle {
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  border-radius: 2px;
+  display: none;
+}
+
+.menuToggle::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  background: #2a015b;
+  transform: translateY(-8px);
+  transition: 0.5s;
+  border-radius: 2px;
+}
+.logo.active .menuToggle::before {
+  transform: translateY(0) rotate(45deg);
+}
+
+.menuToggle::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  background: #2a015b;
+  transform: translateY(8px);
+  box-shadow: 0 -8px 0 #333;
+  transition: 0.5s;
+  border-radius: 2px;
+}
+.logo.active .menuToggle::after {
+  transform: translateY(0) rotate(-45deg);
+  box-shadow: 0 0 0 #333;
+}
+.mobi-menu {
+  display: none;
+}
+@media screen and (max-width: 991.98px) {
+  header {
+    position: fixed;
+    width: 100%;
+    box-shadow: 1px 2px 10px rgb(0 0 0 / 60%);
+    z-index: 99999;
+  }
+  .bot-header-menu,
+  .header nav {
+    display: none;
+  }
+  .logo {
+    text-align: center;
+    position: relative;
+  }
+  .menuToggle {
+    display: block;
+  }
+  .mobi-menu {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+  .top-header .menu_collapse {
+    padding-bottom: 0;
+    overflow-y: scroll;
+    height: 0;
+    border-right: 2px solid var(--color-primary);
+    display: block;
+    transition: all 0.5s;
+  }
+  .changeMenu {
+    height: 100vh !important;
+    padding-bottom: 55px !important;
+  }
+  .mobi-menu li a {
+    color: #2a015b;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    padding: 8px 0;
+  }
+
+  .mobi-menu li a:hover {
+    color: #fb8b1c;
+  }
+
+  .mobi-sub-menu {
+    padding-left: 25px;
+    transition: all 1.5s;
+  }
+  .mobi-menu li {
+    position: relative;
+  }
+
+  .mobi-menu li > i {
+    cursor: pointer;
+    position: absolute;
+    color: #2a015b;
+    right: 30px;
+    top: 10px;
+    display: inline-block;
+    width: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+/* ------------ end header------------------ */

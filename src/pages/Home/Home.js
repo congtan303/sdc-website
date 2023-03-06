@@ -1,3 +1,4 @@
+
 import React from 'react'
 import Banner from '../Banner'
 import BoxCommunity from '../BoxCommunity'
@@ -9,20 +10,28 @@ import BoxValue from '../BoxValue'
 import Products from '../Products'
 
 
+import BoxLecturers from "./BoxLecturers";
+
+
 const Home = () => {
   return (
     <div>
       <Banner />
+
       <BoxReason />
       <BoxValue />
+      <BoxLecturers />
       <BoxCommunity />
       <BoxTechnology />
       <BoxPartners />
       <BoxNews />
       <Products />
  
-    </div>
-  )
-}
 
-export default Home
+   
+
+    </div>
+  );
+};
+
+export default Home;

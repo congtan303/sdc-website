@@ -1,9 +1,11 @@
+
 import React from 'react'
 import Footer from '../components/Footer/Footer'
 import Header from '../components/Header/Header'
 import BackToTopButton from '../pages/BackToTopButton'
 import Home from '../pages/Home/Home'
-import Routers from '../router/Routers'
+import Routers from "../router/Routers";
+
 
 const Layout = () => {
   return (
@@ -16,4 +18,8 @@ const Layout = () => {
   )
 }
 
-export default Layout
+    
+   
+  
+
+export default Layout;

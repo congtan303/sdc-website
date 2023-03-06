@@ -1,0 +1,346 @@
+/* <-------bkap-lecture-------> */
+.bkap-lecture {
+  position: relative;
+  margin-top: 126px !important;
+  background-image: linear-gradient(-39deg, #2a015b 0, #7b2d8a 100%);
+}
+.bkap-lecture::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../assets/image/bg-image-bklecture/bg-lecture.png) no-repeat center;
+  z-index: 0;
+}
+.bkap-lecture .container {
+  z-index: 1;
+  position: relative;
+}
+.bkap-lecture-title .title {
+  display: flex;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+}
+.bkap-lecture-title .title h2 {
+  font-weight: 400;
+  font-size: 40px;
+  color: #ffffff !important;
+}
+/* <------------Swipt-----------> */
+.img_box img {
+  width: 100px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.bkap-lecture {
+  position: relative;
+  margin-top: 120px;
+  background-image: linear-gradient(-39deg, #2a015b 0, #7b2d8a 100%);
+}
+.bkap-lecture .container {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: auto;
+}
+.bkap-lecture-title.title {
+  display: flex;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  margin: auto;
+}
+
+.lecture-slide {
+  padding: 0 120px;
+}
+.lecture-slide h6 {
+  font-size: 14px;
+  font-weight: 300;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+.lecture-slide h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+  text-align: center;
+}
+.bkap-lecture-title {
+  margin-bottom: 40px;
+}
+/* <--------swiper ---------> */
+
+.slide-container {
+  max-width: 900px;
+  width: 100%;
+}
+.slide-content {
+  overflow: hidden;
+}
+
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.image-content {
+  position: relative;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.card-image {
+  position: relative;
+  height: 95px;
+  width: 95px;
+  border-radius: 50%;
+  padding: 10px;
+}
+/* .choosebkap {
+    border: 1px solid var(--orange);
+  } */
+.lecture-slide .card-image:hover,
+.lecture-slide .slick-current.slick-active .image-content .card-image {
+  border: 1px solid var(--orange);
+}
+.card-image .card-img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.card-content h6 h4 {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+}
+/* <--------end swiper ---------> */
+
+/* <--------lecture-item  ---------> */
+
+/* <--------slider-for-item  ---------> */
+.letter-info {
+  position: relative;
+}
+.lecture-item-row1 {
+  display: flex;
+}
+
+.letter-info {
+  min-height: 360px;
+  padding: 30px 40px;
+  background: var(--color-white);
+  border-radius: 15px;
+}
+
+.lecture-item {
+  padding: 110px 0 70px;
+}
+.lecture-item-row {
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
+  flex-wrap: wrap;
+}
+.lecture-item-col-10 {
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%;
+  /* position: relative;
+    width: 100%; */
+}
+.lecture-item-col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.lecture-item-col-6 h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ccc;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+  text-align: left;
+}
+.lecture-item-col-6 h3 {
+  font-size: 18px;
+  color: #2a015b;
+  font-weight: 700;
+}
+.lecture-item-col-6 p {
+  font-size: 16px;
+  color: #707070;
+}
+.lecture-info h4 {
+  font-size: 14px;
+  color: #c2c2c2;
+}
+.lecture-info h3 {
+  font-size: 14px;
+  color: #c2c2c2;
+}
+.lecture-img {
+  position: relative;
+}
+.lecture-img img {
+  border-radius: 15px;
+  position: absolute;
+  top: -84px;
+  right: -118px;
+  box-shadow: 0 20px 28.7px 6.3px rgb(36 36 36 / 22%);
+}
+/* Dot*/
+.lecture-slide .slick-dots {
+  position: absolute;
+  width: auto;
+  right: -250px;
+  top: 50%;
+  transform: rotate(90deg);
+  height: fit-content;
+}
+
+.lecture-slide .slick-dots:before {
+  content: attr(data-label);
+  display: inline-block;
+  letter-spacing: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+  top: 5px;
+}
+.lecture-slide .slick-dots,
+.lecture-slide .slick-dots li button:before {
+  color: #ccc;
+  opacity: 1;
+}
+.lecture-slide .slick-dots li.slick-active button:before {
+  color: #ff9600;
+  font-size: 10px;
+}
+
+/* arrow*/
+.lecture-slide .slick-arrow {
+  position: absolute;
+  top: unset;
+  display: block;
+  z-index: 999;
+  bottom: 70px;
+  width: 34px;
+  height: 30px;
+}
+.lecture-slide .slick-arrow:before {
+  font-size: 34px;
+  color: #535353;
+}
+
+.lecture-slide .slick-prev {
+  left: 10px;
+}
+.lecture-slide .slick-next {
+  left: 50px;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  color: transparent;
+  outline: none;
+  background: transparent;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 0.25;
+}
+/* <--------end slider-for-item  ---------> */
+/* <--------end bkap-lecture  ---------> */
+@media screen and (max-width: 1200px) {
+  .bkap-lecture{
+    margin-top: 160px!important;
+  }
+  .lecture-item-col-10 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .lecture-item-col-2 {
+    right: 34%;
+    top: 94%;
+    transform: rotate(0deg);
+    display: flex;
+    height: fit-content;
+    z-index: 1;
+  }
+  .lecture-img img {
+    position: static;
+    width: 290px;
+    height: 290px;
+  }
+
+  /* Dot*/
+  .lecture-slide .slick-dots {
+    position: static;
+    transform: rotate(0deg);
+  }
+  /*arrow */
+  .lecture-slide .slick-arrow {
+    top: 81%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .lecture-slide {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* <-------bkap-value-------> */
+  .slider_container .container {
+    max-width: 540px;
+  }
+
+  /* <-------bkap-value-------> */
+
+  .lecture-item-col-6 {
+    flex: none;
+    max-width: 100%;
+  }
+  .lecture-item-col-10 {
+    flex: none;
+    max-width: 100%;
+  }
+
+  .letter-info {
+    padding-bottom: 50px;
+  }
+
+  .bkap-lecture-title .title h2 {
+    text-align: center;
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .lecture-slide .slick-arrow {
+    top: 77%;
+  }
+}
