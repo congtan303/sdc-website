@@ -12,6 +12,10 @@
 
 .carousel-control-next-icon:after, .carousel-control-prev-icon:after{
     font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .carousel .control-next.control-arrow:before {
