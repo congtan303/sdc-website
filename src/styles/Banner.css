@@ -1,9 +1,15 @@
 
 .carousel-control-next, .carousel-control-prev{
-    width: initial;
-    opacity: 1;
+    width: initial !important;
+    opacity: 1 !important;
     margin: 0 16px;
 }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+  background-image: none !important;
+}
+
 .carousel-control-next-icon:after, .carousel-control-prev-icon:after{
     font-size: 3rem;
 }
