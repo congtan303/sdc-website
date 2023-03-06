@@ -75,39 +75,6 @@ const BoxCommunity = () => {
                     </div>
                 </div>
                 <div className="student-content">
-                    {/* <div className="student-slider">
-                <div className="comm-item">
-                  <div className="comm-item-img"><img src="/assets/image/student-hot/student-hot-1.png" className="img-fluid lazy" alt="" /></div>
-                  <h3>Bùi Ngọc Sơn</h3>
-                  <p>Giám đốc kĩ thuật<br />Công ty CP Vật Giá Việt Nam</p>
-                </div>
-                <div className="comm-item">
-                  <div className="comm-item-img"><img src="/assets/image/student-hot/student-hot-2.png" className="img-fluid lazy" alt="" /></div>
-                  <h3>Bùi Ngọc Sơn</h3>
-                  <p>Giám đốc kĩ thuật<br />Công ty CP Vật Giá Việt Nam</p>
-                </div>
-                <div className="comm-item">
-                  <div className="comm-item-img"><img src="/assets/image/student-hot/student-hot-3.png" className="img-fluid lazy" alt="" /></div>
-                  <h3>Bùi Ngọc Sơn</h3>
-                  <p>Giám đốc kĩ thuật<br />Công ty CP Vật Giá Việt Nam</p>
-                </div>
-                <div className="comm-item">
-                  <div className="comm-item-img"><img src="/assets/image/student-hot/student-hot-4.png" className="img-fluid lazy" alt="" /></div>
-                  <h3>Bùi Ngọc Sơn</h3>
-                  <p>Giám đốc kĩ thuật<br />Công ty CP Vật Giá Việt Nam</p>
-                </div>
-                <div className="comm-item">
-                  <div className="comm-item-img"><img src="/assets/image/student-hot/student-hot-3.png" className="img-fluid lazy" alt="" /></div>
-                  <h3>Bùi Ngọc Sơn</h3>
-                  <p>Giám đốc kĩ thuật<br />Công ty CP Vật Giá Việt Nam</p>
-                </div>
-                <div className="comm-item">
-                  <div className="comm-item-img"><img src="/assets/image/student-hot/student-hot-4.png" className="img-fluid lazy" alt="" /></div>
-                  <h3>Bùi Ngọc Sơn</h3>
-                  <p>Giám đốc kĩ thuật<br />Công ty CP Vật Giá Việt Nam</p>
-                </div>
-              </div> */}
-
                     <Slider {...settings}>
                         {students && students.map(student => (
                             <div key={student.id}>
@@ -120,7 +87,6 @@ const BoxCommunity = () => {
                                 </div>
                             </div>
                         ))}
-                        
                     </Slider>
                     <span className='btn-slider'>
                             <i className="fa-solid fa-circle"></i>

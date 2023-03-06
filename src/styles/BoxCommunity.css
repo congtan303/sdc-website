@@ -103,12 +103,12 @@
 
 .student-slider .slick-dots li.slick-active button:before {
     color: #211c5e;
-    font-size: 10px;
+    font-size: 14px !important;
 }
 
 .student-slider .slick-dots li button:before {
     font-family: "slick";
-    font-size: 6px;
+    font-size: 8px !important;
     line-height: 20px;
     position: absolute;
     top: 0;
@@ -147,5 +147,26 @@
 @media screen and (max-width: 991px) {
     .btn-slider{
         display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section__student-title .title h2{
+        text-align: center;
+    font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .section__student-title .title h2{
+        text-align: center;
+    font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section__student-title .title h2{
+        text-align: center;
+    font-size: 22px;
     }
 }

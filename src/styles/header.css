@@ -117,6 +117,10 @@ ul.sub-menu ul.sub-menu {
   width: 100%;
 }
 
+.marquee:hover {
+  animation-play-state: paused;
+}
+
 @keyframes marquee {
   0% {
     text-indent: 100%;
@@ -237,4 +241,14 @@ ul.sub-menu ul.sub-menu {
     text-align: center;
   }
 }
+
+@media screen and (max-width:768px) {
+  .header{
+    
+  }
+}
 /* ------------ end header------------------ */
+
+
+
+

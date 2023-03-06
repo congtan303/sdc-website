@@ -98,7 +98,7 @@ const BoxLecturers = () => {
     focusOnSelect: true,
     autoplay: true,
     arrows: false,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 3000,
     responsive: [
       {
         breakpoint: 1200,
@@ -122,7 +122,7 @@ const BoxLecturers = () => {
   };
 
   return (
-    <div>
+    
       <section class="bkap-lecture">
         <div class="slider_container">
           <div class="container">
@@ -187,7 +187,7 @@ const BoxLecturers = () => {
           </div>
         </div>
       </section>
-    </div>
+   
   );
 };
 

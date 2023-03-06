@@ -25,11 +25,15 @@ html {
   font-size: 1rem;
 }
 body {
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, sans-serif !important;
   font-weight: 400;
   color: var(--color-secondary);
   line-height: 1.5;
   background-color: var(--color-white);
+}
+
+#root {
+  overflow-x: hidden;
 }
 a {
   text-decoration: none !important;

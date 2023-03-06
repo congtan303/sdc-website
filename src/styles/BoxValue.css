@@ -3,7 +3,7 @@ input {
   display: none;
 }
 .bkap-value {
-  height: 583px;
+  height: 100%;
 
 }
 
@@ -54,7 +54,7 @@ input {
 .inner .card {
   position: relative;
   height: 100%;
-  background-image: linear-gradient(96deg, #2a015b 0, #7b2d8a 100%);
+  background-image: -webkit-linear-gradient(96deg,#2a015b 0,#7b2d8a 100%);
   padding: 15px;
   color: #fff;
 }
@@ -224,6 +224,10 @@ input {
     flex: 0 0 50%;
     max-width: 50%;
   }
+
+  .slide-value{
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -277,3 +281,7 @@ input {
 }
 
 @media screen and (max-width: 576px) {}
+
+
+
+

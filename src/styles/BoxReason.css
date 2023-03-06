@@ -128,3 +128,32 @@
       justify-content: center;
     }
   }
+
+  @media screen and (max-width: 575.98px) {
+    .section-title .title{
+      display: block;
+      text-align: center;
+    }
+    .section-title .title h1{
+      font-size: 44px
+    }
+    .section-title .title h2{
+      font-size: 32px
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .section-title .title h1 {
+      font-size: 36px;
+      text-align: center;
+    }
+    .section-title .title h2 {
+      font-size: 22px;
+    }
+
+    .section-row .section-col-3{
+      flex: 100% !important;
+      max-width: 100% !important;
+      padding: 0;
+    }
+  }

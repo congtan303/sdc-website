@@ -17,6 +17,7 @@
   .section__blog-title .title h2 span {
     display: block;
     font-weight: 700;
+    color: var(--sc-violet);
   }
   .section__blog-content .nav {
     display: flex;
@@ -56,11 +57,12 @@
     overflow: hidden;
   }
   .blog-item.active .blog-item-img.page-1 {
-    height: 860px;
+ 
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-image: url("https://product.bachkhoa-aptech.edu.vn:33/Resources/Data/z4104910491020_0dfba06c16d370be31b74ed1c6f14a78.jpg");
+    
   }
   .blog-item .blog-item-title {
     position: absolute;
@@ -144,6 +146,7 @@
     background-position: center;
     background-size: cover;
     height: 430px;
+    background-size: 100% 100%;
   }
   .blog-item:hover .blog-item-title {
     height: 100%;
@@ -212,5 +215,25 @@
       width: 100%;
       margin-top: 15px;
       height: auto;
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    .section__blog-title .title h2{
+      text-align: center;
+    font-size: 36px;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .section__blog-title .title h2{
+      text-align: center;
+    font-size: 32px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .section__blog-title .title h2{
+      text-align: center;
+    font-size: 22px;
     }
   }

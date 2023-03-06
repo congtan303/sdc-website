@@ -9,6 +9,8 @@
   pointer-events: none;
 }
 
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -24,6 +26,12 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+@media screen and (max-width: 992px) {
+  main {
+    padding-top: 102px;
+  }
 }
 
 @media screen and (min-width: 768px) {

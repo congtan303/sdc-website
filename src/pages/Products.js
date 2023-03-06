@@ -63,7 +63,7 @@ const Products = () => {
                 <div className="section__content-product">
                     <div className="row">
                         {products && products.map(product => (
-                            <div className="col-lg-4 col-md-6 col-sm-12" key={product.id}>
+                            <div className="col-md-6 col-lg-4 " key={product.id}>
                                 <div className="st-product-item">
                                     <img src={product.image} className="img-fluid lazy" alt="" />
                                     <div className="st-product-item-overlay">

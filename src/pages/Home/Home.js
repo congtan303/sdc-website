@@ -13,7 +13,7 @@ import BoxLecturers from "../BoxLecturers";
 
 const Home = () => {
   return (
-    <div>
+    <main>
       <Banner />
 
       <BoxReason />
@@ -28,7 +28,7 @@ const Home = () => {
 
    
 
-    </div>
+    </main>
   );
 };
 

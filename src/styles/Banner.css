@@ -1,4 +1,8 @@
 
+.section-banner  {
+  padding: 0;
+}
+
 .carousel-control-next, .carousel-control-prev{
     width: initial !important;
     opacity: 1 !important;
@@ -22,3 +26,8 @@
   border-left: 8px solid #fff;
 }
 
+@media screen and (max-width: 480px) {
+  .section-banner{
+    padding-bottom: 50px;
+  }
+}
