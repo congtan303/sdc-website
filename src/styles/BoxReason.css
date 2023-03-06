@@ -1,0 +1,130 @@
+/* <-------bkap-reason-------> */
+.section-title {
+    margin-bottom: 50px;
+  }
+  .section-title .title {
+    display: flex;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-title .title h1 {
+    font-size: 94px;
+    padding: 0 15px;
+    font-weight: 700;
+  }
+  .section-title .title h2 {
+    font-weight: 400;
+    font-size: 40px;
+  }
+  .section-title .title span {
+    display: block;
+    font-weight: 700;
+  }
+  .section-row {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: 0 -15px; */
+  }
+  .section-row .section-col-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+    /* position: relative; */
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .reason-item {
+    text-align: center;
+  }
+  .reason-item-row {
+    align-items: center !important;
+  }
+  .reason-item-col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    /* position: relative; */
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  .reason-item-col-7 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .reason-item h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  .reason-item h2 span {
+    font-size: 18px;
+    display: block;
+    padding: 5px 0;
+    line-height: 22px;
+    height: 48px;
+    overflow: hidden;
+  }
+
+  @media screen and (max-width: 991px) {
+    .lecture-slide {
+      padding: 0;
+    }
+    .banner {
+      padding-top: 102px !important;
+    }
+    .section-row .section-col-3 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    /* <-------bkap-value-------> */
+    .inner,
+    .container {
+      max-width: 768px;
+    }
+    .card ul {
+      width: 184.812px;
+    }
+    .card-col-3 {
+      width: 139.438px;
+    }
+    .card-col-9 h3 {
+      width: 207.212px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    /* <-------bkap-reason-------> */
+    .section-title .title h1 {
+      font-size: 72px;
+    }
+    .section-title .title h2 {
+      text-align: center;
+      font-size: 36px;
+    }
+  
+    .section-row .section-col-3 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .reason-item-col-12 {
+      flex: 0 0 41.666667%;
+      max-width: 41.666667%;
+    }
+    .reason-item-col-7 {
+      flex: 0 0 58.333333%;
+      max-width: 58.333333%;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+    .reason-item-row {
+      display: flex;
+      justify-content: center;
+    }
+  }

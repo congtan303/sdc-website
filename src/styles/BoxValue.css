@@ -1,0 +1,278 @@
+/* <-------bkap-value-------> */
+input {
+  display: none;
+}
+.bkap-value {
+  height: 583px;
+}
+
+.slide-value {
+  height: 320px;
+  margin-top: 172px;
+  padding: 0 54px;
+}
+.container {
+  max-width: 1170px;
+  height: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.bkap-value .section-title {
+  padding-top: 55px;
+  margin-bottom: 50px;
+}
+.section-title .title {
+  display: flex;
+  text-transform: uppercase;
+  /* justify-content: center; */
+  align-items: center;
+}
+.text-violet {
+  color: var(--sc-violet);
+}
+
+.inner {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 20px;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+.inner label {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  cursor: pointer;
+  transition: transform 0.55s ease;
+}
+.inner .card {
+  position: relative;
+  height: 100%;
+  background-image: linear-gradient(96deg, #2a015b 0, #7b2d8a 100%);
+  padding: 15px;
+  color: #fff;
+}
+.card-row {
+  display: flex;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.card-col-8 {
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+  /* position: relative;
+  width: 100%; */
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.card-col-3 {
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%;
+  text-align: right !important;
+  /* position: relative;
+  width: 100%; */
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.card-col-3 img {
+  vertical-align: middle;
+  border-style: none;
+}
+.card-col-9 {
+  flex: 0 0 58.333333%;
+  max-width: 58.333333%;
+  /* position: relative;
+  width: 100%; */
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.card-col-9 h3 {
+  font-size: 24px;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.card ul {
+  padding-left: 20px;
+  max-height: 140px;
+  overflow-y: scroll;
+  list-style: none;
+  width: 362px;
+  margin: 0;
+}
+.card ul::-webkit-scrollbar {
+  width: 3px;
+}
+.card ul::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+.card ul::-webkit-scrollbar-thumb {
+  background-image: -webkit-linear-gradient(96deg, #2a015b 0, #7b2d8a 100%);
+  border-radius: 10px;
+}
+.card ul li {
+  font-size: 16px;
+}
+.card ul li p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.card-col-4 {
+  flex: 0 0 28%;
+  max-width: 28%;
+  /* width: 100%; */
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.value-item-img img {
+  width: 158px;
+  height: 158px;
+  border-radius: 50%;
+  background-position: center;
+}
+
+#s1:checked ~ .cards #slide4,
+#s2:checked ~ .cards #slide5,
+#s3:checked ~ .cards #slide1,
+#s4:checked ~ .cards #slide2,
+#s5:checked ~ .cards #slide3 {
+  box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.799);
+  transform: translate3d(0, -105%, -220px);
+  --current-color1: #eceaed;
+  --current-color2: #404457;
+  /* LÀM TRƯỚC HỌC SAU */
+}
+
+#s1:checked ~ .cards #slide5,
+#s2:checked ~ .cards #slide1,
+#s3:checked ~ .cards #slide2,
+#s4:checked ~ .cards #slide3,
+#s5:checked ~ .cards #slide4 {
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
+  transform: translate3d(0, -55%, -120px);
+  --current-color1: #eceaed;
+  --current-color2: #404457;
+  /* HỌC LÀ LÀM ĐƯỢC VIỆC */
+}
+
+#s1:checked ~ .cards #slide1,
+#s2:checked ~ .cards #slide2,
+#s3:checked ~ .cards #slide3,
+#s4:checked ~ .cards #slide4,
+#s5:checked ~ .cards #slide5 {
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 50%);
+  transform: translate3d(0, 0, 0);
+  --current-color1: #fad00c;
+  --current-color2: #eceaed;
+  /* VĂN BẰNG QUỐC TẾ */
+}
+
+#s1:checked ~ .cards #slide2,
+#s2:checked ~ .cards #slide3,
+#s3:checked ~ .cards #slide4,
+#s4:checked ~ .cards #slide5,
+#s5:checked ~ .cards #slide1 {
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
+  transform: translate3d(0, 55%, -120px);
+  --current-color1: #eceaed;
+  --current-color2: #404457;
+  /* TIỆN ÍCH HỖ TRỢ */
+}
+
+#s1:checked ~ .cards #slide3,
+#s2:checked ~ .cards #slide4,
+#s3:checked ~ .cards #slide5,
+#s4:checked ~ .cards #slide1,
+#s5:checked ~ .cards #slide2 {
+  box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 45%);
+  transform: translate3d(0, 105%, -220px);
+  --current-color1: #eceaed;
+  --current-color2: #404457;
+  /* DỊCH VỤ CHẤT LƯỢNG CAO */
+}
+
+@media screen and (max-width: 1200px) {
+  .inner,
+  .container {
+    max-width: 960px;
+  }
+  .card ul {
+    width: 280.55px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .lecture-slide {
+    padding: 0;
+  }
+  .banner {
+    padding-top: 102px !important;
+  }
+  .section-row .section-col-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider_container .container {
+    max-width: 540px;
+  }
+  .inner,
+  .container,
+  .inner label {
+    width: 100%
+  }
+  .card-col-4 {
+    display: none;
+    flex: 0 0 0;
+    max-width: 0;
+  }
+  .card-col-8 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .card-col-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .card-col-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .card-col-9 h3 {
+    font-size: 18px;
+    width: 100%;
+  }
+  .card ul {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .inner,
+  .container,
+  .inner label {
+    width: 100%;
+  }
+  .card ul {
+    max-width: 100% !important;
+  }
+  .card-col-9 h3 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {}

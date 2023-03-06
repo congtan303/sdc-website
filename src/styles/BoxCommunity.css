@@ -1,0 +1,151 @@
+.st-product-item-overlay span {
+
+    background-image: url("../assets/image/news/play-button-icon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+}
+
+.st-product-item-overlay span:hover {
+    background-image: url("../assets/image/news/play-button-icon-hover.png");
+}
+
+.title {
+    display: flex;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+}
+
+/*--------student--------*/
+.student {
+    padding: 40px 0;
+}
+
+.student .section__student-title {
+    margin-bottom: 50px;
+}
+
+.section__student-title .title h2 {
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.section__student-title .title h2 span {
+    display: block;
+    font-weight: 700;
+}
+
+.comm-item {
+    text-align: center;
+    padding: 0 35px;
+    margin-bottom: 30px;
+}
+
+.comm-item .comm-item-img img {
+    width: 140px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+    display: inline-block;
+}
+
+.comm-item p {
+    color: #959595;
+    font-size: 16px;
+    line-height: 24px;
+    height: 72px;
+    overflow: hidden;
+}
+
+.comm-item h3 {
+    font-size: 18px;
+    color: #383191;
+    margin-bottom: 23px;
+    font-weight: 700;
+}
+
+.student-slider .slick-dots {
+    position: absolute;
+    bottom: -25px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.student-slider .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.student-slider .slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.student-slider .slick-dots li.slick-active button:before {
+    color: #211c5e;
+    font-size: 10px;
+}
+
+.student-slider .slick-dots li button:before {
+    font-family: "slick";
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: "•";
+    text-align: center;
+    opacity: 0.25;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.student-slider .slick-dots:before {
+    content: attr(data-label);
+    display: inline-block;
+    letter-spacing: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    top: 5px;
+}
+
+.btn-slider {
+    
+    text-align: center;
+
+}
+
+.btn-slider i {
+    width: 100%;
+    font-size: 11px;
+}
+
+@media screen and (max-width: 991px) {
+    .btn-slider{
+        display: none;
+    }
+}

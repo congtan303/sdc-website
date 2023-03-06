@@ -1,0 +1,57 @@
+.partner {
+  padding: 40px 0;
+}
+
+.partner .partner-title {
+  margin-bottom: 50px;
+}
+
+.partner .partner-title .title h2 {
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.partner .partner-content {
+  padding: 40px;
+}
+
+.partner-content {
+  padding: 40px;
+}
+
+
+.partner-content .slick-slider .slide {
+  width: 100%;
+  height: 50px;
+}
+
+.partner-content .slick-slider .slide img {
+  width: 120px;
+  height: 100%;
+  margin: 0 auto;
+  filter: grayscale(1);
+  cursor: pointer;
+}
+
+.partner-content .slick-slider .slide img:hover {
+  filter: none;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .partner .container {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .partner .container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .partner .container {
+    max-width: 1300px;
+  }
+}
