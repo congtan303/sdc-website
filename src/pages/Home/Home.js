@@ -8,9 +8,7 @@ import BoxReason from '../BoxReason'
 import BoxTechnology from '../BoxTechnology'
 import BoxValue from '../BoxValue'
 import Products from '../Products'
-
-
-import BoxLecturers from "./BoxLecturers";
+import BoxLecturers from "../BoxLecturers";
 
 
 const Home = () => {

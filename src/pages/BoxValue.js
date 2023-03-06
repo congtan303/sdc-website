@@ -94,7 +94,7 @@ const BoxValue = () => {
                       <div className="card-col-8">
                         <div className="card-row">
                           <div className="card-col-3">
-                            <img src="./assets/image/bkap-value-icon/bkap-value-icon-1.png" alt="lazy" />
+                            <img src={iconValue1} alt="lazy" />
                           </div>
                           <div className="card-col-9">
                             <h3>VĂN BẰNG QUỐC TẾ</h3>
@@ -110,7 +110,7 @@ const BoxValue = () => {
                       </div>
                       <div className="card-col-4">
                         <div className="value-item-img">
-                          <img src="./assets/image/bkap-value/bkap-value-1.jpg" alt="" />
+                          <img src={imageValue1} alt="" />
                         </div>
                       </div>
                     </div>
@@ -123,7 +123,7 @@ const BoxValue = () => {
                       <div className="card-col-8">
                         <div className="card-row">
                           <div className="card-col-3">
-                            <img src="./assets/image/bkap-value-icon/bkap-value-icon-2.png" alt="lazy" />
+                            <img src={iconValue2} alt="lazy" />
                           </div>
                           <div className="card-col-9">
                             <h3>TIỆN ÍCH HỖ TRỢ</h3>
@@ -138,7 +138,7 @@ const BoxValue = () => {
                       </div>
                       <div className="card-col-4">
                         <div className="value-item-img">
-                          <img src="./assets/image/bkap-value/bkap-value-2.jpg" alt="" />
+                          <img src={imageValue2} alt="" />
                         </div>
                       </div>
                     </div>
@@ -151,7 +151,7 @@ const BoxValue = () => {
                       <div className="card-col-8">
                         <div className="card-row">
                           <div className="card-col-3">
-                            <img src="./assets/image/bkap-value-icon/bkap-value-icon-1.png" alt="lazy" />
+                            <img src={iconValue1} alt="lazy" />
                           </div>
                           <div className="card-col-9">
                             <h3>DỊCH VỤ CHẤT LƯỢNG CAO</h3>
@@ -166,7 +166,7 @@ const BoxValue = () => {
                       </div>
                       <div className="card-col-4">
                         <div className="value-item-img">
-                          <img src="./assets/image/bkap-value/bkap-value-1.jpg" alt="" />
+                          <img src={imageValue1} alt="" />
                         </div>
                       </div>
                     </div>
@@ -179,7 +179,7 @@ const BoxValue = () => {
                       <div className="card-col-8">
                         <div className="card-row">
                           <div className="card-col-3">
-                            <img src="./assets/image/bkap-value-icon/bkap-value-icon-3.png" alt="lazy" />
+                            <img src={iconValue2} alt="lazy" />
                           </div>
                           <div className="card-col-9">
                             <h3>LÀM TRƯỚC HỌC SAU</h3>
@@ -193,7 +193,7 @@ const BoxValue = () => {
                       </div>
                       <div className="card-col-4">
                         <div className="value-item-img">
-                          <img src="./assets/image/bkap-value/bkap-value-2.jpg" alt="" />
+                          <img src={imageValue2} alt="" />
                         </div>
                       </div>
                     </div>
@@ -206,7 +206,7 @@ const BoxValue = () => {
                       <div className="card-col-8">
                         <div className="card-row">
                           <div className="card-col-3">
-                            <img src="./assets/image/bkap-value-icon/bkap-value-icon-1.png" alt="lazy" />
+                            <img src={iconValue1} alt="lazy" />
                           </div>
                           <div className="card-col-9">
                             <h3>HỌC LÀ LÀM ĐƯỢC VIỆC</h3>
@@ -219,7 +219,7 @@ const BoxValue = () => {
                       </div>
                       <div className="card-col-4">
                         <div className="value-item-img">
-                          <img src="./assets/image/bkap-value/bkap-value-2.jpg" alt="" />
+                          <img src={imageValue1} alt="" />
                         </div>
                       </div>
                     </div>
