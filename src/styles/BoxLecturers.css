@@ -1,8 +1,7 @@
 /* <-------bkap-lecture-------> */
 .bkap-lecture {
   position: relative;
-  margin-top: 126px ;
-
+  margin-top: 58px ;
   background-image: -webkit-linear-gradient(-39deg,#2a015b 0,#7b2d8a 100%);
 }
 .bkap-lecture::after {
@@ -227,7 +226,7 @@
   opacity: 1;
 }
 .lecture-slide .slick-dots li.slick-active button:before {
-  color: #ff9600;
+  color: var(--color-primary);
   font-size: 10px;
 }
 

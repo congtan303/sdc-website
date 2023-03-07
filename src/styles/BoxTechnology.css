@@ -17,7 +17,7 @@
   .section__blog-title .title h2 span {
     display: block;
     font-weight: 700;
-    color: var(--sc-violet);
+    color: var(--color-primary);
   }
   .section__blog-content .nav {
     display: flex;
@@ -39,7 +39,7 @@
     background-color: transparent;
     color: var(--orange);
     border-bottom: 3px solid var(--orange);
-    font-weight: 700;
+    font-weight: 700; 
   }
   .section__blog-content .no-padding {
     padding: 0;
@@ -56,13 +56,17 @@
     position: relative;
     overflow: hidden;
   }
-  .blog-item.active .blog-item-img.page-1 {
- 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    background-image: url("https://product.bachkhoa-aptech.edu.vn:33/Resources/Data/z4104910491020_0dfba06c16d370be31b74ed1c6f14a78.jpg");
-    
+  .blog-item.active .blog-item-img.page-1 img,
+  .blog-item .blog-item-img.page-2 img,
+  .blog-item .blog-item-img.page-3 img,
+  .blog-item .blog-item-img.page-4 img,
+  .blog-item .blog-item-img.page-5 img  {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .blog-item.active .blog-item-img.page-1 img{
+    height: 860px;
   }
   .blog-item .blog-item-title {
     position: absolute;
@@ -73,8 +77,9 @@
     padding: 25px;
     height: 143px;
     cursor: pointer;
-    color: #707070;
+    color: var(--text-color);
     transition: all 0.5s ease-in;
+   
   }
   .blog-item .blog-item-title .read-more {
     /* display: none; */
@@ -105,7 +110,7 @@
   }
   .blog-item .read-more,
   .course .read-more {
-    color: #ff9600;
+    color: var(--orange);
     font-size: 22px;
     display: inline-block;
     padding: 15px 60px;
@@ -114,15 +119,15 @@
   }
   .blog-item .read-more::before,
   .course .read-more::before {
-    border-top: 1px solid #ff9600;
-    border-left: 1px solid #ff9600;
+    border-top: 1px solid var(--orange);
+    border-left: 1px solid var(--orange);
     top: 0;
     left: 0;
   }
   .blog-item .read-more::after,
   .course .read-more::after {
-    border-bottom: 1px solid #ff9600;
-    border-right: 1px solid #ff9600;
+    border-bottom: 1px solid var(--orange);
+    border-right: 1px solid var(--orange);
     bottom: 0;
     right: 0;
   }
@@ -138,8 +143,8 @@
   }
   .blog-item .read-more:hover,
   .course .read-more:hover {
-    background-color: #ff9600;
-    color: #fff;
+    background-color: var(--orange);
+    color: var(--color-white);
   }
   .blog-item .blog-item-img {
     background-repeat: no-repeat;
@@ -151,26 +156,18 @@
   .blog-item:hover .blog-item-title {
     height: 100%;
     background: rgba(123, 45, 138, 0.8);
-    color: #ccc;
+    color: var(--gray);
   }
   .blog-item:hover .blog-item-title h3 a {
-    color: #fff;
+    color: var(--color-white);
   }
   .blog-item:hover .blog-item-des {
     display: block;
   }
-  .blog-item .blog-item-img.page-2 {
-    background-image: url("https://product.bachkhoa-aptech.edu.vn:33/Resources/Data/z4083196677656_f56d3f0803830d555e29b3b734c45988.jpg");
-  }
-  .blog-item .blog-item-img.page-3 {
-    background-image: url("https://product.bachkhoa-aptech.edu.vn:33/Resources/Data/1@fwf.jpg");
-  }
-  .blog-item .blog-item-img.page-4 {
-    background-image: url("https://product.bachkhoa-aptech.edu.vn:33/Resources/Data/z4072512283964_6621348c04fb49cd03d3a205630f0379.jpg");
-  }
-  .blog-item .blog-item-img.page-5 {
-    background-image: url("https://product.bachkhoa-aptech.edu.vn:33/Resources/Data/z3976547459430_2b7ab5206ffc327878fc45cda16364bb.jpg");
-  }
+ 
+  .blog-item .blog-item-img.page-3 img
+  .blog-item .blog-item-img.page-4 img
+  .blog-item .blog-item-img.page-5 img
   .load-more {
     margin-top: 40px;
   }
@@ -183,6 +180,7 @@
   .but-primary {
     border: 1px solid #383191;
     color: #383191;
+    margin-top: 40px;
   }
 
   @media screen and (max-width: 992px) {
@@ -215,6 +213,9 @@
       width: 100%;
       margin-top: 15px;
       height: auto;
+    }
+    .blog-item .blog-item-title {
+      backdrop-filter: blur(6px);
     }
   }
 

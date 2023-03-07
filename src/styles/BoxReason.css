@@ -7,6 +7,7 @@
     text-transform: uppercase;
     justify-content: center;
     align-items: center;
+    color: var(--color-primary);
   }
   .section-title .title h1 {
     font-size: 94px;
@@ -97,6 +98,10 @@
     .card-col-9 h3 {
       width: 207.212px;
     }
+    .section-title .title h1,
+    .section-title .title h2 {
+        text-align: center;
+    }
   }
 
   @media screen and (max-width: 768px) {
@@ -129,9 +134,9 @@
     }
   }
 
-  @media screen and (max-width: 575.98px) {
+  @media screen and (max-width: 576px) {
     .section-title .title{
-      display: block;
+      display: block !important;
       text-align: center;
     }
     .section-title .title h1{

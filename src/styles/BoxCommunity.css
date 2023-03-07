@@ -102,7 +102,7 @@
 }
 
 .student-slider .slick-dots li.slick-active button:before {
-    color: #211c5e;
+    color: var(--color-primary);
     font-size: 14px !important;
 }
 

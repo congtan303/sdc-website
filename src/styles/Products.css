@@ -47,7 +47,7 @@
     top: 0;
     right: 0;
     font-size: 72px;
-    color: #ff9600;
+    color: var(--orange);
     line-height: 0;
   }
 
@@ -92,7 +92,7 @@
   }
   .section__content-product .link-read-more {
     font-size: 24px;
-    color: #381a68;
+    color: var(--text-footer-color);
     font-weight: 700;
     padding: 15px 0;
     display: inline-block;
@@ -106,10 +106,14 @@
     font-size: 19px;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 992px) {
     .product{
       background-position: 100% 49%;
     }
+  }
+
+  @media screen and (max-width: 768px) {
+    
     .section__title-product .title h2{
       font-size: 36px;
     }

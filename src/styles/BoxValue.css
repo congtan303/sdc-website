@@ -30,9 +30,7 @@ input {
   /* justify-content: center; */
   align-items: center;
 }
-.text-violet {
-  color: var(--sc-violet);
-}
+
 
 .inner {
   position: relative;
@@ -231,9 +229,14 @@ input {
 }
 
 @media screen and (max-width: 768px) {
+  .slide-value{
+    margin-top: 128px;
+  }
+
   .slider_container .container {
     max-width: 540px;
   }
+  
   .inner,
   .container,
   .inner label {
@@ -280,7 +283,11 @@ input {
   }
 }
 
-@media screen and (max-width: 576px) {}
+@media screen and (max-width: 576px) {
+  .slide-value{
+    margin-top: 150px;
+  }
+}
 
 
 

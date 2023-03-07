@@ -1,6 +1,11 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
 import '../styles/BoxTechnology.css'
+import imgTech1 from '../assets/image/technology/image-technology-1.jpg'
+import imgTech2 from '../assets/image/technology/image-technology-2.jpg'
+import imgTech3 from '../assets/image/technology/image-technology-3.jpg'
+import imgTech4 from '../assets/image/technology/image-technology-4.jpg'
+import imgTech5 from '../assets/image/technology/image-technology-5.jpg'
 
 const tabs = ['Tin mới nhất', 'Tin công nghệ', 'Tin về BKAP']
 const BoxTechnology = () => {
@@ -21,7 +26,7 @@ const BoxTechnology = () => {
         <section className="blog-technology">
             <div className="container">
                 <div className="section__blog-title">
-                    <div className="title">
+                    <div className="title text-violet">
                         <h2>
                             <span>BLOG CÔNG NGHỆ</span>
                         </h2>
@@ -54,7 +59,10 @@ const BoxTechnology = () => {
                         <div className="row m-auto">
                             <div className="col-blog-4 col-md-12 no-padding">
                                 <div className="blog-item active">
-                                    <div className="blog-item-img page-1"></div>
+                                    <div className="blog-item-img page-1">
+                                        <img src={imgTech1} alt='' />
+                                    </div>
+
                                     <div className="blog-item-title">
                                         <h3><a href="#">THÔNG BÁO TUYỂN SINH 2023: CHƯƠNG TRÌNH LẬP TRÌNH VIÊN QUỐC TẾ</a></h3>
                                         <p className="blog-item-time">13-02-2023</p>
@@ -71,7 +79,9 @@ const BoxTechnology = () => {
                                 <div className="row no-margin">
                                     <div className="col-lg-4 col-md-12 no-padding">
                                         <div className="blog-item">
-                                            <div className="blog-item-img page-2"></div>
+                                            <div className="blog-item-img page-2">
+                                                <img src={imgTech2} alt='' />
+                                            </div>
                                             <div className="blog-item-title">
                                                 <h3><a href="#">HOT: LỊCH KHAI GIẢNG KHÓA HỌC LẬP TRÌNH JAVA FULLSTACK PLUS THÁNG 2</a></h3>
                                                 <p className="blog-item-time">07-02-2023</p>
@@ -88,7 +98,9 @@ const BoxTechnology = () => {
                                     </div>
                                     <div className="col-lg-8 col-md-12 no-padding">
                                         <div className="blog-item">
-                                            <div className="blog-item-img page-3"></div>
+                                            <div className="blog-item-img page-3">
+                                                <img src={imgTech3} alt='' />
+                                            </div>
                                             <div className="blog-item-title">
                                                 <h3><a href="">BKAPER KHOE SẢN PHẨM CÔNG NGHỆ .NET VỚI MÔ HÌNH LÀM TRƯỚC HỌC SAU</a></h3>
                                                 <p className="blog-item-time">06-02-2023</p>
@@ -105,7 +117,9 @@ const BoxTechnology = () => {
                                     </div>
                                     <div className="col-lg-8 col-md-12 no-padding">
                                         <div className="blog-item">
-                                            <div className="blog-item-img page-4"></div>
+                                            <div className="blog-item-img page-4">
+                                                <img src={imgTech4} alt='' />
+                                            </div>
                                             <div className="blog-item-title">
                                                 <h3><a href="">SINH VIÊN SDC RỘN RÀNG NHẬN LÌ XÌ KHAI XUÂN </a></h3>
                                                 <p className="blog-item-time">01-02-2023</p>
@@ -125,7 +139,9 @@ const BoxTechnology = () => {
                                     </div>
                                     <div className="col-lg-4 col-md-12 no-padding">
                                         <div className="blog-item">
-                                            <div className="blog-item-img page-5"></div>
+                                            <div className="blog-item-img page-5">
+                                            <img src={imgTech5} alt='' />
+                                            </div>
                                             <div className="blog-item-title">
                                                 <h3><a href=""> SDC THÔNG BÁO LỊCH NGHỈ TẾT NGUYÊN ĐÁN 2023 </a></h3>
                                                 <p className="blog-item-time">12-01-2023</p>
