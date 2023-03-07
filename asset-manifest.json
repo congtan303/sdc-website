@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/sdc-website/static/css/main.56a1463e.css",
+    "main.css": "/sdc-website/static/css/main.672d0907.css",
     "main.js": "/sdc-website/static/js/main.751f2b5d.js",
     "static/media/image-technology-1.jpg": "/sdc-website/static/media/image-technology-1.d24412deb26778b2da4f.jpg",
     "static/media/image-technology-5.jpg": "/sdc-website/static/media/image-technology-5.81f12351095d6e0c6387.jpg",
@@ -48,11 +48,11 @@
     "static/media/slick.ttf": "/sdc-website/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/sdc-website/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/sdc-website/index.html",
-    "main.56a1463e.css.map": "/sdc-website/static/css/main.56a1463e.css.map",
+    "main.672d0907.css.map": "/sdc-website/static/css/main.672d0907.css.map",
     "main.751f2b5d.js.map": "/sdc-website/static/js/main.751f2b5d.js.map"
   },
   "entrypoints": [
-    "static/css/main.56a1463e.css",
+    "static/css/main.672d0907.css",
     "static/js/main.751f2b5d.js"
   ]
 }
