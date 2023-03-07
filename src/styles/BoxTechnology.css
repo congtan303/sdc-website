@@ -56,9 +56,13 @@
     position: relative;
     overflow: hidden;
   }
+
+  .blog-item.active .blog-item-img.page-1 {
+    height: 100%;
+  }
   .blog-item.active .blog-item-img.page-1 img,
   .blog-item .blog-item-img.page-2 img,
-  .blog-item .blog-item-img.page-3 img,
+  .blog-item .blog-item-img.page-3 img, 
   .blog-item .blog-item-img.page-4 img,
   .blog-item .blog-item-img.page-5 img  {
     object-fit: cover;
