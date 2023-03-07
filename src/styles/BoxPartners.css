@@ -39,7 +39,7 @@
 
 
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .partner .container {
     max-width: 720px;
   }
@@ -53,5 +53,29 @@
 @media screen and (min-width: 1200px) {
   .partner .container {
     max-width: 1300px;
+  }
+} */
+
+@media screen and (max-width: 768px) {
+  .partner .partner-title .title h2{
+    text-align: center;
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width:576px){
+  .partner .partner-title .title h2{
+    text-align: center;
+    font-size: 32px;
+  }
+  .partner .partner-title .title h2 b{
+      display: block;
+  }
+}
+
+@media screen and (max-width:480px){
+  .partner .partner-title .title h2{
+    text-align: center;
+    font-size: 22px;
   }
 }

@@ -86,7 +86,6 @@ const BoxLecturers = () => {
     setNav2(slider2.current);
 
     const ulslick = document.querySelector(".slick-dots");
-    console.log(ulslick);
     ulslick.setAttribute("data-label", "Giảng viên");
   }, []);
 
@@ -123,29 +122,29 @@ const BoxLecturers = () => {
 
   return (
     
-      <section class="bkap-lecture">
-        <div class="slider_container">
-          <div class="container">
-            <div class="bkap-lecture-title">
-              <div class="title">
+      <section className="bkap-lecture">
+        <div className="slider_container">
+          <div className="container">
+            <div className="bkap-lecture-title">
+              <div className="title">
                 <h2>
                   ĐỘI NGŨ<b> GIẢNG VIÊN CHUYÊN GIA HÀNG ĐẦU</b>
                 </h2>
               </div>
             </div>
-            <div class="lecture-slide">
-              <Slider class="slide-container slider-nav" asNavFor={nav1} ref={slider2} {...setting}>
+            <div className="lecture-slide">
+              <Slider className="slide-container slider-nav" asNavFor={nav1} ref={slider2} {...setting}>
                 {sliderData.map((data, index) => (
-                  <div class="slide-content" key={index}>
-                    <div class="card-wrapper">
-                      <div class="card-lecture">
-                        <div class="image-content">
-                          <div class="card-image">
-                            <img src={data.avatar} alt="" class="card-img" />
+                  <div className="slide-content" key={index}>
+                    <div className="card-wrapper">
+                      <div className="card-lecture">
+                        <div className="image-content">
+                          <div className="card-image">
+                            <img src={data.avatar} alt="" className="card-img" />
                           </div>
                         </div>
 
-                        <div class="card-content">
+                        <div className="card-content">
                           <h6>{data.service}</h6>
                           <h4>{data.name}</h4>
                         </div>
@@ -155,24 +154,24 @@ const BoxLecturers = () => {
                 ))}
               </Slider>
 
-              <Slider class="preview-lecture slider-for" asNavFor={nav2} ref={slider1} slidesToShow={6} slidesToScroll={1} fade={true} speed={500} dots={true} cssEase={"linear"}>
+              <Slider className="preview-lecture slider-for" asNavFor={nav2} ref={slider1} slidesToShow={6} slidesToScroll={1} fade={true} speed={500} dots={true} cssEase={"linear"}>
                 {sliderData.map((data, index) => (
-                  <div class="slider-for-item" key={index}>
-                    <div class="lecture-item">
-                      <div class="lecture-item-row1">
-                        <div class="lecture-item-col-10">
-                          <div class="letter-info">
-                            <div class="lecture-item-row">
-                              <div class="lecture-item-col-6">
+                  <div className="slider-for-item" key={index}>
+                    <div className="lecture-item">
+                      <div className="lecture-item-row1">
+                        <div className="lecture-item-col-10">
+                          <div className="letter-info">
+                            <div className="lecture-item-row">
+                              <div className="lecture-item-col-6">
                                 <h4>{data.service}</h4>
                                 <h3>{data.name}</h3>
                                 <p></p>
                                 <p>{data.office}</p>
                                 <p>{data.desc}</p>
                               </div>
-                              <div class="lecture-item-col-6">
-                                <div class="lecture-img">
-                                  <img src={data.avatar} class="img-fluid lazy lazyloaded" alt="" />
+                              <div className="lecture-item-col-6">
+                                <div className="lecture-img">
+                                  <img src={data.avatar} className="img-fluid lazy lazyloaded" alt="" />
                                 </div>
                               </div>
                             </div>

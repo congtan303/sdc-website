@@ -9,10 +9,10 @@ const SubMenuParent = ({ data }) => {
 
   return (
     <>
-      <ul class="clear mobi-menu">
+      <ul className="clear mobi-menu">
         <li>
           <Link href="#">{data.parentMenu}</Link>
-          <i class={`${data.childrenMenu && subnav ? data.iconDown : data.childrenMenu ? data.iconRight : null}`} onClick={data.childrenMenu && showSubnav}></i>
+          <i className={`${data.childrenMenu && subnav ? data.iconDown : data.childrenMenu ? data.iconRight : null}`} onClick={data.childrenMenu && showSubnav}></i>
 
           {subnav &&
             data.childrenMenu.map((data, index) => {

@@ -236,4 +236,8 @@
       text-align: center;
     font-size: 22px;
     }
+
+    a.load-more.but-primary.but-lg{
+      font-size: 18px;
+    }
   }
