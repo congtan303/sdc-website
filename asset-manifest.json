@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sdc-website/static/css/main.4d95a75c.css",
-    "main.js": "/sdc-website/static/js/main.780ce70e.js",
+    "main.css": "/sdc-website/static/css/main.25659e28.css",
+    "main.js": "/sdc-website/static/js/main.4c65763d.js",
     "static/media/báo.jpeg": "/sdc-website/static/media/báo.3d124e02ad0853f18fc7.jpeg",
     "static/media/blog-3.jpg": "/sdc-website/static/media/blog-3.6a8aefd4a1c0e7bfbe76.jpg",
     "static/media/banner3.jpg": "/sdc-website/static/media/banner3.0fd936aa375de1baf5d4.jpg",
@@ -43,11 +43,11 @@
     "static/media/slick.ttf": "/sdc-website/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/sdc-website/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/sdc-website/index.html",
-    "main.4d95a75c.css.map": "/sdc-website/static/css/main.4d95a75c.css.map",
-    "main.780ce70e.js.map": "/sdc-website/static/js/main.780ce70e.js.map"
+    "main.25659e28.css.map": "/sdc-website/static/css/main.25659e28.css.map",
+    "main.4c65763d.js.map": "/sdc-website/static/js/main.4c65763d.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d95a75c.css",
-    "static/js/main.780ce70e.js"
+    "static/css/main.25659e28.css",
+    "static/js/main.4c65763d.js"
   ]
 }
