@@ -1,7 +1,9 @@
 {
   "files": {
-    "main.css": "/sdc-website/static/css/main.25659e28.css",
-    "main.js": "/sdc-website/static/js/main.4c65763d.js",
+    "main.css": "/sdc-website/static/css/main.56a1463e.css",
+    "main.js": "/sdc-website/static/js/main.751f2b5d.js",
+    "static/media/image-technology-1.jpg": "/sdc-website/static/media/image-technology-1.d24412deb26778b2da4f.jpg",
+    "static/media/image-technology-5.jpg": "/sdc-website/static/media/image-technology-5.81f12351095d6e0c6387.jpg",
     "static/media/báo.jpeg": "/sdc-website/static/media/báo.3d124e02ad0853f18fc7.jpeg",
     "static/media/blog-3.jpg": "/sdc-website/static/media/blog-3.6a8aefd4a1c0e7bfbe76.jpg",
     "static/media/banner3.jpg": "/sdc-website/static/media/banner3.0fd936aa375de1baf5d4.jpg",
@@ -10,6 +12,9 @@
     "static/media/banner2.jpg": "/sdc-website/static/media/banner2.ff49c657f16cb11603e3.jpg",
     "static/media/banner1.jpg": "/sdc-website/static/media/banner1.f2a89eb82008a4888442.jpg",
     "static/media/bg-lecture.png": "/sdc-website/static/media/bg-lecture.7117146c9a10c32e6aa7.png",
+    "static/media/image-technology-4.jpg": "/sdc-website/static/media/image-technology-4.76ce648b52c7fe12d2f1.jpg",
+    "static/media/image-technology-3.jpg": "/sdc-website/static/media/image-technology-3.5df1e9a3aa05865be20f.jpg",
+    "static/media/image-technology-2.jpg": "/sdc-website/static/media/image-technology-2.9f55e57bee4cdbc7d800.jpg",
     "static/media/student-hot-2.png": "/sdc-website/static/media/student-hot-2.98838b78b70e7865db6f.png",
     "static/media/student-hot-3.png": "/sdc-website/static/media/student-hot-3.59ab9e80462a2aaa0bd6.png",
     "static/media/gv_nguyen_van_luan.jpg": "/sdc-website/static/media/gv_nguyen_van_luan.6848c12e008ba65eed48.jpg",
@@ -43,11 +48,11 @@
     "static/media/slick.ttf": "/sdc-website/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/sdc-website/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/sdc-website/index.html",
-    "main.25659e28.css.map": "/sdc-website/static/css/main.25659e28.css.map",
-    "main.4c65763d.js.map": "/sdc-website/static/js/main.4c65763d.js.map"
+    "main.56a1463e.css.map": "/sdc-website/static/css/main.56a1463e.css.map",
+    "main.751f2b5d.js.map": "/sdc-website/static/js/main.751f2b5d.js.map"
   },
   "entrypoints": [
-    "static/css/main.25659e28.css",
-    "static/js/main.4c65763d.js"
+    "static/css/main.56a1463e.css",
+    "static/js/main.751f2b5d.js"
   ]
 }
