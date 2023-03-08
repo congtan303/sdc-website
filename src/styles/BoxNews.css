@@ -137,10 +137,7 @@
   padding: 0 15px;
 }
 
-.news-content .news-item .col-md-4,
-.news-content .news-item .col-md-8{
-  width: 100%;
-}
+
 
 .news-content .news-item h3 {
   line-height: 18px;
@@ -193,6 +190,10 @@
   .news-content .row .col-lg-4 .text-right {
     text-align: right;
   }
+  .news-content .news-item .col-md-4,
+.news-content .news-item .col-md-8{
+  width: 100%;
+}
  
 }
 

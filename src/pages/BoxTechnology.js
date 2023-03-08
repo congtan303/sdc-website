@@ -7,38 +7,12 @@ import imgTech2 from '../assets/image/technology/image-technology-2.jpg'
 import imgTech3 from '../assets/image/technology/image-technology-3.jpg'
 import imgTech4 from '../assets/image/technology/image-technology-4.jpg'
 import imgTech5 from '../assets/image/technology/image-technology-5.jpg'
+import { NavLink } from 'react-router-dom';
 
 const tabs = ['Tin mới nhất', 'Tin công nghệ', 'Tin về BKAP']
 const BoxTechnology = () => {
-    const dataLatest = {
-        imgActive: 'https://product.bachkhoa-aptech.edu.vn:33/Resources/Data/IMG_6391.jpg',
-        titleActive:'CHÚC MỪNG C2002M VÀ S2010I BẢO VỆ ĐỒ ÁN THÀNH CÔNG',
-        dateActive: '06-03-2023',
-        descriptionActive: 'Sáng 4/3 vừa qua, các bạn lớp S2010I VÀ C2002M đã có buổi bảo vệ đồ án SEM 4, trình làng các sản phẩm độc đáo bằng ngôn ngữ Android.',
-        imgCol1: 'https://product.bachkhoa-aptech.edu.vn:33/Resource…149782195941_01d2ad86f9d300baa2bb7522c77f5379.jpg',
-        titleCol1: 'THÔNG BÁO LỊCH KHAI GIẢNG KHÓA HỌC',
-        dateCol1: '02-03-2023',
-        descriptionCol1: 'Note ngay lịch khai giảng các khóa học lập trình và quản trị mạng siêu hot sẽ khai giảng tháng 3 này tại Bachkhoa-Aptech nhé!',
-        imgCol2: 'https://product.bachkhoa-aptech.edu.vn:33/Resource…149782195941_01d2ad86f9d300baa2bb7522c77f5379.jpg',
-        titleCol2: 'THÔNG BÁO LỊCH KHAI GIẢNG KHÓA HỌC',
-        dateCol2: '02-03-2023',
-        descriptionCol2: 'Note ngay lịch khai giảng các khóa học lập trình và quản trị mạng siêu hot sẽ khai giảng tháng 3 này tại Bachkhoa-Aptech nhé!',
-        imgCol3: 'https://product.bachkhoa-aptech.edu.vn:33/Resource…149782195941_01d2ad86f9d300baa2bb7522c77f5379.jpg',
-        titleCol3: 'THÔNG BÁO LỊCH KHAI GIẢNG KHÓA HỌC',
-        dateCol3: '02-03-2023',
-        descriptionCol3: 'Note ngay lịch khai giảng các khóa học lập trình và quản trị mạng siêu hot sẽ khai giảng tháng 3 này tại Bachkhoa-Aptech nhé!',
-        imgCol4: 'https://product.bachkhoa-aptech.edu.vn:33/Resource…149782195941_01d2ad86f9d300baa2bb7522c77f5379.jpg',
-        titleCol4: 'THÔNG BÁO LỊCH KHAI GIẢNG KHÓA HỌC',
-        dateCol4: '02-03-2023',
-        descriptionCol4: 'Note ngay lịch khai giảng các khóa học lập trình và quản trị mạng siêu hot sẽ khai giảng tháng 3 này tại Bachkhoa-Aptech nhé!',
-    }
-    const dataTechnology = {
-        
-    }
-    const dataBKAP = {
-        
-    }
-    const [newsLatest, setNewsLatest] = useState({}) 
+   
+   
     const [type, setType] = useState('Tin mới nhất')
 
     // useEffect(() => {
