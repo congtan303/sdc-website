@@ -127,7 +127,7 @@ const Footer = () => {
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                     className="address-location"
-                  ></Iframe>
+                  />
                 </div>
               </div>
             </div>

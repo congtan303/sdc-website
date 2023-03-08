@@ -1,4 +1,7 @@
 .btn-back-to-top{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
     z-index: 9999;
     width: 60px;
     height: 60px;
@@ -7,9 +10,7 @@
     border-radius: 50%;
     background-color: var(--pr-violet);
     color: #fff;
-    position: fixed;
-    right: 100px;
-    bottom: 20px;
+    
     cursor: pointer;
     transition: all .5s;
     border: none;

@@ -1,17 +1,23 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import '../styles/BackToTop.css'
-import {TiArrowUpThick} from 'react-icons/ti'
+
 const BackToTopButton = () => {
-    const [backToTopButton, setBackToTopButton] = useState(false)
+    const [showGoToTop, setShowGoToTop] = useState(false)
     useEffect(() => {
-        window.addEventListener('scroll', () => {
-            if(window.scrollY > 100) {
-                setBackToTopButton(true)
+        const handleScroll = () => {
+            if(window.scrollY >= 200) {
+                setShowGoToTop(true)
             } else {
-                setBackToTopButton(false)
+                setShowGoToTop(false)
             }
-        })
+        }
+        window.addEventListener('scroll', handleScroll)
+
+        // cleanup function
+        return () => {
+            window.removeEventListener('scroll', handleScroll)
+        }
     }, [])
     const scrollUp = () => {
         window.scrollTo({
@@ -21,10 +27,9 @@ const BackToTopButton = () => {
     }
   return (
     <div>
-        {backToTopButton && (
+        {showGoToTop && (
             <button className='btn-back-to-top' onClick={scrollUp}>
                 <i className='fa fa-arrow-up'></i>
-               
             </button>
         )}
     </div>

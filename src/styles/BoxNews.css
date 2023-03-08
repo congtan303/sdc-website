@@ -173,16 +173,9 @@
   display: inline-block;
 }
 
-@media screen and (max-width: 1200px) {
-  /* .news .container {
-    max-width: 1170px;
-  } */
-}
 
 @media screen and (max-width: 992px) {
-    /* .news .container {
-      max-width: 960px;
-    } */
+    
   .news-content .news-feature .news-item-active .new-caps {
     position: static;
     width: 100%;
@@ -192,10 +185,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  /* .news .container {
-    max-width: 720px;
-  } */
-
   .news-title .title h2{
     text-align: center;
     font-size: 36px;

@@ -28,7 +28,7 @@
 .bkap-lecture-title .title h2 {
   font-weight: 400;
   font-size: 40px;
-  color: #ffffff !important;
+  color: var(--color-white) !important;
 }
 /* <------------Swipt-----------> */
 .img_box img {
@@ -63,14 +63,14 @@
 .lecture-slide h6 {
   font-size: 14px;
   font-weight: 300;
-  color: #ffffff;
+  color: var(--color-white);
   margin-bottom: 0.5rem;
   line-height: 1.2;
 }
 .lecture-slide h4 {
   font-size: 14px;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--color-white);
   margin-bottom: 0.5rem;
   line-height: 1.2;
   text-align: center;
@@ -121,6 +121,8 @@
   border-radius: 50%;
 }
 
+  
+
 .card-content h6 h4 {
   text-align: center;
   font-size: 14px;
@@ -169,27 +171,27 @@
 .lecture-item-col-6 h4 {
   font-size: 14px;
   font-weight: 700;
-  color: #ccc;
+  color: var(--gray);
   margin-bottom: 0.5rem;
   line-height: 1.2;
   text-align: left;
 }
 .lecture-item-col-6 h3 {
   font-size: 18px;
-  color: #2a015b;
+  color: var(--pr-violet);
   font-weight: 700;
 }
 .lecture-item-col-6 p {
   font-size: 16px;
-  color: #707070;
+  color: var(--text-color);
 }
 .lecture-info h4 {
   font-size: 14px;
-  color: #c2c2c2;
+  color: var(--line-color);
 }
 .lecture-info h3 {
   font-size: 14px;
-  color: #c2c2c2;
+  color: var(--line-color);
 }
 .lecture-img {
   position: relative;
@@ -222,7 +224,7 @@
 }
 .lecture-slide .slick-dots,
 .lecture-slide .slick-dots li button:before {
-  color: #ccc;
+  color: var(--gray);
   opacity: 1;
 }
 .lecture-slide .slick-dots li.slick-active button:before {
@@ -230,6 +232,10 @@
   font-size: 10px;
 }
 
+.lecture-slide  .slick-dots li.slick-active button:before {
+  color: #ff9600 !important;
+font-size: 10px !important;
+}
 /* arrow*/
 .lecture-slide .slick-arrow {
   position: absolute;

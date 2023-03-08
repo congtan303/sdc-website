@@ -31,7 +31,7 @@
 .top-header .main-menu li a {
   font-size: 14px;
   text-transform: uppercase;
-  color: #5807ba;
+  color: var(--color-purpel);
   padding: 0 20px;
   font-weight: 700;
 }
@@ -92,7 +92,7 @@ ul.sub-menu ul.sub-menu {
   font-size: 16px;
   display: inline-block;
   padding: 15px 25px 15px;
-  color: #fff;
+  color: var(--color-white);
 }
 .bot-header-menu li:hover > a {
   color: #fb8b1c;

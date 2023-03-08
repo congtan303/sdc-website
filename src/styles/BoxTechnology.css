@@ -175,6 +175,9 @@
   .load-more {
     margin-top: 40px;
   }
+  .load-more:hover{
+    color: var(--orange);
+  }
   .but-lg {
     padding: 11px 50px;
     border-radius: 30px;

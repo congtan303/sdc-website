@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
+import Nav from 'react-bootstrap/Nav';
 import '../styles/BoxTechnology.css'
 import imgTech1 from '../assets/image/technology/image-technology-1.jpg'
 import imgTech2 from '../assets/image/technology/image-technology-2.jpg'
@@ -9,18 +10,40 @@ import imgTech5 from '../assets/image/technology/image-technology-5.jpg'
 
 const tabs = ['Tin mới nhất', 'Tin công nghệ', 'Tin về BKAP']
 const BoxTechnology = () => {
-    const latestArray = [];
-    const technologyArray = [];
-    const bkapArray = [];
-    const [latestNews, setLateNews] = useState([])
-    const [technologyNews, setTechnologyNews] = useState([])
-    const [bkapNews, setBkapNews] = useState([])
-    const [type, setType] = useState('latest')
+    const dataLatest = {
+        imgActive: 'https://product.bachkhoa-aptech.edu.vn:33/Resources/Data/IMG_6391.jpg',
+        titleActive:'CHÚC MỪNG C2002M VÀ S2010I BẢO VỆ ĐỒ ÁN THÀNH CÔNG',
+        dateActive: '06-03-2023',
+        descriptionActive: 'Sáng 4/3 vừa qua, các bạn lớp S2010I VÀ C2002M đã có buổi bảo vệ đồ án SEM 4, trình làng các sản phẩm độc đáo bằng ngôn ngữ Android.',
+        imgCol1: 'https://product.bachkhoa-aptech.edu.vn:33/Resource…149782195941_01d2ad86f9d300baa2bb7522c77f5379.jpg',
+        titleCol1: 'THÔNG BÁO LỊCH KHAI GIẢNG KHÓA HỌC',
+        dateCol1: '02-03-2023',
+        descriptionCol1: 'Note ngay lịch khai giảng các khóa học lập trình và quản trị mạng siêu hot sẽ khai giảng tháng 3 này tại Bachkhoa-Aptech nhé!',
+        imgCol2: 'https://product.bachkhoa-aptech.edu.vn:33/Resource…149782195941_01d2ad86f9d300baa2bb7522c77f5379.jpg',
+        titleCol2: 'THÔNG BÁO LỊCH KHAI GIẢNG KHÓA HỌC',
+        dateCol2: '02-03-2023',
+        descriptionCol2: 'Note ngay lịch khai giảng các khóa học lập trình và quản trị mạng siêu hot sẽ khai giảng tháng 3 này tại Bachkhoa-Aptech nhé!',
+        imgCol3: 'https://product.bachkhoa-aptech.edu.vn:33/Resource…149782195941_01d2ad86f9d300baa2bb7522c77f5379.jpg',
+        titleCol3: 'THÔNG BÁO LỊCH KHAI GIẢNG KHÓA HỌC',
+        dateCol3: '02-03-2023',
+        descriptionCol3: 'Note ngay lịch khai giảng các khóa học lập trình và quản trị mạng siêu hot sẽ khai giảng tháng 3 này tại Bachkhoa-Aptech nhé!',
+        imgCol4: 'https://product.bachkhoa-aptech.edu.vn:33/Resource…149782195941_01d2ad86f9d300baa2bb7522c77f5379.jpg',
+        titleCol4: 'THÔNG BÁO LỊCH KHAI GIẢNG KHÓA HỌC',
+        dateCol4: '02-03-2023',
+        descriptionCol4: 'Note ngay lịch khai giảng các khóa học lập trình và quản trị mạng siêu hot sẽ khai giảng tháng 3 này tại Bachkhoa-Aptech nhé!',
+    }
+    const dataTechnology = {
+        
+    }
+    const dataBKAP = {
+        
+    }
+    const [newsLatest, setNewsLatest] = useState({}) 
+    const [type, setType] = useState('Tin mới nhất')
 
-    useEffect(() => {
+    // useEffect(() => {
 
-        console.log('type change');
-    }, [type])
+    // }, [type])
 
     return (
         <section className="blog-technology">
@@ -35,16 +58,17 @@ const BoxTechnology = () => {
             </div>
             <div className="section__blog-content">
                 <ul className="nav nav-blogs" id="pills-tab" role="tablist">
-                    {/* {tabs && tabs.map(tab => (
+                 {tabs && tabs.map(tab => (
                         <li
                             className="nav-item"
                             key={tab}
                             onClick={() => setType(tab)}
                         >
-                            <a className={type === tab ? "nav-link active" : "nav-link"} id="tech-tab" data-toggle="tab" href="#tech" role="tab" aria-controls="tech" aria-selected="false">{tab}</a>
+                            <a className={type === tab ? "nav-link active" : "nav-link "} >{tab}</a>
                         </li>
-                    ))} */}
-                    <li className="nav-item">
+                    ))}
+                   
+                    {/* <li className="nav-item">
                         <a className="nav-link active" id="new-tab" data-toggle="tab" href="#new" role="tab" aria-controls="new" aria-selected="true">Tin mới nhất</a>
                     </li>
                     <li className="nav-item">
@@ -52,8 +76,20 @@ const BoxTechnology = () => {
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" id="bkap-tab" data-toggle="tab" href="#bkap" role="tab" aria-controls="bkap" aria-selected="false">Tin về BKAP</a>
-                    </li>
+                    </li> */}
+
                 </ul>
+                {/* <Nav variant='pills' defaultActiveKey={'link-3'} as='ul'>
+                        <Nav.Item as='li' className="nav-item">
+                            <Nav.Link eventKey='link-3' className="nav-link">Tin mới nhất</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item as='li' className="nav-item">
+                            <Nav.Link eventKey='link-1' className="nav-link">Tin công nghệ</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item as='li' className="nav-item">
+                            <Nav.Link eventKey='link-2' className="nav-link">Tin về BKAP</Nav.Link>
+                        </Nav.Item>
+                    </Nav> */}
                 <div className="tab-content" id="pills-tabContent">
                     <div className="tab-pane fade show active" id="new" role="tabpanel" aria-labelledby="new-tab">
                         <div className="row m-auto">
@@ -158,7 +194,7 @@ const BoxTechnology = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="tab-pane fade" id="tech" role="tabpanel" aria-labelledby="tech-tab">
+                    {/* <div className="tab-pane fade" id="tech" role="tabpanel" aria-labelledby="tech-tab">
                         <div className="row m-auto">
                             <div className="col-blog-4 col-md-12 no-padding">
                                 <div className="blog-item active">
@@ -341,7 +377,7 @@ const BoxTechnology = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="text-center">
                     <a href="#" className="load-more but-primary but-lg">Xem thêm</a>
