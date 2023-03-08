@@ -1,37 +1,38 @@
 
 import React from 'react';
-import {
-  MDBCarousel,
-  MDBCarouselItem,
-} from 'mdb-react-ui-kit';
+import { MDBCarousel, MDBCarouselItem} from 'mdb-react-ui-kit';
 import '../styles/Banner.css'
-
 import banner1 from '../../src/assets/image/banner/banner1.jpg'
 import banner2 from '../../src/assets/image/banner/banner2.jpg'
 import banner3 from '../../src/assets/image/banner/banner3.jpg'
-const Banner = () => {
-  return (
 
+const Banner = () => {
+  const banners = [
+    {
+      id: 1,
+      image: banner1,
+    },
+    {
+      id: 2,
+      image: banner2,
+    },
+    {
+      id: 3,
+      image: banner3,
+    }
+  ]
+  return (
     <section className='section-banner'>
       <MDBCarousel showControls fade >
-        <MDBCarouselItem
-          className='w-100 d-block'
-          itemId={1}
-          src={banner1}
-          alt='...'
-        />
-        <MDBCarouselItem
-          className='w-100 d-block'
-          itemId={2}
-          src={banner2}
-          alt='...'
-        />
-        <MDBCarouselItem
-          className='w-100 d-block'
-          itemId={3}
-          src={banner3}
-          alt='...'
-        />
+        {banners && banners.map(banner => (
+          <MDBCarouselItem
+            className='w-100 d-block'
+            itemId={banner.id}
+            src={banner.image}
+            alt='...'
+            key={banner.id}
+          />
+        ))}
       </MDBCarousel>
     </section>
 

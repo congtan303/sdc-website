@@ -53,7 +53,7 @@ const Footer = () => {
                         <div className="col-2 col-xl-3">
                           <i className="fa-regular fa-map"></i>
                         </div>
-                        <div className="col-10 col-xl-9">250 Hoàng Quốc Việt, Bắc Từ Liêm, Hà Nội.</div>
+                        <div className="col-10 col-xl-9">41 Lê Duẩn, Hải Châu 1, Hải Châu, Đà Nẵng.</div>
                       </div>
                     </li>
                     <li>

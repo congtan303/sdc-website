@@ -108,7 +108,7 @@ ul.sub-menu ul.sub-menu {
   background: var(--color-bg-primary);
   white-space: nowrap;
   overflow: hidden;
-  animation: marquee 20s linear infinite;
+  animation: marquee 30s linear infinite;
   font-size: 1.25rem;
   color: var(--color-white);
   font-weight: 400;
@@ -144,6 +144,8 @@ ul.sub-menu ul.sub-menu {
 .menuToggle::before {
   content: "";
   position: absolute;
+  top: -2px;
+  left: -4px;
   width: 40px;
   height: 4px;
   background: #2a015b;
@@ -158,6 +160,8 @@ ul.sub-menu ul.sub-menu {
 .menuToggle::after {
   content: "";
   position: absolute;
+  top: -2px;
+  left: -4px;
   width: 40px;
   height: 4px;
   background: #2a015b;

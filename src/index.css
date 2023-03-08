@@ -36,6 +36,11 @@ body {
 #root {
   overflow-x: hidden;
 }
+.row {
+  padding: 0 15px;
+}
+
+
 a {
   text-decoration: none !important;
   color: unset;

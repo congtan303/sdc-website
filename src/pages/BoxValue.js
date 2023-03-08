@@ -1,75 +1,14 @@
 import React, { useState, useEffect } from 'react'
-import ReactDOM from 'react-dom';
 import '../styles/BoxValue.css'
 import imageValue1 from '../../src/assets/image/bkap-value/bkap-value-1.jpg'
 import imageValue2 from '../../src/assets/image/bkap-value/bkap-value-2.jpg'
 import iconValue1 from '../../src/assets/image/bkap-value-icon/bkap-value-icon-1.png'
 import iconValue2 from '../../src/assets/image/bkap-value-icon/bkap-value-icon-2.png'
 import iconValue3 from '../../src/assets/image/bkap-value-icon/bkap-value-icon-3.png'
-import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const BoxValue = () => {
-
-  const values = [
-    {
-      id: 1,
-      icon: iconValue1,
-      title: 'HỌC ĐỂ LÀM ĐƯỢC VIỆC',
-      description: 'Ký cam kết việc làm tại doanh nghiệp ngay từ khi nhập học',
-      image: imageValue1
-    },
-    {
-      id: 2,
-      icon: iconValue2,
-      title: 'LÀM TRƯỚC HỌC SAU',
-      description: '75% thực hành, bỏ túi ít nhất 6 sản phẩm thực tế',
-      image: imageValue2
-    },
-    {
-      id: 3,
-      icon: iconValue1,
-      title: 'HỌC ĐỂ LÀM ĐƯỢC VIỆC',
-      description: 'Ký cam kết việc làm tại doanh nghiệp ngay từ khi nhập học',
-      image: imageValue1
-    },
-    {
-      id: 4,
-      icon: iconValue2,
-      title: 'LÀM TRƯỚC HỌC SAU',
-      description: '75% thực hành, bỏ túi ít nhất 6 sản phẩm thực tế',
-      image: imageValue2
-    },
-    {
-      id: 5,
-      icon: iconValue1,
-      title: 'HỌC ĐỂ LÀM ĐƯỢC VIỆC',
-      description: 'Ký cam kết việc làm tại doanh nghiệp ngay từ khi nhập học',
-      image: imageValue1
-    },
-    {
-      id: 6,
-      icon: iconValue1,
-      title: 'HỌC ĐỂ LÀM ĐƯỢC VIỆC',
-      description: 'Ký cam kết việc làm tại doanh nghiệp ngay từ khi nhập học',
-      image: imageValue1
-    },
-  ]
-
-  const [imageIndex, setImageIndex] = useState(0)
-
-  const settings = {
-    infinite: true,
-    slidesToShow: 5,
-    focusOnSelect: true,
-    centerMode: true,
-   
-    vertical: true,
-    arrows: false,
-    beforeChange: (current, next) => setImageIndex(next)
-    
-  }
 
   return (
    <section className="bkap-value">

@@ -1,0 +1,25 @@
+.hotline{
+    position: fixed;
+    left: 15px;
+    bottom: 20px;
+    background-color: #ac1b1f;
+    border-radius: 22.5px;
+    z-index: 9999;
+}
+
+.hotline a {
+    display: inline-block;
+    line-height: 45px;
+    padding: 0 15px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.hotline a i {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 16px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    margin-right: 15px;
+}

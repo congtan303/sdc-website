@@ -7,15 +7,13 @@ import BoxPartners from '../BoxPartners'
 import BoxReason from '../BoxReason'
 import BoxTechnology from '../BoxTechnology'
 import BoxValue from '../BoxValue'
-import Products from '../Products'
+import BoxProducts from '../BoxProducts'
 import BoxLecturers from "../BoxLecturers";
-
 
 const Home = () => {
   return (
     <main>
       <Banner />
-
       <BoxReason />
       <BoxValue />
       <BoxLecturers />
@@ -23,11 +21,7 @@ const Home = () => {
       <BoxTechnology />
       <BoxPartners />
       <BoxNews />
-      <Products />
- 
-
-   
-
+      <BoxProducts />
     </main>
   );
 };

@@ -84,7 +84,6 @@ const BoxLecturers = () => {
   useEffect(() => {
     setNav1(slider1.current);
     setNav2(slider2.current);
-
     const ulslick = document.querySelector(".slick-dots");
     ulslick.setAttribute("data-label", "Giảng viên");
   }, []);
@@ -165,7 +164,7 @@ const BoxLecturers = () => {
                               <div className="lecture-item-col-6">
                                 <h4>{data.service}</h4>
                                 <h3>{data.name}</h3>
-                                <p></p>
+                                {/* <p></p> */}
                                 <p>{data.office}</p>
                                 <p>{data.desc}</p>
                               </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/Products.css'
+import '../styles/BoxProducts.css'
 import imageProduct1 from '../assets/image/product/product1.jpg'
 import imageProduct2 from '../assets/image/product/product2.jpg'
 import imageProduct3 from '../assets/image/product/product3.jpg'
