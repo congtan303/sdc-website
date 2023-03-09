@@ -3,20 +3,21 @@ import { Link } from "react-router-dom";
 import SubMenuChildrenMini from "./SubMenuChildrenMini";
 
 const SubMenuChildren = ({ data }) => {
+  console.log(data.title);
   const [childrenSubnav, setChildrenSubnav] = useState(false);
   const showChildrenSubnav = () => setChildrenSubnav(!childrenSubnav);
   return (
     <>
-      <ul className="mobi-sub-menu">
-        <li>
-          <Link href="#">{data.nameMenu}</Link>
-          <i className={`${data.ChildrenMiniMenu && childrenSubnav ? data.iconDown : data.ChildrenMiniMenu ? data.iconRight : null}`} onClick={data.ChildrenMiniMenu && showChildrenSubnav}></i>
+      <li>
+        <Link href="#">{data.title}</Link>
+        <i className={`${data.children && childrenSubnav ? "fa-solid fa-angle-down" : data.children ? "fa-solid fa-angle-right" : null}`} onClick={data.children && showChildrenSubnav}></i>
+        <ul className="mobi-sub-menu">
           {childrenSubnav &&
-            data.ChildrenMiniMenu.map((data, index) => {
+            data.children.map((data, index) => {
               return <SubMenuChildrenMini data={data} key={index} />;
             })}
-        </li>
-      </ul>
+        </ul>
+      </li>
     </>
   );
 };
