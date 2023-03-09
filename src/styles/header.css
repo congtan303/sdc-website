@@ -184,6 +184,12 @@ ul.sub-menu ul.sub-menu {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .header .top-header .container .row .col-lg-9 {
+    padding: 0;
+  }
+}
+
 @media screen and (max-width: 991.98px) {
   header {
     position: fixed;

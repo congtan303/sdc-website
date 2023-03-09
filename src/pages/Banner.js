@@ -1,39 +1,66 @@
 
-import React from 'react';
-import { MDBCarousel, MDBCarouselItem} from 'mdb-react-ui-kit';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import '../styles/Banner.css'
-import banner1 from '../../src/assets/image/banner/banner1.jpg'
-import banner2 from '../../src/assets/image/banner/banner2.jpg'
-import banner3 from '../../src/assets/image/banner/banner3.jpg'
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Banner = () => {
-  const banners = [
-    {
-      id: 1,
-      image: banner1,
-    },
-    {
-      id: 2,
-      image: banner2,
-    },
-    {
-      id: 3,
-      image: banner3,
-    }
-  ]
+  const [banners, setBanners] = useState([])
+
+  useEffect(() => {
+    axios.get('https://sdc.azurecloud.vn/api/banners')
+          .then((response) => {
+            setBanners(response.data.data)
+            console.log(response.data.data);
+          })
+  }, [])
+ 
+  function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block", right: '25px'}}
+        onClick={onClick}
+      />
+    );
+  }
+  
+  function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block",  left: '25px', zIndex: 1 }}
+        onClick={onClick}
+      />
+    );
+  }
+  const settings = {
+    dots: false,
+    fade: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />
+  }
   return (
     <section className='section-banner'>
-      <MDBCarousel showControls fade >
-        {banners && banners.map(banner => (
-          <MDBCarouselItem
-            className='w-100 d-block'
-            itemId={banner.id}
-            src={banner.image}
-            alt='...'
-            key={banner.id}
-          />
+      
+      <Slider {...settings} style={{width: '100%', height: '100%'}}>
+        {banners.map((banner, index) => (
+          <div key={index} className='test' style={{height: '100%'}}>
+            <img src={banner.link_urls} alt='hinh anh' style={{width: '100%',height: '100%', objectFit: 'contain'}} />
+          </div>
         ))}
-      </MDBCarousel>
+
+      </Slider>
     </section>
 
   )
