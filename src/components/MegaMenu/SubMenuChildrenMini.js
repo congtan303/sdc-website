@@ -6,20 +6,18 @@ const SubMenuChildrenMini = ({ data }) => {
   const showchildrenMiniSubnav = () => setChildrenMiniSubnav(!childrenMiniSubnav);
   return (
     <>
-      <ul className="mobi-sub-menu">
-        <li>
-          <Link href="#">{data.nameMiniMenu}</Link>
-          <i className={`${data.miniMenu && childrenMiniSubnav ? data.iconDown : data.miniMenu ? data.iconRight : null}`} onClick={data.miniMenu && showchildrenMiniSubnav}></i>
+      <li>
+        <Link href="#">{data.title}</Link>
+        <i className={`${data.children && childrenMiniSubnav ? "fa-solid fa-angle-down" : data.children ? "fa-solid fa-angle-right" : null}`} onClick={data.children && showchildrenMiniSubnav}></i>
+        <ul className="mobi-sub-menu">
           {childrenMiniSubnav &&
-            data.miniMenu.map((data, index) => (
-              <ul className="mobi-sub-menu">
-                <li>
-                  <Link href="#">{data.subjectName}</Link>
-                </li>
-              </ul>
+            data.children.map((data, index) => (
+              <li key={index}>
+                <Link href="#">{data.title}</Link>
+              </li>
             ))}
-        </li>
-      </ul>
+        </ul>
+      </li>
     </>
   );
 };

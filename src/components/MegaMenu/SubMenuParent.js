@@ -9,17 +9,16 @@ const SubMenuParent = ({ data }) => {
 
   return (
     <>
-      <ul className="clear mobi-menu">
-        <li>
-          <Link href="#">{data.parentMenu}</Link>
-          <i className={`${data.childrenMenu && subnav ? data.iconDown : data.childrenMenu ? data.iconRight : null}`} onClick={data.childrenMenu && showSubnav}></i>
-
+      <li>
+        <Link href="#">{data.title}</Link>
+        <i className={`${data.children && subnav ? "fa-solid fa-angle-down" : data.children ? "fa-solid fa-angle-right" : null}`} onClick={data.children && showSubnav}></i>
+        <ul className="mobi-sub-menu">
           {subnav &&
-            data.childrenMenu.map((data, index) => {
+            data.children.map((data, index) => {
               return <SubMenuChildren data={data} key={index} />;
             })}
-        </li>
-      </ul>
+        </ul>
+      </li>
     </>
   );
 };
