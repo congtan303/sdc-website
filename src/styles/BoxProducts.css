@@ -128,6 +128,13 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .product .container .section__title-product .title,
+  .product .container .section__content-product .row {
+    padding: 0;
+  }
+}
+
 @media screen and (max-width: 768px) {
 
   .section__title-product .title h2 {

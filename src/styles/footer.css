@@ -49,3 +49,9 @@
 .mid-footer-item Iframe {
   width: 100%;
 }
+
+@media screen and (min-width: 1200px) {
+  .footer-layout .footer-wrapper .container .mid-footer .row {
+    padding: 0
+  }
+}

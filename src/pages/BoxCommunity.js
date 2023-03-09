@@ -89,8 +89,9 @@ const BoxCommunity = () => {
                         ))}
                     </Slider>
                     <span className='btn-slider'>
-                            <i className="fa-solid fa-circle"></i>
-                        </span>
+                       
+                        <i className="fa-solid fa-circle"> Cựu học viên</i>
+                    </span>
                 </div>
             </div>
         </section>

@@ -177,6 +177,13 @@ ul.sub-menu ul.sub-menu {
 .mobi-menu {
   display: none;
 }
+
+@media screen and (min-width: 1200px) {
+  .header .top-header .container .row {
+    padding: 0;
+  }
+}
+
 @media screen and (max-width: 991.98px) {
   header {
     position: fixed;
