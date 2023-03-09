@@ -1,33 +1,66 @@
-
-.section-banner  {
+.section-banner {
   padding: 0;
 }
 
-.carousel-control-next, .carousel-control-prev{
-    width: initial !important;
-    opacity: 1 !important;
-    margin: 0 16px;
+.carousel-control-next,
+.carousel-control-prev {
+  width: initial !important;
+  opacity: 1 !important;
+  margin: 0 16px;
 }
 
 .carousel-control-prev-icon,
-.carousel-control-next-icon{
+.carousel-control-next-icon {
   background-image: none !important;
 }
 
-.carousel-control-next-icon:after, .carousel-control-prev-icon:after{
-    font-size: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+.carousel-control-next-icon:after,
+.carousel-control-prev-icon:after {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .carousel .control-next.control-arrow:before {
   border-left: 8px solid #fff;
 }
 
+.section-banner .slick-slider .slick-list {
+  height: 532px;
+}
+
+.section-banner .slick-slider .slick-list .slick-track,
+.section-banner .slick-slider .slick-list .slick-track .slick-slide div {
+  height: 100%;
+}
+
+
 @media screen and (max-width: 480px) {
-  .section-banner{
+  .section-banner {
     padding-bottom: 50px;
   }
+}
+
+.section-banner .slick-slider .slick-next,
+.section-banner .slick-slider .slick-prev {
+  height: auto;
+}
+
+.section-banner .slick-slider .slick-prev::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f053";
+  font-size: 56px;
+  color: rgb(255, 255, 255);
+}
+
+.section-banner .slick-slider .slick-next::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f054";
+  font-size: 56px;
+  color: rgb(255, 255, 255);
+
 }

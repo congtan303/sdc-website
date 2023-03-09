@@ -175,7 +175,11 @@
     padding: 0;
   }
 }
-
+@media  screen and (max-width: 1200px) {
+  .news {
+    background-position: 46% 46%;
+  }
+}
 
 @media screen and (max-width: 992px) {
 
