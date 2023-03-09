@@ -12,7 +12,7 @@ const BoxReason = () => {
             <div className="title text-violet">
               <h1>vì sao</h1>
               <h2>
-                "35.000 học viên chọn "
+                35.000 học viên chọn
                 <span>BachKhoa-Aptech?</span>
               </h2>
             </div>

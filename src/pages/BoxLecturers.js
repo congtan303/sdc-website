@@ -4,7 +4,6 @@ import avatar1 from "../assets/image/avatar-gv/gv_pham_xuan_hien.jpg";
 import avatar2 from "../assets/image/avatar-gv/gv_nguyen_anh_luong.jpg";
 import avatar3 from "../assets/image/avatar-gv/gv_vu_tuan_minh.jpg";
 import avatar4 from "../assets/image/avatar-gv/gv_nguyen_van_luan.jpg";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -16,23 +15,23 @@ const sliderData = [
     name: "Phạm Xuân Hiền",
     avatar: avatar1,
     office: "- Giám đốc đào tạo BKAP",
-    desc: "Tin học VP, Pascal, C, C++, PHP, SQL Server, CSDL, HTML, Cấu trúc DL&amp;GT, PTTK hệ thống,&nbsp; Java core.",
+    desc: "Tin học VP, Pascal, C, C++, PHP, SQL Server, CSDL, HTML, Cấu trúc DL&GT, PTTK hệ thống,  Java core.",
   },
   {
     id: "02",
     service: "Giảng viên",
-    name: "Nguyễn An Lương",
+    name: "Nguyễn Anh Lương",
     avatar: avatar2,
     office: "- Giảng viên BKAP",
-    desc: "- Các môn giảng dạy&nbsp;C, HTML,CSS, Bootstrap, SQL PHP,MySQL,Javascript, laravel, yii2, Codeigniter",
+    desc: "- Các môn giảng dạy C, HTML,CSS, Bootstrap, SQL PHP,MySQL,Javascript, laravel, yii2, Codeigniter",
   },
   {
     id: "03",
     service: "Giảng viên",
     name: "Vũ Tuấn Minh",
     avatar: avatar3,
-    office: "-Giảng viên BKAP",
-    desc: "- Giảng dạy các môn&nbsp; Java Core, Android, PHP, C#, ...",
+    office: "- Giảng viên BKAP",
+    desc: "- Giảng dạy các môn Java Core, Android, PHP, C#, ...",
   },
   {
     id: "04",
@@ -40,7 +39,7 @@ const sliderData = [
     name: "Nguyễn Văn Luận",
     avatar: avatar4,
     office: "- Giảng viên lập trình",
-    desc: "- Giảng dạy các bộ môn PHP, SQL, Angular, NodeJS, HTML&amp;CSS, JavaScript, React, ...",
+    desc: "- Giảng dạy các bộ môn PHP, SQL, Angular, NodeJS, HTML&CSS, JavaScript, React, ...",
   },
   {
     id: "05",
@@ -48,23 +47,23 @@ const sliderData = [
     name: "Phạm Xuân Hiền",
     avatar: avatar1,
     office: "- Giám đốc đào tạo BKAP",
-    desc: "Tin học VP, Pascal, C, C++, PHP, SQL Server, CSDL, HTML, Cấu trúc DL&amp;GT, PTTK hệ thống,&nbsp; Java core.",
+    desc: "Tin học VP, Pascal, C, C++, PHP, SQL Server, CSDL, HTML, Cấu trúc DL&GT, PTTK hệ thống, Java core.",
   },
   {
     id: "06",
     service: "Giảng viên",
-    name: "Nguyễn An Lương",
+    name: "Nguyễn Anh Lương",
     avatar: avatar2,
     office: "- Giảng viên BKAP",
-    desc: "- Các môn giảng dạy&nbsp;C, HTML,CSS, Bootstrap, SQL PHP,MySQL,Javascript, laravel, yii2, Codeigniter",
+    desc: "- Các môn giảng dạy C, HTML,CSS, Bootstrap, SQL PHP,MySQL,Javascript, laravel, yii2, Codeigniter",
   },
   {
     id: "07",
     service: "Giảng viên",
     name: "Vũ Tuấn Minh",
     avatar: avatar3,
-    office: "-Giảng viên BKAP",
-    desc: "- Giảng dạy các môn&nbsp; Java Core, Android, PHP, C#, ...",
+    office: "- Giảng viên BKAP",
+    desc: "- Giảng dạy các môn Java Core, Android, PHP, C#, ...",
   },
   {
     id: "08",
@@ -72,7 +71,7 @@ const sliderData = [
     name: "Nguyễn Văn Luận",
     avatar: avatar4,
     office: "- Giảng viên lập trình",
-    desc: "- Giảng dạy các bộ môn PHP, SQL, Angular, NodeJS, HTML&amp;CSS, JavaScript, React, ...",
+    desc: "- Giảng dạy các bộ môn PHP, SQL, Angular, NodeJS, HTML&CSS, JavaScript, React, ...",
   },
 ];
 
@@ -81,6 +80,7 @@ const BoxLecturers = () => {
   const [nav2, setNav2] = useState(null);
   const slider1 = useRef(null);
   const slider2 = useRef(null);
+
   useEffect(() => {
     setNav1(slider1.current);
     setNav2(slider2.current);

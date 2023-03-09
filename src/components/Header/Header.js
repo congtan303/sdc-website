@@ -55,20 +55,18 @@ const Header = () => {
                         <a href="#">Đào tạo</a>
                         <ul className="sub-menu">
                           <li>
-                            <a href="#">Giới thiệu chung</a>
+                            <a href="#">Giảng viên</a>
                           </li>
                           <li>
-                            <a href="#">Thư viện ảnh</a>
+                            <a href="#">Lịch đào tạo</a>
                           </li>
                           <li>
-                            <a href="#">Thư viện Video</a>
+                            <a href="#">Thông báo</a>
                           </li>
                           <li>
-                            <a href="#">Sự kiện</a>
+                            <a href="#">Biểu mẫu - văn bản</a>
                           </li>
-                          <li>
-                            <a href="#">Đào tạo</a>
-                          </li>
+                          
                         </ul>
                       </li>
                     </ul>

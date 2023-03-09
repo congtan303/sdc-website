@@ -61,7 +61,7 @@ const Footer = () => {
                         <div className="col-2 col-xl-3">
                           <i className="fa-solid fa-phone"></i>
                         </div>
-                        <div className="col-10 col-xl-9">Hotline: 0968276996</div>
+                        <div className="col-10 col-xl-9">Hotline: 0905333999</div>
                       </div>
                     </li>
                     <li>

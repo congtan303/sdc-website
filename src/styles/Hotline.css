@@ -7,11 +7,15 @@
     z-index: 9999;
 }
 
+.hotline a:hover {
+    color: var(--white) !important;
+}
+
 .hotline a {
     display: inline-block;
     line-height: 45px;
     padding: 0 15px;
-    color: #fff;
+    color: var(--white);
     font-size: 20px;
 }
 

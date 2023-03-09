@@ -134,12 +134,24 @@
 }
 
 .btn-slider {
-    text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: var(--color-primary);
+}
+
+.btn-slider span {
+    letter-spacing: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ccc;
 }
 
 .btn-slider i {
-    width: 100%;
+    width: auto;
     font-size: 11px;
+    margin-left: 18px;
+
 }
 
 .student-content .btn-slider .old-student {
