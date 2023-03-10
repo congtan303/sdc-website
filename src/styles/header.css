@@ -240,7 +240,21 @@ ul.sub-menu ul.sub-menu {
 
   .mobi-sub-menu {
     padding-left: 25px;
-    transition: all 1.5s;
+  }
+  .mobi-sub-menu li {
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    animation: showChild 0.2s ease-in 1 forwards;
+  }
+  @keyframes showChild {
+    from {
+      opacity: 0;
+      transform: translate(0, -10px);
+    }
+    to {
+      opacity: 1;
+    }
   }
   .mobi-menu li {
     position: relative;

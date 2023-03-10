@@ -120,58 +120,56 @@ const BoxLecturers = () => {
   };
 
   return (
-    
-      <section className="bkap-lecture">
-        <div className="slider_container">
-          <div className="container">
-            <div className="bkap-lecture-title">
-              <div className="title">
-                <h2>
-                  ĐỘI NGŨ<b> GIẢNG VIÊN CHUYÊN GIA HÀNG ĐẦU</b>
-                </h2>
-              </div>
+    <section className="bkap-lecture">
+      <div className="slider_container">
+        <div className="container">
+          <div className="bkap-lecture-title">
+            <div className="title">
+              <h2>
+                ĐỘI NGŨ<b> GIẢNG VIÊN CHUYÊN GIA HÀNG ĐẦU</b>
+              </h2>
             </div>
-            <div className="lecture-slide">
-              <Slider className="slide-container slider-nav" asNavFor={nav1} ref={slider2} {...setting}>
-                {sliderData.map((data, index) => (
-                  <div className="slide-content" key={index}>
-                    <div className="card-wrapper">
-                      <div className="card-lecture">
-                        <div className="image-content">
-                          <div className="card-image">
-                            <img src={data.avatar} alt="" className="card-img" />
-                          </div>
+          </div>
+          <div className="lecture-slide">
+            <Slider className="slide-container slider-nav" asNavFor={nav1} ref={slider2} {...setting}>
+              {sliderData.map((data, index) => (
+                <div className="slide-content" key={index}>
+                  <div className="card-wrapper">
+                    <div className="card-lecture">
+                      <div className="image-content">
+                        <div className="card-image">
+                          <img src={data.avatar} alt="" className="card-img" />
                         </div>
+                      </div>
 
-                        <div className="card-content">
-                          <h6>{data.service}</h6>
-                          <h4>{data.name}</h4>
-                        </div>
+                      <div className="card-content">
+                        <h6>{data.service}</h6>
+                        <h4>{data.name}</h4>
                       </div>
                     </div>
                   </div>
-                ))}
-              </Slider>
+                </div>
+              ))}
+            </Slider>
 
-              <Slider className="preview-lecture slider-for" asNavFor={nav2} ref={slider1} slidesToShow={6} slidesToScroll={1} fade={true} speed={500} dots={true} cssEase={"linear"}>
-                {sliderData.map((data, index) => (
-                  <div className="slider-for-item" key={index}>
-                    <div className="lecture-item">
-                      <div className="lecture-item-row1">
-                        <div className="lecture-item-col-10">
-                          <div className="letter-info">
-                            <div className="lecture-item-row">
-                              <div className="lecture-item-col-6">
-                                <h4>{data.service}</h4>
-                                <h3>{data.name}</h3>
-                                {/* <p></p> */}
-                                <p>{data.office}</p>
-                                <p>{data.desc}</p>
-                              </div>
-                              <div className="lecture-item-col-6">
-                                <div className="lecture-img">
-                                  <img src={data.avatar} className="img-fluid lazy lazyloaded" alt="" />
-                                </div>
+            <Slider className="preview-lecture slider-for" asNavFor={nav2} ref={slider1} slidesToShow={6} slidesToScroll={1} fade={true} speed={500} dots={true} cssEase={"linear"}>
+              {sliderData.map((data, index) => (
+                <div className="slider-for-item" key={index}>
+                  <div className="lecture-item">
+                    <div className="lecture-item-row1">
+                      <div className="lecture-item-col-10">
+                        <div className="letter-info">
+                          <div className="lecture-item-row">
+                            <div className="lecture-item-col-6">
+                              <h4>{data.service}</h4>
+                              <h3>{data.name}</h3>
+                              {/* <p></p> */}
+                              <p>{data.office}</p>
+                              <p>{data.desc}</p>
+                            </div>
+                            <div className="lecture-item-col-6">
+                              <div className="lecture-img">
+                                <img src={data.avatar} className="img-fluid lazy lazyloaded" alt="" />
                               </div>
                             </div>
                           </div>
@@ -179,13 +177,13 @@ const BoxLecturers = () => {
                       </div>
                     </div>
                   </div>
-                ))}
-              </Slider>
-            </div>
+                </div>
+              ))}
+            </Slider>
           </div>
         </div>
-      </section>
-   
+      </div>
+    </section>
   );
 };
 
