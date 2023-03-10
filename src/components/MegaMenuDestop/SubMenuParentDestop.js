@@ -5,10 +5,10 @@ import SubMenuChildrenDestop from "./SubMenuChildrenDestop";
 const SubMenuParentDestop = ({ data }) => {
   return (
     <>
-      <li class="dropdownmenu">
+      <li className="dropdownmenu">
         <Link href="#">{data.title}</Link>
         {data.children ? (
-          <ul class="sub-menu">
+          <ul className="sub-menu">
             {data.children.map((data, index) => {
               return <SubMenuChildrenDestop data={data} key={index} />;
             })}

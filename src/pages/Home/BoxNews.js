@@ -1,9 +1,9 @@
 import React from 'react'
-import '../styles/BoxNews.css'
-import imageActive from '../assets/image/news/báo.jpeg'
-import imageNews1 from '../assets/image/news/BK-DW-04.jpg'
-import imageNews2 from '../assets/image/news/image-news-2.jpg'
-import imageNews3 from '../assets/image/news/image-news-2.jpg'
+import '../../styles/BoxNews.css'
+import imageActive from '../../assets/image/news/báo.jpeg'
+import imageNews1 from '../../assets/image/news/BK-DW-04.jpg'
+import imageNews2 from '../../assets/image/news/image-news-2.jpg'
+import imageNews3 from '../../assets/image/news/image-news-2.jpg'
 
 
 const BoxNews = () => {

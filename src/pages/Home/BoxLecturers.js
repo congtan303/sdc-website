@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
-import "../styles/BoxLecturers.css";
-import avatar1 from "../assets/image/avatar-gv/gv_pham_xuan_hien.jpg";
-import avatar2 from "../assets/image/avatar-gv/gv_nguyen_anh_luong.jpg";
-import avatar3 from "../assets/image/avatar-gv/gv_vu_tuan_minh.jpg";
-import avatar4 from "../assets/image/avatar-gv/gv_nguyen_van_luan.jpg";
+import "../../styles/BoxLecturers.css";
+import avatar1 from "../../assets/image/avatar-gv/gv_pham_xuan_hien.jpg";
+import avatar2 from "../../assets/image/avatar-gv/gv_nguyen_anh_luong.jpg";
+import avatar3 from "../../assets/image/avatar-gv/gv_vu_tuan_minh.jpg";
+import avatar4 from "../../assets/image/avatar-gv/gv_nguyen_van_luan.jpg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
