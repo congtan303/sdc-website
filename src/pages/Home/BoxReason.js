@@ -1,9 +1,9 @@
 import React from 'react';
-import '../styles/BoxReason.css'
-import imgReason1 from '../../src/assets/image/bkap-reason-1/bkap-reason-1.png'
-import imgReason2 from '../../src/assets/image/bkap-reason-1/bkap-reason-2.png'
-import imgReason3 from '../../src/assets/image/bkap-reason-1/bkap-reason-3.png'
-import imgReason4 from '../../src/assets/image/bkap-reason-1/bkap-reason-4.png'
+import '../../styles/BoxReason.css'
+import imgReason1 from '../../../src/assets/image/bkap-reason-1/bkap-reason-1.png'
+import imgReason2 from '../../../src/assets/image/bkap-reason-1/bkap-reason-2.png'
+import imgReason3 from '../../../src/assets/image/bkap-reason-1/bkap-reason-3.png'
+import imgReason4 from '../../../src/assets/image/bkap-reason-1/bkap-reason-4.png'
 const BoxReason = () => {
   return (
     <section className="bkap-reason">

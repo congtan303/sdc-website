@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 const MenuBottomChildren = ({ data }) => {
   return (
     <>
-      <li class="dropdownmenu">
+      <li className="dropdownmenu">
         <Link href="#">{data.title}</Link>
         {data.children ? (
-          <ul class="sub-menu">
+          <ul className="sub-menu">
             {data.children.map((dataBottom, idx) => {
               return <MenuBottomMiniChildren data={dataBottom} key={idx} />;
             })}

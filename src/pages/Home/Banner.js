@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import '../styles/Banner.css'
+import '../../styles/Banner.css'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -16,13 +16,7 @@ const Banner = () => {
             console.log(response.data.data);
           })
   }, [])
-  // useEffect(() => {
-  //   axios.get('https://sdc.azurecloud.vn/api/banners')
-  //         .then((response) => {
-  //           setBanners(response.data.data)
-  //           console.log(response.data.data);
-  //         })
-  // }, [])
+  
  
   function SampleNextArrow(props) {
     const { className, style, onClick } = props;

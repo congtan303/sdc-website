@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react'
-import '../styles/BoxValue.css'
-import imageValue1 from '../../src/assets/image/bkap-value/bkap-value-1.jpg'
-import imageValue2 from '../../src/assets/image/bkap-value/bkap-value-2.jpg'
-import iconValue1 from '../../src/assets/image/bkap-value-icon/bkap-value-icon-1.png'
-import iconValue2 from '../../src/assets/image/bkap-value-icon/bkap-value-icon-2.png'
-import iconValue3 from '../../src/assets/image/bkap-value-icon/bkap-value-icon-3.png'
+import '../../styles/BoxValue.css'
+import imageValue1 from '../../../src/assets/image/bkap-value/bkap-value-1.jpg'
+import imageValue2 from '../../../src/assets/image/bkap-value/bkap-value-2.jpg'
+import iconValue1 from '../../../src/assets/image/bkap-value-icon/bkap-value-icon-1.png'
+import iconValue2 from '../../../src/assets/image/bkap-value-icon/bkap-value-icon-2.png'
+import iconValue3 from '../../../src/assets/image/bkap-value-icon/bkap-value-icon-3.png'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 

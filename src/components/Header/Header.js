@@ -35,19 +35,19 @@ const Header = () => {
   }, [datamenudestop]);
 
   return (
-    <header class="header">
-      <div class="top-header">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3">
-              <div class="logo" ref={logoRef}>
+    <header className="header">
+      <div className="top-header">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-3">
+              <div className="logo" ref={logoRef}>
                 <h1>
-                  <Link href="#"> Bach Khoa Aptech </Link>
+                  <Link to="/"> Bach Khoa Aptech </Link>
                 </h1>
-                <div class="menuToggle" onClick={toggleMenu}></div>
+                <div className="menuToggle" onClick={toggleMenu}></div>
               </div>
-              <div class="navbar-collapse menu_collapse" ref={menuRef}>
-                <ul class="clear mobi-menu">
+              <div className="navbar-collapse menu_collapse" ref={menuRef}>
+                <ul className="clear mobi-menu">
                   {datamenudestop.map((data, index) => {
                     return <SubMenuParent data={data} key={index} />;
                   })}
@@ -55,9 +55,9 @@ const Header = () => {
               </div>
               {/* test api */}
             </div>
-            <div class="col-lg-9">
+            <div className="col-lg-9">
               <nav>
-                <ul class="main-menu">
+                <ul className="main-menu">
                   {mainMenu &&
                     mainMenu.map((data, index) => {
                       return <SubMenuParentDestop data={data} key={index} />;
@@ -68,16 +68,16 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div class="bot-header">
-        <div class="container">
-          <ul class="bot-header-menu">
+      <div className="bot-header">
+        <div className="container">
+          <ul className="bot-header-menu">
             {databottomMenu.map((dataBottom, idx) => {
               return <MenuBottmParent data={dataBottom} key={idx} />;
             })}
           </ul>
         </div>
-        <div class="marquee-text">
-          <div class="marquee">Làm trước học sau, khác biệt dẫn đầu - Xét học bạ nhận văn bằng CNTT Quốc tế - Cam kết việc làm lương từ 10 triệu đồng trở lên</div>
+        <div className="marquee-text">
+          <div className="marquee">Làm trước học sau, khác biệt dẫn đầu - Xét học bạ nhận văn bằng CNTT Quốc tế - Cam kết việc làm lương từ 10 triệu đồng trở lên</div>
         </div>
       </div>
     </header>

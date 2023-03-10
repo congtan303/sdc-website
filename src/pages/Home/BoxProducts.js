@@ -1,11 +1,11 @@
 import React from 'react'
-import '../styles/BoxProducts.css'
-import imageProduct1 from '../assets/image/product/product1.jpg'
-import imageProduct2 from '../assets/image/product/product2.jpg'
-import imageProduct3 from '../assets/image/product/product3.jpg'
-import imageProduct4 from '../assets/image/product/product4.jpg'
-import imageProduct5 from '../assets/image/product/product5.png'
-import imageProduct6 from '../assets/image/product/product6.jpg'
+import '../../styles/BoxProducts.css'
+import imageProduct1 from '../../assets/image/product/product1.jpg'
+import imageProduct2 from '../../assets/image/product/product2.jpg'
+import imageProduct3 from '../../assets/image/product/product3.jpg'
+import imageProduct4 from '../../assets/image/product/product4.jpg'
+import imageProduct5 from '../../assets/image/product/product5.png'
+import imageProduct6 from '../../assets/image/product/product6.jpg'
 const Products = () => {
     const products = [
         {

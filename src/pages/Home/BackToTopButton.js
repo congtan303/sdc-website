@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import '../styles/BackToTop.css'
+import '../../styles/BackToTop.css'
 
 const BackToTopButton = () => {
     const [showGoToTop, setShowGoToTop] = useState(false)

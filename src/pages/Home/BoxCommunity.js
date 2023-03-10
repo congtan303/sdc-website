@@ -1,12 +1,12 @@
 import React from 'react'
-import '../styles/BoxCommunity.css'
+import '../../styles/BoxCommunity.css'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import avatar1 from '../assets/image/student-hot/student-hot-1.png'
-import avatar2 from '../assets/image/student-hot/student-hot-2.png'
-import avatar3 from '../assets/image/student-hot/student-hot-3.png'
-import avatar4 from '../assets/image/student-hot/student-hot-4.png'
+import avatar1 from '../../assets/image/student-hot/student-hot-1.png'
+import avatar2 from '../../assets/image/student-hot/student-hot-2.png'
+import avatar3 from '../../assets/image/student-hot/student-hot-3.png'
+import avatar4 from '../../assets/image/student-hot/student-hot-4.png'
 
 const BoxCommunity = () => {
     const students = [
