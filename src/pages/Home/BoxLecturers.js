@@ -7,6 +7,7 @@ import avatar4 from "../../assets/image/avatar-gv/gv_nguyen_van_luan.jpg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import axios from "axios";
 
 const sliderData = [
   {
@@ -80,16 +81,21 @@ const BoxLecturers = () => {
   const [nav2, setNav2] = useState(null);
   const slider1 = useRef(null);
   const slider2 = useRef(null);
-
+  const [dataTeacher, SetDataTeacher] = useState([]);
   useEffect(() => {
     setNav1(slider1.current);
     setNav2(slider2.current);
-    const ulslick = document.querySelector(".slick-dots");
-    ulslick.setAttribute("data-label", "Giảng viên");
+    // const ulslick = document.querySelector(".slick-dots");
+    // ulslick.dataset.label = "Giảng viên";
+    // ulslick.setAttribute("data-label", "Giảng viên");
+    axios.get("https://sdc.azurecloud.vn/api/teachers").then((res) => {
+      SetDataTeacher(res.data.data);
+    });
   }, []);
 
+  console.log(dataTeacher);
   const setting = {
-    slidesToShow: 6,
+    slidesToShow: dataTeacher.length - 1,
     // slidesToScroll: 1,
     swipeToSlide: true,
     centerMode: false,
@@ -132,19 +138,19 @@ const BoxLecturers = () => {
           </div>
           <div className="lecture-slide">
             <Slider className="slide-container slider-nav" asNavFor={nav1} ref={slider2} {...setting}>
-              {sliderData.map((data, index) => (
+              {dataTeacher.map((data, index) => (
                 <div className="slide-content" key={index}>
                   <div className="card-wrapper">
                     <div className="card-lecture">
                       <div className="image-content">
                         <div className="card-image">
-                          <img src={data.avatar} alt="" className="card-img" />
+                          <img src={data.avatar_urls} alt="" className="card-img" />
                         </div>
                       </div>
 
                       <div className="card-content">
-                        <h6>{data.service}</h6>
-                        <h4>{data.name}</h4>
+                        <h6>{data.profession}</h6>
+                        <h4>{data.fullname}</h4>
                       </div>
                     </div>
                   </div>
@@ -152,8 +158,8 @@ const BoxLecturers = () => {
               ))}
             </Slider>
 
-            <Slider className="preview-lecture slider-for" asNavFor={nav2} ref={slider1} slidesToShow={6} slidesToScroll={1} fade={true} speed={500} dots={true} cssEase={"linear"}>
-              {sliderData.map((data, index) => (
+            <Slider className="preview-lecture slider-for" asNavFor={nav2} ref={slider1} slidesToShow={dataTeacher.length - 1} slidesToScroll={1} fade={true} speed={500} dots={true} cssEase={"linear"}>
+              {dataTeacher.map((data, index) => (
                 <div className="slider-for-item" key={index}>
                   <div className="lecture-item">
                     <div className="lecture-item-row1">
@@ -161,15 +167,15 @@ const BoxLecturers = () => {
                         <div className="letter-info">
                           <div className="lecture-item-row">
                             <div className="lecture-item-col-6">
-                              <h4>{data.service}</h4>
-                              <h3>{data.name}</h3>
+                              <h4>{data.profession}</h4>
+                              <h3>{data.fullname}</h3>
                               {/* <p></p> */}
-                              <p>{data.office}</p>
-                              <p>{data.desc}</p>
+                              <p>{data.skills}</p>
+                              <p>{data.description}</p>
                             </div>
                             <div className="lecture-item-col-6">
                               <div className="lecture-img">
-                                <img src={data.avatar} className="img-fluid lazy lazyloaded" alt="" />
+                                <img src={data.avatar_urls} className="img-fluid lazy lazyloaded" alt="" />
                               </div>
                             </div>
                           </div>
