@@ -8,6 +8,7 @@ import SubMenuParentDestop from "../MegaMenuDestop/SubMenuParentDestop";
 
 import MenuBottmParent from "../MenuBottomHeader/MenuBottmParent";
 import axios from "axios";
+import logo from "../../assets/image/logo/logo-bkap-edu.png";
 
 const Header = () => {
   const menuRef = useRef(null);
@@ -32,7 +33,6 @@ const Header = () => {
     const cutbottomMenu = datamenudestop.slice(5, 8);
     SetBottomMenu(cutbottomMenu);
   }, [datamenudestop]);
- 
 
   return (
     <header className="header">
@@ -41,9 +41,9 @@ const Header = () => {
           <div className="row">
             <div className="col-lg-3">
               <div className="logo" ref={logoRef}>
-                <h1>
-                  <Link to="/sdc-website"> Bach Khoa Aptech </Link>
-                </h1>
+                <div className="logo-img">
+                  <img src={logo} alt="logo" />
+                </div>
                 <div className="menuToggle" onClick={toggleMenu}></div>
               </div>
               <div className="navbar-collapse menu_collapse" ref={menuRef}>
@@ -60,7 +60,6 @@ const Header = () => {
                 <ul className="main-menu">
                   {mainMenu &&
                     mainMenu.map((data, index) => {
-                   
                       return <SubMenuParentDestop data={data} key={index} />;
                     })}
                 </ul>
