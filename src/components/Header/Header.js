@@ -42,7 +42,7 @@ const Header = () => {
             <div className="col-lg-3">
               <div className="logo" ref={logoRef}>
                 <h1>
-                  <Link to="/sdc-website"> Bach Khoa Aptech </Link>
+                  <Link to="/"> Bach Khoa Aptech </Link>
                 </h1>
                 <div className="menuToggle" onClick={toggleMenu}></div>
               </div>

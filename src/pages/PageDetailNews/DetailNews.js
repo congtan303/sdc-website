@@ -47,10 +47,10 @@ const DetailNews = () => {
                 <div className='container'>
                     <ul className='breadcrumb'>
                         <li className='breadcrumb-item'>
-                            <Link to='/sdc-website'>Trang chủ</Link>
+                            <Link to='/'>Trang chủ</Link>
                         </li>
                         <li className='breadcrumb-item'>
-                            <Link to='/sdc-website'>Tin tức</Link>
+                            <Link to='/'>Tin tức</Link>
                         </li>
                         <li className='breadcrumb-item active'>Bài viết</li>
                     </ul>
