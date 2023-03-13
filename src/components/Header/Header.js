@@ -32,6 +32,7 @@ const Header = () => {
     const cutbottomMenu = datamenudestop.slice(5, 8);
     SetBottomMenu(cutbottomMenu);
   }, [datamenudestop]);
+ 
 
   return (
     <header className="header">
@@ -41,7 +42,7 @@ const Header = () => {
             <div className="col-lg-3">
               <div className="logo" ref={logoRef}>
                 <h1>
-                  <Link to="/"> Bach Khoa Aptech </Link>
+                  <Link to="/sdc-website"> Bach Khoa Aptech </Link>
                 </h1>
                 <div className="menuToggle" onClick={toggleMenu}></div>
               </div>
@@ -59,6 +60,7 @@ const Header = () => {
                 <ul className="main-menu">
                   {mainMenu &&
                     mainMenu.map((data, index) => {
+                   
                       return <SubMenuParentDestop data={data} key={index} />;
                     })}
                 </ul>

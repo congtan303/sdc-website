@@ -12,19 +12,19 @@ const BoxTechnology = () => {
     const [type, setType] = useState('Tin mới nhất')
 
     const handleNavigate = () => {
-        navigate(`/detail-news/${news[0]?.id}`)
+        navigate(`/sdc-website/detail-news/${news[0]?.id}`)
     }
     const handleNavigate1 = () => {
-        navigate(`/detail-news/${news[1]?.id}`)
+        navigate(`/sdc-website/detail-news/${news[1]?.id}`)
     }
     const handleNavigate2 = () => {
-        navigate(`/detail-news/${news[2]?.id}`)
+        navigate(`/sdc-website/detail-news/${news[2]?.id}`)
     }
     const handleNavigate3 = () => {
-        navigate(`/detail-news/${news[3]?.id}`)
+        navigate(`/sdc-website/detail-news/${news[3]?.id}`)
     }
     const handleNavigate4 = () => {
-        navigate(`/detail-news/${news[4]?.id}`)
+        navigate(`/sdc-website/detail-news/${news[4]?.id}`)
     }
 
     useEffect(() => {
