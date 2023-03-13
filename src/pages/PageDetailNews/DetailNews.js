@@ -3,10 +3,13 @@ import '../../styles/DetailNews.css'
 import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
 import moment from 'moment/moment';
-import { Link, useParams } from 'react-router-dom'
+import { Link, useParams, useNavigate } from 'react-router-dom'
+import { useLocation } from 'react-router-dom';
 import axios from 'axios'
 import Hotline from '../Hotline';
 const DetailNews = () => {
+    let location = useLocation();
+    const navigate = useNavigate()
     let { id } = useParams()
     const [detailNews, setDetailNews] = useState({})
     // call API detailNews
@@ -15,27 +18,28 @@ const DetailNews = () => {
             .then(response => {
                 setDetailNews(response.data.data)
             })
-    }, [])
+    }, [location])
 
     // call API list-news
     const [listNews, setListNews] = useState([])
     useEffect(() => {
         axios.get('https://sdc.azurecloud.vn/api/news/')
             .then(response => {
-                console.log(listNews);
                 setListNews(response.data.data.data)
             })
-    },[])
+    }, [])
 
     // call API features news
     const [featuresNews, setFeaturesNews] = useState([])
     useEffect(() => {
         axios.get('https://sdc.azurecloud.vn/api/news?feature=1')
-        .then(response => {
-            setFeaturesNews(response.data.data.data);
-            console.log(response.data.data.data);
-        })
+            .then(response => {
+                setFeaturesNews(response.data.data.data);
+
+            })
     }, [])
+
+
     return (
         <main>
             <Header />
@@ -43,10 +47,10 @@ const DetailNews = () => {
                 <div className='container'>
                     <ul className='breadcrumb'>
                         <li className='breadcrumb-item'>
-                            <Link to='/'>Trang chủ</Link>
+                            <Link to='/sdc-website'>Trang chủ</Link>
                         </li>
                         <li className='breadcrumb-item'>
-                            <Link to='/'>Tin tức</Link>
+                            <Link to='/sdc-website'>Tin tức</Link>
                         </li>
                         <li className='breadcrumb-item active'>Bài viết</li>
                     </ul>
@@ -96,23 +100,26 @@ const DetailNews = () => {
                                         <div className='widget-content'>
                                             <ul>
                                                 {listNews && listNews.map((item, index) => (
-                                                    <li className='item-post-sidebar' key={index}>
-                                                    <div className='row'>
-                                                        <div className='col-5'>
-                                                            <a>
-                                                                <img src={item.image_urls} />
-                                                            </a>
-                                                        </div>
-                                                        <div className='col-7'>
-                                                            <h3>
-                                                                <a>{item.title}</a>
-                                                            </h3>
-                                                        </div>
-                                                    </div>
-                                                </li>
+                                                    <Link to={`/sdc-website/detail-news/${item.id}`} key={index} >
+                                                        <li className='item-post-sidebar' >
+                                                            <div className='row' >
+                                                                <div className='col-5' >
+
+                                                                    <img src={item.image_urls} />
+
+                                                                </div>
+                                                                <div className='col-7' >
+                                                                    <h3>
+                                                                        {item.title}
+                                                                    </h3>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </Link>
+
                                                 ))}
-                                                
-                                               
+
+
                                             </ul>
                                         </div>
                                     </div>
@@ -125,23 +132,25 @@ const DetailNews = () => {
                                         <div className='widget-content'>
                                             <ul>
                                                 {featuresNews && featuresNews.map((item, index) => (
-                                                    <li className='item-post-sidebar' key={index}>
-                                                    <div className='row'>
-                                                        <div className='col-5'>
-                                                            <a>
-                                                                <img src={item.image_urls} />
-                                                            </a>
-                                                        </div>
-                                                        <div className='col-7'>
-                                                            <h3>
-                                                                 <a>{item.title}</a>
-                                                            </h3>
-                                                        </div>
-                                                    </div>
-                                                </li>
+                                                    <Link to={`/sdc-website/detail-news/${item.id}`} key={index} >
+                                                        <li className='item-post-sidebar' >
+                                                            <div className='row'>
+                                                                <div className='col-5'>
+                                                                    <a>
+                                                                        <img src={item.image_urls} />
+                                                                    </a>
+                                                                </div>
+                                                                <div className='col-7'>
+                                                                    <h3>
+                                                                        <a>{item.title}</a>
+                                                                    </h3>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </Link>
                                                 ))}
-                                                
-                                                
+
+
                                             </ul>
                                         </div>
                                     </div>
