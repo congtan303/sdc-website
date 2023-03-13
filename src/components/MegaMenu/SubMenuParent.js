@@ -10,7 +10,7 @@ const SubMenuParent = ({ data }) => {
   return (
     <>
       <li>
-        <Link to={data.slug}>{data.title}</Link>
+        <Link to={`/${data.slug}`}>{data.title}</Link>
         <i className={`${data.children && subnav ? "fa-solid fa-angle-down" : data.children ? "fa-solid fa-angle-right" : null}`} onClick={data.children && showSubnav}></i>
         <ul className="mobi-sub-menu">
           {subnav &&
