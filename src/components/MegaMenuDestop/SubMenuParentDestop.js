@@ -5,7 +5,7 @@ import SubMenuChildrenDestop from "./SubMenuChildrenDestop";
 const SubMenuParentDestop = ({ data }) => {
   return (
     <>
-      <li className="dropdownmenu">
+      <li className="droopdwnmenu">
         <Link to={`/${data.slug}`}>{data.title}</Link>
         {data.children ? (
           <ul className="sub-menu">
