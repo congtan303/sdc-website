@@ -1,12 +1,11 @@
 import React, { useRef, useState, useEffect } from "react";
 import "../../styles/header.css";
 import { NavLink, Link } from "react-router-dom";
-import { dataMenu } from "../MegaMenu/SidebarData";
+
 import SubMenuParent from "../MegaMenu/SubMenuParent";
-import { dataDestop } from "../MegaMenuDestop/dataDestop";
 
 import SubMenuParentDestop from "../MegaMenuDestop/SubMenuParentDestop";
-import { dataBottomMenu } from "../MenuBottomHeader/MenuBottomData";
+
 import MenuBottmParent from "../MenuBottomHeader/MenuBottmParent";
 import axios from "axios";
 

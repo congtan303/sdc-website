@@ -7,13 +7,13 @@ const SubMenuChildrenMini = ({ data }) => {
   return (
     <>
       <li>
-        <Link href="#">{data.title}</Link>
+        <Link to={data.slug}>{data.title}</Link>
         <i className={`${data.children && childrenMiniSubnav ? "fa-solid fa-angle-down" : data.children ? "fa-solid fa-angle-right" : null}`} onClick={data.children && showchildrenMiniSubnav}></i>
         <ul className="mobi-sub-menu">
           {childrenMiniSubnav &&
             data.children.map((data, index) => (
               <li key={index}>
-                <Link href="#">{data.title}</Link>
+                <Link to={data.slug}>{data.title}</Link>
               </li>
             ))}
         </ul>

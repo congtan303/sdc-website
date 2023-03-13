@@ -6,7 +6,7 @@ const SubMenuParentDestop = ({ data }) => {
   return (
     <>
       <li className="dropdownmenu">
-        <Link href="#">{data.title}</Link>
+        <Link to={data.slug}>{data.title}</Link>
         {data.children ? (
           <ul className="sub-menu">
             {data.children.map((data, index) => {

@@ -46,6 +46,15 @@
 .title-banner4 {
   color: var(--orange);
 }
+.card-history .card-img {
+  width: 150px;
+  background: red;
+  border-radius: 50%;
+}
+.card-img img {
+  width: 100%;
+  padding: 30px;
+}
 @media (max-width: 991.98px) {
   .inner-header-title-caps h3 {
     margin-bottom: 0px;
@@ -55,5 +64,24 @@
     font-size: 16px;
     margin-bottom: 0;
     border-bottom: 0;
+  }
+  .inner-header-title-caps p {
+    font-size: 22px;
+  }
+}
+@media (max-width: 415.98px) {
+  .inner-header-title-caps h3 {
+    font-size: 15px;
+  }
+  .inner-header-title-caps h2 {
+    font-size: 11px;
+    padding: 0;
+  }
+  .inner-header-title-caps p {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .inner-header-title-caps .title-Banner3 {
+    padding-bottom: 0;
   }
 }
