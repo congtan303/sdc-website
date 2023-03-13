@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sdc-website/static/css/main.be4792fb.css",
-    "main.js": "/sdc-website/static/js/main.e290d014.js",
+    "main.js": "/sdc-website/static/js/main.300f990e.js",
     "static/media/báo.jpeg": "/sdc-website/static/media/báo.3d124e02ad0853f18fc7.jpeg",
     "static/media/blog-3.jpg": "/sdc-website/static/media/blog-3.6a8aefd4a1c0e7bfbe76.jpg",
     "static/media/product5.png": "/sdc-website/static/media/product5.a9d17bfcde7c1b8f601e.png",
@@ -42,10 +42,10 @@
     "static/media/slick.woff": "/sdc-website/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/sdc-website/index.html",
     "main.be4792fb.css.map": "/sdc-website/static/css/main.be4792fb.css.map",
-    "main.e290d014.js.map": "/sdc-website/static/js/main.e290d014.js.map"
+    "main.300f990e.js.map": "/sdc-website/static/js/main.300f990e.js.map"
   },
   "entrypoints": [
     "static/css/main.be4792fb.css",
-    "static/js/main.e290d014.js"
+    "static/js/main.300f990e.js"
   ]
 }
