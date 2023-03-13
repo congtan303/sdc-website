@@ -7,7 +7,7 @@ import Bachkhoa from "../pages/BachKhoaBox/Bachkhoa";
 const Routers = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />}></Route>
+      <Route path="/sdc-website" element={<Home />}></Route>
       <Route path="/detail-news/:id" element={<DetailNews />}></Route>
       <Route path="/ve-bach-khoa-aptech" element={<Bachkhoa />}></Route>
       <Route path="*" element={<NotFound />}></Route>
