@@ -100,7 +100,7 @@ const DetailNews = () => {
                                         <div className='widget-content'>
                                             <ul>
                                                 {listNews && listNews.map((item, index) => (
-                                                    <Link to={`/sdc-website/detail-news/${item.id}`} key={index} >
+                                                    <Link to={`/detail-news/${item.id}`} key={index} >
                                                         <li className='item-post-sidebar' >
                                                             <div className='row' >
                                                                 <div className='col-5' >
@@ -132,7 +132,7 @@ const DetailNews = () => {
                                         <div className='widget-content'>
                                             <ul>
                                                 {featuresNews && featuresNews.map((item, index) => (
-                                                    <Link to={`/sdc-website/detail-news/${item.id}`} key={index} >
+                                                    <Link to={`/detail-news/${item.id}`} key={index} >
                                                         <li className='item-post-sidebar' >
                                                             <div className='row'>
                                                                 <div className='col-5'>
