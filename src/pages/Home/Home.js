@@ -15,7 +15,7 @@ import Hotline from "../Hotline";
 
 const Home = () => {
   return (
-    <main>
+    < >
       <Header />
       <Banner />
       <BoxReason />
@@ -29,7 +29,7 @@ const Home = () => {
       <Footer />
       <BackToTopButton />
       <Hotline />
-    </main>
+    </  >
   );
 };
 
