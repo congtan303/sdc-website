@@ -9,13 +9,16 @@
   margin: 0;
   padding: 13px 0;
 }
-.top-header .logo h1 a {
+.top-header .logo-img {
+  line-height: 30px;
+  margin: 0;
+  padding: 13px 0;
+}
+.top-header .logo-img img {
   display: inline-block;
   width: 230px;
   height: 30px;
   text-indent: -10000px;
-  background-repeat: no-repeat;
-  background-image: url(../assets/image/logo/logo-bkap-edu.png);
 }
 .top-header nav {
   height: 100%;
@@ -147,7 +150,7 @@ ul.sub-menu ul.sub-menu {
   top: -2px;
   left: -4px;
   width: 40px;
-  height: 4px;
+  height: 4.5px;
   background: #2a015b;
   transform: translateY(-8px);
   transition: 0.5s;
@@ -163,7 +166,7 @@ ul.sub-menu ul.sub-menu {
   top: -2px;
   left: -4px;
   width: 40px;
-  height: 4px;
+  height: 4.5px;
   background: #2a015b;
   transform: translateY(8px);
   box-shadow: 0 -8px 0 #333;
@@ -273,6 +276,18 @@ ul.sub-menu ul.sub-menu {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 375px) {
+  .menuToggle::before {
+    width: 30px;
+    height: 3.5px;
+  }
+  .menuToggle::after {
+    width: 30px;
+    height: 3.5px;
+  }
+  .top-header .logo-img img {
+    width: 70%;
+    height: 30px;
+  }
 }
 /* ------------ end header------------------ */
