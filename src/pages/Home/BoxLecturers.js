@@ -95,7 +95,7 @@ const BoxLecturers = () => {
 
   console.log(dataTeacher);
   const setting = {
-    slidesToShow: dataTeacher.length - 1,
+    slidesToShow: 6,
     // slidesToScroll: 1,
     swipeToSlide: true,
     centerMode: false,
@@ -158,7 +158,7 @@ const BoxLecturers = () => {
               ))}
             </Slider>
 
-            <Slider className="preview-lecture slider-for" asNavFor={nav2} ref={slider1} slidesToShow={dataTeacher.length - 1} slidesToScroll={1} fade={true} speed={500} dots={true} cssEase={"linear"}>
+            <Slider className="preview-lecture slider-for" asNavFor={nav2} ref={slider1} slidesToShow={6} slidesToScroll={1} fade={true} speed={500} dots={true} cssEase={"linear"}>
               {dataTeacher.map((data, index) => (
                 <div className="slider-for-item" key={index}>
                   <div className="lecture-item">

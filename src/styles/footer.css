@@ -24,7 +24,7 @@
   padding: 0;
 }
 
-.mid-footer .mid-footer-item .nav-f-contact .row{
+.mid-footer .mid-footer-item .nav-f-contact .row {
   align-items: center;
 }
 .mid-footer .mid-footer-item .nav-f-contact i {
@@ -52,6 +52,19 @@
 
 @media screen and (min-width: 1200px) {
   .footer-layout .footer-wrapper .container .mid-footer .row {
-    padding: 0
+    padding: 0;
+  }
+}
+@media screen and (max-width: 384.98px) {
+  .nav-f-contact li .contact-row,
+  .bottom-titleContact {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .nav-f-contact .contact-icon i {
+    font-size: 25px !important;
+  }
+  .nav-f-contact .contact-text {
+    font-size: 15px;
   }
 }
