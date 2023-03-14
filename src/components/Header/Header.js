@@ -42,15 +42,19 @@ const Header = () => {
             <div className="col-lg-3">
               <div className="logo" ref={logoRef}>
                 <div className="logo-img">
-                  <img src={logo} alt="logo" />
+                  <Link to="/">
+                    {" "}
+                    <img src={logo} alt="logo" />
+                  </Link>
                 </div>
                 <div className="menuToggle" onClick={toggleMenu}></div>
               </div>
               <div className="navbar-collapse menu_collapse" ref={menuRef}>
                 <ul className="clear mobi-menu">
-                  {datamenudestop.map((data, index) => {
-                    return <SubMenuParent data={data} key={index} />;
-                  })}
+                  {datamenudestop &&
+                    datamenudestop.map((data, index) => {
+                      return <SubMenuParent data={data} key={index} />;
+                    })}
                 </ul>
               </div>
               {/* test api */}
@@ -71,9 +75,10 @@ const Header = () => {
       <div className="bot-header">
         <div className="container">
           <ul className="bot-header-menu">
-            {databottomMenu.map((dataBottom, idx) => {
-              return <MenuBottmParent data={dataBottom} key={idx} />;
-            })}
+            {databottomMenu &&
+              databottomMenu.map((dataBottom, idx) => {
+                return <MenuBottmParent data={dataBottom} key={idx} />;
+              })}
           </ul>
         </div>
         <div className="marquee-text">

@@ -1,8 +1,8 @@
 /* <-------bkap-lecture-------> */
 .bkap-lecture {
   position: relative;
-  margin-top: 58px ;
-  background-image: -webkit-linear-gradient(-39deg,#2a015b 0,#7b2d8a 100%);
+  margin-top: 58px;
+  background-image: -webkit-linear-gradient(-39deg, #2a015b 0, #7b2d8a 100%);
 }
 .bkap-lecture::after {
   content: "";
@@ -121,8 +121,6 @@
   border-radius: 50%;
 }
 
-  
-
 .card-content h6 h4 {
   text-align: center;
   font-size: 14px;
@@ -232,9 +230,9 @@
   font-size: 10px;
 }
 
-.lecture-slide  .slick-dots li.slick-active button:before {
+.lecture-slide .slick-dots li.slick-active button:before {
   color: #ff9600 !important;
-font-size: 10px !important;
+  font-size: 10px !important;
 }
 /* arrow*/
 .lecture-slide .slick-arrow {
@@ -278,7 +276,7 @@ font-size: 10px !important;
 /* <--------end slider-for-item  ---------> */
 /* <--------end bkap-lecture  ---------> */
 @media screen and (max-width: 1200px) {
-  .bkap-lecture{
+  .bkap-lecture {
     /* margin-top: 160px!important; */
   }
   .lecture-item-col-10 {
@@ -311,30 +309,32 @@ font-size: 10px !important;
   }
 }
 @media screen and (max-width: 992px) {
-
   /* .bkap-lecture{
     margin-top: 200px !important;
   } */
   .lecture-slide {
     padding: 0;
   }
-  .lecture-slide .slick-arrow{
+  .lecture-slide .slick-arrow {
     margin-left: 24px;
   }
 }
 @media screen and (max-width: 768px) {
   /* <-------bkap-value-------> */
 
-  .bkap-lecture{
+  .bkap-lecture {
     margin: 90px 0 0 0;
   }
 
   .slider_container .container {
     max-width: 540px;
   }
+  .lecture-slide .slick-arrow {
+    top: 82%;
+  }
 
   /* <-------bkap-value-------> */
-  
+
   .lecture-item-col-6 {
     flex: none;
     max-width: 100%;
@@ -354,19 +354,19 @@ font-size: 10px !important;
   }
 }
 @media screen and (max-width: 576px) {
-  .lecture-slide .slick-arrow {
+  /* .lecture-slide .slick-arrow {
     top: 77%;
-  }
-  .bkap-lecture-title .title h2{
+  } */
+  .bkap-lecture-title .title h2 {
     font-size: 32px;
   }
-  .bkap-lecture-title .title h2 b{
+  .bkap-lecture-title .title h2 b {
     display: block;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .bkap-lecture-title .title h2{
+  .bkap-lecture-title .title h2 {
     font-size: 22px;
   }
 }

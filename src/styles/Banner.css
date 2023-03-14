@@ -24,7 +24,7 @@
 }
 
 .carousel .control-next.control-arrow:before {
-  border-left: 8px solid #fff;
+  border-left: 8px solid var(--color-white);
 }
 
 .section-banner .slick-slider .slick-list {
@@ -35,7 +35,6 @@
 .section-banner .slick-slider .slick-list .slick-track .slick-slide div {
   height: 100%;
 }
-
 
 @media screen and (max-width: 480px) {
   .section-banner {
@@ -62,5 +61,4 @@
   content: "\f054";
   font-size: 56px;
   color: rgb(255, 255, 255);
-
 }
