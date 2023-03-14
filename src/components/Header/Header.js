@@ -8,7 +8,7 @@ import SubMenuParentDestop from "../MegaMenuDestop/SubMenuParentDestop";
 
 import MenuBottmParent from "../MenuBottomHeader/MenuBottmParent";
 import axios from "axios";
-import logo from "../../assets/image/logo/logo-bkap-edu.png";
+import logo from "../../assets/image/logo/804a268d9db040ee19a1.jpg";
 
 const Header = () => {
   const menuRef = useRef(null);
