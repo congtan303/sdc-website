@@ -26,13 +26,23 @@ const Header = () => {
 
   const [mainMenu, SetMainMenu] = useState([]);
   const [databottomMenu, SetBottomMenu] = useState([]);
+  // api menu
   useEffect(() => {
     const cutMainMenu = datamenudestop.slice(0, 5);
     SetMainMenu(cutMainMenu);
     const cutbottomMenu = datamenudestop.slice(5, 8);
     SetBottomMenu(cutbottomMenu);
   }, [datamenudestop]);
- 
+
+  // api chữ chạy
+  const [marquees, setMarquees] = useState([])
+  useEffect(()=> {
+    axios.get('https://sdc.azurecloud.vn/api/news/list-new')
+      .then(response => {
+      //  console.log(response.data.data);
+       setMarquees(response.data.data)
+      })
+  }, [])
 
   return (
     <header className="header">
@@ -78,7 +88,11 @@ const Header = () => {
           </ul>
         </div>
         <div className="marquee-text">
-          <div className="marquee">Làm trước học sau, khác biệt dẫn đầu - Xét học bạ nhận văn bằng CNTT Quốc tế - Cam kết việc làm lương từ 10 triệu đồng trở lên</div>
+          <div className="marquee">
+            {marquees && marquees.map(marquee => (
+              <span key={marquee.id}>{marquee.title}</span>
+            ))}
+          </div>
         </div>
       </div>
     </header>

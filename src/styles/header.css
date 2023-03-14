@@ -15,7 +15,8 @@
   height: 30px;
   text-indent: -10000px;
   background-repeat: no-repeat;
-  background-image: url(../assets/image/logo/logo-bkap-edu.png);
+  background-image: url(../assets/image/logoSDC/logoSDC.jpg);
+  background-size: 100% 100%;
 }
 .top-header nav {
   height: 100%;
@@ -193,6 +194,7 @@ ul.sub-menu ul.sub-menu {
 @media screen and (max-width: 991.98px) {
   header {
     position: fixed;
+    top: 0;
     width: 100%;
     box-shadow: 1px 2px 10px rgb(0 0 0 / 60%);
     z-index: 99999;

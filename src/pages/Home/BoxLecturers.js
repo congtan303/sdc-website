@@ -93,7 +93,7 @@ const BoxLecturers = () => {
     });
   }, []);
 
-  console.log(dataTeacher);
+  
   const setting = {
     slidesToShow: dataTeacher.length - 1,
     // slidesToScroll: 1,

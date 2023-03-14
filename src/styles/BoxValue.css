@@ -289,6 +289,11 @@ input {
   }
 }
 
+@media screen and (max-width:310px) {
+  .slide-value {
+    margin-top: 174px;
+  }
+}
 
 
 

@@ -27,15 +27,19 @@
   border-left: 8px solid #fff;
 }
 
-.section-banner .slick-slider .slick-list {
-  height: 532px;
-}
+
 
 .section-banner .slick-slider .slick-list .slick-track,
 .section-banner .slick-slider .slick-list .slick-track .slick-slide div {
   height: 100%;
 }
 
+
+@media screen and (max-width: 992px) {
+  .section-banner .slick-slider .slick-list {
+  padding-top: 102px;
+  }
+}
 
 @media screen and (max-width: 480px) {
   .section-banner {

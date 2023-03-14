@@ -111,7 +111,7 @@
 
 .blog-item-title h3 {
   line-height: 25px;
-  height: 54px;
+  height: auto;
   overflow: hidden;
   margin-bottom: 20px;
 }
@@ -245,7 +245,7 @@
   }
 
   .news .news-content .col-lg-4 {
-    padding: 0 15px;
+    padding: 0 18px;
   }
 
   .news-content .news-feature {

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import SubMenuChildrenMini from "./SubMenuChildrenMini";
 
 const SubMenuChildren = ({ data }) => {
-  console.log(data.title);
+  
   const [childrenSubnav, setChildrenSubnav] = useState(false);
   const showChildrenSubnav = () => setChildrenSubnav(!childrenSubnav);
   return (

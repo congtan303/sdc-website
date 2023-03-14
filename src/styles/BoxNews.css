@@ -196,7 +196,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .news-title .title h2{
     text-align: center;
     font-size: 36px;
