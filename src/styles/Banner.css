@@ -27,10 +27,6 @@
   border-left: 8px solid var(--color-white);
 }
 
-.section-banner .slick-slider .slick-list {
-  height: 532px;
-}
-
 .section-banner .slick-slider .slick-list .slick-track,
 .section-banner .slick-slider .slick-list .slick-track .slick-slide div {
   height: 100%;
@@ -47,12 +43,16 @@
   height: auto;
 }
 
+.section-banner .slick-slider .slick-prev {
+  right: 35px;
+}
+
 .section-banner .slick-slider .slick-prev::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f053";
   font-size: 56px;
-  color: rgb(255, 255, 255);
+  color: #ddd;
 }
 
 .section-banner .slick-slider .slick-next::before {
@@ -60,5 +60,6 @@
   font-weight: 900;
   content: "\f054";
   font-size: 56px;
-  color: rgb(255, 255, 255);
+
+  color: #ddd;
 }

@@ -1,0 +1,335 @@
+.banner-read-more {
+  background-image: url(https://bachkhoa-aptech.edu.vn/public/assets/imgs/themes/banner.png);
+  height: 600px;
+}
+
+.banner-item {
+  position: relative;
+}
+
+.banner-item-caption {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 100px 0;
+}
+
+.banner-item-caption .content-banner .text-white {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.banner-item-caption .content-banner h3 span {
+  font-size: 48px;
+  color: #f9b248;
+}
+
+.banner-item-caption .content-banner h3 .text-underline {
+  text-decoration: underline;
+  color: #f9b248;
+  font-size: 55px;
+}
+
+#content-tech-blog {
+  padding: 12px 0px;
+}
+
+.box-breadcrumbs {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.box-breadcrumbs .item-breadcrumb a,
+.box-breadcrumbs .item-breadcrumb span {
+  font-size: 14pt;
+  color: #464646;
+}
+
+.item-breadcrumb + .item-breadcrumb ::before {
+  content: "/";
+  color: #464646;
+  padding: 10px 8px;
+}
+
+/* box content */
+
+.header-content .title-content {
+  color: #372154;
+  font-size: 36px;
+  text-align: center;
+}
+
+.descript-title {
+  text-align: center;
+  font-size: 18px;
+  color: #464646;
+}
+
+#content-tech-blog .nav-pills {
+  max-width: 600px;
+}
+
+#content-tech-blog .nav .nav-item {
+  width: 33.333333%;
+}
+
+#content-tech-blog .group-content-blog .nav-pills .nav-item .nav-link {
+  border: solid 1px #dcdada;
+  font-weight: 900;
+  border-radius: 0 !important;
+  color: #372154 !important;
+  margin: 0;
+}
+
+.nav-link.active {
+  position: relative;
+  background-color: white !important;
+}
+
+#content-tech-blog .nav-pills .nav-link.active::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background-color: #f9b248;
+  top: 0;
+  left: 0;
+}
+
+.tab-content .slick-slider .slick-slide {
+  /* margin-right: 20px; */
+}
+/* .slick-list {margin-right:  25px;}    */
+.tab-content .slick-slide > div {
+  width: 545px;
+  /* padding-right: 25px; */
+  padding-top: 16px;
+}
+.tab-content .item {
+  height: 100% !important;
+  box-shadow: 0 0 10px #e4bcf9;
+  overflow: hidden;
+}
+.tab-content .slick-slider .slick-list {
+  margin: 30px 0;
+}
+
+.bg-image-blog {
+  width: 100%;
+  height: 100%;
+}
+
+.bg-image-blog img {
+  /* background-image: url(https://product.bachkhoa-aptech.edu.vn:33/Resources/Data/IMG_6391.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center; */
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  object-fit: cover;
+  /* background-size: cover; */
+}
+
+.small-content-blog {
+  padding: 10px 20px;
+}
+
+.small-content-blog .content-small {
+  padding-right: 12px;
+}
+
+.content-small span {
+  margin: 10px 0;
+  display: block;
+  width: 100%;
+  color: gray;
+}
+.content-small span i {
+  margin-right: 4px;
+}
+
+.content-small h4 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 16px;
+}
+
+.content-small .sub__title p {
+  font-size: 14px;
+}
+.content-small .sub__title p strong {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+.small-content-blog .read-more-blog a {
+  font-size: 14px;
+}
+
+.read-more-blog a > span {
+  color: #464646;
+}
+
+.read-more-blog a p > span {
+  margin-left: 8px;
+  transition: all 0.5s;
+}
+
+/* detail list */
+
+.box-content-blog-detail {
+  background-image: url(https://bachkhoa-aptech.edu.vn/public/assets/imgs/themes/bg-private-new-log-event.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+.box-content-blog-detail .box-more-blog .card {
+  /* position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem; */
+}
+.box-more-blog .item {
+  height: 100%;
+}
+.box-more-blog .item .row {
+}
+
+.box-shadow-item {
+  box-shadow: 0 0 10px #e4bcf9;
+  overflow: hidden;
+}
+
+.box-more-blog .img-log {
+  width: 100%;
+}
+
+.content-small span {
+  margin: 10px 0 10px 0;
+  display: block;
+  font-size: 14px;
+}
+
+.box-more-blog .content-small h4 {
+  font-size: 18px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.des__sapo {
+  -webkit-line-clamp: 2;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+.des__sapo strong {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.box-more-blog .content-small p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  font-size: 14px;
+}
+
+.box-more-blog .row {
+  padding: 0;
+}
+
+.tab-content .item .col-md-6 {
+  padding: 0 15px;
+}
+.tab-content .item .row {
+  padding: 0;
+}
+
+/* btn slider */
+
+.tab-content button.slick-arrow.slick-prev,
+.tab-content button.slick-arrow.slick-next {
+  display: block;
+  border: 2px solid #f1b247;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  position: absolute;
+}
+.tab-content button.slick-arrow.slick-prev {
+  left: -46px;
+}
+.tab-content button.slick-arrow.slick-next {
+  right: -46px;
+}
+
+.tab-content .slick-prev:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f104";
+  font-size: 16px;
+  color: #27275a;
+}
+.tab-content .slick-next:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f105";
+  font-size: 16px;
+  color: #27275a;
+}
+
+/* read-more-blog */
+.read-more-blog {
+  padding: 8px;
+  margin-bottom: 9px;
+}
+.read-more-blog a p {
+  font-weight: 900;
+  margin: 0;
+  color: #fc3a52 !important;
+}
+
+@media screen and (min-width: 768px) {
+  .tab-content .item .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}

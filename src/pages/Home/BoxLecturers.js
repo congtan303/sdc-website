@@ -99,6 +99,7 @@ const BoxLecturers = () => {
     quantity = 1;
   }
 
+  console.log(dataTeacher);
   const setting = {
     slidesToShow: quantity,
     // slidesToScroll: 1,

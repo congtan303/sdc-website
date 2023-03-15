@@ -13,7 +13,6 @@ const Banner = () => {
     axios.get('https://sdc.azurecloud.vn/api/banners')
           .then((response) => {
             setBanners(response.data.data)
-            console.log(response.data.data);
           })
   }, [])
   
@@ -23,7 +22,7 @@ const Banner = () => {
     return (
       <div
         className={className}
-        style={{ ...style, display: "block", right: '25px'}}
+        style={{ ...style, display: "block", right: '35px'}}
         onClick={onClick}
       />
     );
@@ -43,7 +42,7 @@ const Banner = () => {
     dots: false,
     fade: true,
     infinite: true,
-    speed: 500,
+    speed: 800,
     slidesToShow: 1,
     arrows: true,
     autoplay: true,
@@ -54,10 +53,10 @@ const Banner = () => {
   return (
     <section className='section-banner'>
       
-      <Slider {...settings} style={{width: '100%', height: '100%'}}>
+      <Slider {...settings}>
         {banners.map((banner, index) => (
-          <div key={index} className='test' style={{height: '100%'}}>
-            <img src={banner.link_urls} alt='hinh anh' style={{width: '100%',height: '100%', objectFit: 'contain'}} />
+          <div key={index} >
+            <img src={banner.link_urls} alt='hinh anh' style={{width: '100%',height: '100%', objectFit: 'cover'}} />
           </div>
         ))}
 

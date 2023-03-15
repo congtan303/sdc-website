@@ -21,7 +21,7 @@ const BoxValue = () => {
           <div className="section-content">
             <div className="slide-value">
               <input type="radio" name="slider" className="d-none" id="s1" defaultChecked />
-              <input type="radio" name="slider" className="d-none" id="s2" />
+              <input type="radio" name="slider" className="d-none" id="s2"  />
               <input type="radio" name="slider" className="d-none" id="s3" />
               <input type="radio" name="slider" className="d-none" id="s4" />
               <input type="radio" name="slider" className="d-none" id="s5" />

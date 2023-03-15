@@ -15,17 +15,20 @@ import Hotline from "../Hotline";
 
 const Home = () => {
   return (
-    < >
+    <>
       <Header />
-      <Banner />
-      <BoxReason />
-      <BoxValue />
-      <BoxLecturers />
-      <BoxCommunity />
-      <BoxTechnology />
-      <BoxPartners />
-      <BoxNews />
-      <BoxProducts />
+      <main>
+        <Banner />
+        <BoxReason />
+        <BoxValue />
+        <BoxLecturers />
+        <BoxCommunity />
+        <BoxTechnology />
+        <BoxPartners />
+        <BoxNews />
+        <BoxProducts />
+      </main>
+
       <Footer />
       <BackToTopButton />
       <Hotline />

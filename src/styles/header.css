@@ -17,6 +17,7 @@
 .top-header .logo-img img {
   display: inline-block;
   text-indent: -10000px;
+
 }
 .top-header nav {
   height: 100%;
@@ -109,7 +110,7 @@ ul.sub-menu ul.sub-menu {
   background: var(--color-bg-primary);
   white-space: nowrap;
   overflow: hidden;
-  animation: marquee 30s linear infinite;
+  animation: marquee 50s linear infinite;
   font-size: 1.25rem;
   color: var(--color-white);
   font-weight: 400;
@@ -194,6 +195,7 @@ ul.sub-menu ul.sub-menu {
 @media screen and (max-width: 991.98px) {
   header {
     position: fixed;
+    top: 0;
     width: 100%;
     box-shadow: 1px 2px 10px rgb(0 0 0 / 60%);
     z-index: 99999;

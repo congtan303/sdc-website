@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import SubMenuChildrenDestop from "./SubMenuChildrenDestop";
 
 const SubMenuParentDestop = ({ data }) => {
+  console.log(data);
   return (
     <>
       <li className="droopdwnmenu">

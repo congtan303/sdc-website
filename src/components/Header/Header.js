@@ -1,14 +1,11 @@
 import React, { useRef, useState, useEffect } from "react";
 import "../../styles/header.css";
 import { NavLink, Link } from "react-router-dom";
-
 import SubMenuParent from "../MegaMenu/SubMenuParent";
-
 import SubMenuParentDestop from "../MegaMenuDestop/SubMenuParentDestop";
-
 import MenuBottmParent from "../MenuBottomHeader/MenuBottmParent";
 import axios from "axios";
-import logo from "../../assets/image/logo/804a268d9db040ee19a1.jpg";
+import logo from "../../assets/image/logoSDC/logoSDC.jpg";
 
 const Header = () => {
   const menuRef = useRef(null);
@@ -27,12 +24,22 @@ const Header = () => {
 
   const [mainMenu, SetMainMenu] = useState([]);
   const [databottomMenu, SetBottomMenu] = useState([]);
+  // api menu
   useEffect(() => {
     const cutMainMenu = datamenudestop.slice(0, 5);
     SetMainMenu(cutMainMenu);
     const cutbottomMenu = datamenudestop.slice(5, 8);
     SetBottomMenu(cutbottomMenu);
   }, [datamenudestop]);
+
+  // api chữ chạy
+  const [marquees, setMarquees] = useState([]);
+  useEffect(() => {
+    axios.get("https://sdc.azurecloud.vn/api/news/list-new").then((response) => {
+      //  console.log(response.data.data);
+      setMarquees(response.data.data);
+    });
+  }, []);
 
   return (
     <header className="header">
@@ -42,10 +49,7 @@ const Header = () => {
             <div className="col-lg-3">
               <div className="logo" ref={logoRef}>
                 <div className="logo-img">
-                  <Link to="/">
-                    {" "}
-                    <img src={logo} alt="logo" />
-                  </Link>
+                  <img src={logo} alt="logo" />
                 </div>
                 <div className="menuToggle" onClick={toggleMenu}></div>
               </div>
@@ -82,7 +86,7 @@ const Header = () => {
           </ul>
         </div>
         <div className="marquee-text">
-          <div className="marquee">Làm trước học sau, khác biệt dẫn đầu - Xét học bạ nhận văn bằng CNTT Quốc tế - Cam kết việc làm lương từ 10 triệu đồng trở lên</div>
+          <div className="marquee">{marquees && marquees.map((marquee) => <span key={marquee.id}>{`${marquee.title} - `}</span>)}</div>
         </div>
       </div>
     </header>

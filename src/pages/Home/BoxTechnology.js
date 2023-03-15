@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../../styles/BoxTechnology.css'
 import axios from 'axios';
 import moment from 'moment/moment';
@@ -162,7 +162,7 @@ const BoxTechnology = () => {
 
                 </div>
                 <div className="text-center">
-                    <a href="#" className="load-more but-primary but-lg">Xem thêm</a>
+                    <Link to='/xem-them' className="load-more but-primary but-lg">Xem thêm</Link>
                 </div>
             </div>
         </section>
