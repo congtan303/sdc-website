@@ -1,80 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../../styles/BoxLecturers.css";
-import avatar1 from "../../assets/image/avatar-gv/gv_pham_xuan_hien.jpg";
-import avatar2 from "../../assets/image/avatar-gv/gv_nguyen_anh_luong.jpg";
-import avatar3 from "../../assets/image/avatar-gv/gv_vu_tuan_minh.jpg";
-import avatar4 from "../../assets/image/avatar-gv/gv_nguyen_van_luan.jpg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import axios from "axios";
-
-const sliderData = [
-  {
-    id: "01",
-    service: "Giảng viên",
-    name: "Phạm Xuân Hiền",
-    avatar: avatar1,
-    office: "- Giám đốc đào tạo BKAP",
-    desc: "Tin học VP, Pascal, C, C++, PHP, SQL Server, CSDL, HTML, Cấu trúc DL&GT, PTTK hệ thống,  Java core.",
-  },
-  {
-    id: "02",
-    service: "Giảng viên",
-    name: "Nguyễn Anh Lương",
-    avatar: avatar2,
-    office: "- Giảng viên BKAP",
-    desc: "- Các môn giảng dạy C, HTML,CSS, Bootstrap, SQL PHP,MySQL,Javascript, laravel, yii2, Codeigniter",
-  },
-  {
-    id: "03",
-    service: "Giảng viên",
-    name: "Vũ Tuấn Minh",
-    avatar: avatar3,
-    office: "- Giảng viên BKAP",
-    desc: "- Giảng dạy các môn Java Core, Android, PHP, C#, ...",
-  },
-  {
-    id: "04",
-    service: "Giảng viên",
-    name: "Nguyễn Văn Luận",
-    avatar: avatar4,
-    office: "- Giảng viên lập trình",
-    desc: "- Giảng dạy các bộ môn PHP, SQL, Angular, NodeJS, HTML&CSS, JavaScript, React, ...",
-  },
-  {
-    id: "05",
-    service: "Giảng viên",
-    name: "Phạm Xuân Hiền",
-    avatar: avatar1,
-    office: "- Giám đốc đào tạo BKAP",
-    desc: "Tin học VP, Pascal, C, C++, PHP, SQL Server, CSDL, HTML, Cấu trúc DL&GT, PTTK hệ thống, Java core.",
-  },
-  {
-    id: "06",
-    service: "Giảng viên",
-    name: "Nguyễn Anh Lương",
-    avatar: avatar2,
-    office: "- Giảng viên BKAP",
-    desc: "- Các môn giảng dạy C, HTML,CSS, Bootstrap, SQL PHP,MySQL,Javascript, laravel, yii2, Codeigniter",
-  },
-  {
-    id: "07",
-    service: "Giảng viên",
-    name: "Vũ Tuấn Minh",
-    avatar: avatar3,
-    office: "- Giảng viên BKAP",
-    desc: "- Giảng dạy các môn Java Core, Android, PHP, C#, ...",
-  },
-  {
-    id: "08",
-    service: "Giảng viên",
-    name: "Nguyễn Văn Luận",
-    avatar: avatar4,
-    office: "- Giảng viên lập trình",
-    desc: "- Giảng dạy các bộ môn PHP, SQL, Angular, NodeJS, HTML&CSS, JavaScript, React, ...",
-  },
-];
 
 const BoxLecturers = () => {
   const [nav1, setNav1] = useState(null);

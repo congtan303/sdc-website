@@ -1,0 +1,28 @@
+.title-detailBanner p {
+  color: var(--color-white);
+  font-size: 24px;
+}
+.title-detailBanner h2 {
+  font-size: 55px;
+  font-weight: 700;
+  color: var(--orange);
+  display: inline-block;
+  border-bottom: 3px solid var(--orange);
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  .title-detailBanner p {
+    font-size: 22px;
+  }
+  .title-detailBanner h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .title-detailBanner p {
+    font-size: 22px;
+  }
+  .title-detailBanner h2 {
+    font-size: 20px;
+  }
+}
