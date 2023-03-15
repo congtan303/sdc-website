@@ -297,8 +297,8 @@
 
 /* btn slider */
 
-button.slick-arrow.slick-prev,
-button.slick-arrow.slick-next {
+.tab-content button.slick-arrow.slick-prev,
+.tab-content button.slick-arrow.slick-next {
     display: block;
     border: 2px solid #f1b247;
     border-radius: 50%;
