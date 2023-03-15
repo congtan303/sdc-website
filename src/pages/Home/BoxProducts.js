@@ -7,7 +7,8 @@ const Products = () => {
   const [dataproducts, SetDataproducts] = useState([]);
   //API project-students
   useEffect(() => {
-    axios.get("https://sdc.azurecloud.vn/api/project-students").then((res) => {
+    axios.get("https://sdc.azurecloud.vn/api/project-students")
+      .then((res) => {
       SetDataproducts(res.data.data.data);
     });
   }, []);

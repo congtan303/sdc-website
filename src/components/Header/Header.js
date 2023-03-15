@@ -49,7 +49,10 @@ const Header = () => {
             <div className="col-lg-3">
               <div className="logo" ref={logoRef}>
                 <div className="logo-img">
-                  <img src={logo} alt="logo" />
+                  <Link to='/'>
+                    <img src={logo} alt="logo" />
+                  </Link>
+
                 </div>
                 <div className="menuToggle" onClick={toggleMenu}></div>
               </div>

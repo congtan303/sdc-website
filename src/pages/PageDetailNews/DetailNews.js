@@ -83,7 +83,8 @@ const DetailNews = () => {
                                         <p>
                                             <img src={detailNews && detailNews?.image_urls} alt='...' style={{ width: '100%', height: '100%' }} />
                                         </p>
-                                        {detailNews && detailNews?.content}
+                                        
+                                        <p dangerouslySetInnerHTML={{__html:detailNews?.content}}></p>
                                         <p>&nbsp;</p>
                                         <p>&nbsp;</p>
                                     </div>
