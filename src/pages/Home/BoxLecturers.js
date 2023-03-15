@@ -82,20 +82,26 @@ const BoxLecturers = () => {
   const slider1 = useRef(null);
   const slider2 = useRef(null);
   const [dataTeacher, SetDataTeacher] = useState([]);
+  // API teacher
   useEffect(() => {
     setNav1(slider1.current);
     setNav2(slider2.current);
-    // const ulslick = document.querySelector(".slick-dots");
-    // ulslick.dataset.label = "Giảng viên";
-    // ulslick.setAttribute("data-label", "Giảng viên");
     axios.get("https://sdc.azurecloud.vn/api/teachers").then((res) => {
       SetDataTeacher(res.data.data);
     });
   }, []);
+  let quantity = dataTeacher.length;
+  if (quantity >= 7) {
+    quantity = 6;
+  } else if (quantity <= 6) {
+    quantity = quantity - 1;
+  } else if (quantity <= 3) {
+    quantity = 1;
+  }
 
-  
+  console.log(dataTeacher);
   const setting = {
-    slidesToShow: 6,
+    slidesToShow: quantity,
     // slidesToScroll: 1,
     swipeToSlide: true,
     centerMode: false,
@@ -107,13 +113,13 @@ const BoxLecturers = () => {
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: 5,
+          slidesToShow: quantity,
         },
       },
       {
         breakpoint: 769,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: quantity - 1,
         },
       },
       {
@@ -123,6 +129,9 @@ const BoxLecturers = () => {
         },
       },
     ],
+  };
+  const nameTeacher = {
+    appendDots: (dots) => <ul data-label="Giảng viên">{dots}</ul>,
   };
 
   return (
@@ -138,44 +147,47 @@ const BoxLecturers = () => {
           </div>
           <div className="lecture-slide">
             <Slider className="slide-container slider-nav" asNavFor={nav1} ref={slider2} {...setting}>
-              {dataTeacher.map((data, index) => (
-                <div className="slide-content" key={index}>
-                  <div className="card-wrapper">
-                    <div className="card-lecture">
-                      <div className="image-content">
-                        <div className="card-image">
-                          <img src={data.avatar_urls} alt="" className="card-img" />
+              {dataTeacher &&
+                dataTeacher.map((data, index) => (
+                  <div className="slide-content" key={index}>
+                    <div className="card-wrapper">
+                      <div className="card-lecture">
+                        <div className="image-content">
+                          <div className="card-image">
+                            <img src={data.avatar_urls} alt="" className="card-img" />
+                          </div>
                         </div>
-                      </div>
 
-                      <div className="card-content">
-                        <h6>{data.profession}</h6>
-                        <h4>{data.fullname}</h4>
+                        <div className="card-content">
+                          <h6>{data.profession}</h6>
+                          <h4>{data.fullname}</h4>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                ))}
             </Slider>
 
-            <Slider className="preview-lecture slider-for" asNavFor={nav2} ref={slider1} slidesToShow={6} slidesToScroll={1} fade={true} speed={500} dots={true} cssEase={"linear"}>
-              {dataTeacher.map((data, index) => (
-                <div className="slider-for-item" key={index}>
-                  <div className="lecture-item">
-                    <div className="lecture-item-row1">
-                      <div className="lecture-item-col-10">
-                        <div className="letter-info">
-                          <div className="lecture-item-row">
-                            <div className="lecture-item-col-6">
-                              <h4>{data.profession}</h4>
-                              <h3>{data.fullname}</h3>
-                              {/* <p></p> */}
-                              <p>{data.skills}</p>
-                              <p>{data.description}</p>
-                            </div>
-                            <div className="lecture-item-col-6">
-                              <div className="lecture-img">
-                                <img src={data.avatar_urls} className="img-fluid lazy lazyloaded" alt="" />
+            <Slider className="preview-lecture slider-for" asNavFor={nav2} ref={slider1} slidesToShow={quantity} slidesToScroll={1} fade={true} speed={500} dots={true} cssEase={"linear"} {...nameTeacher}>
+              {dataTeacher &&
+                dataTeacher.map((data, index) => (
+                  <div className="slider-for-item" key={index}>
+                    <div className="lecture-item">
+                      <div className="lecture-item-row1">
+                        <div className="lecture-item-col-10">
+                          <div className="letter-info">
+                            <div className="lecture-item-row">
+                              <div className="lecture-item-col-6">
+                                <h4>{data.profession}</h4>
+                                <h3>{data.fullname}</h3>
+                                {/* <p></p> */}
+                                <p>{data.skills}</p>
+                                <p>{data.description}</p>
+                              </div>
+                              <div className="lecture-item-col-6">
+                                <div className="lecture-img">
+                                  <img src={data.avatar_urls} className="img-fluid lazy lazyloaded" alt="" />
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -183,8 +195,7 @@ const BoxLecturers = () => {
                       </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                ))}
             </Slider>
           </div>
         </div>

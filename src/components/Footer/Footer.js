@@ -1,10 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Iframe from "react-iframe";
 import "../../styles/footer.css";
 import logoBk from "../../assets/image/logo/logo-bkap-edu.png";
 import logoBKG from "../../assets/image/logo/bkap-gr-250.png";
+import { Link } from "react-router-dom";
+import axios from "axios";
 
 const Footer = () => {
+  // Api Configs
+  const [dataFooter, SetDataFooter] = useState([]);
+  useEffect(() => {
+    axios.get("https://sdc.azurecloud.vn/api/configs").then((res) => {
+      SetDataFooter(res.data.data);
+    });
+  }, []);
+  const [dataContact, SetDataContact] = useState([]);
+  useEffect(() => {
+    const cutDataFooter = dataFooter.slice(0, 3);
+    SetDataContact(cutDataFooter);
+  }, [dataFooter]);
+
   return (
     <footer className="footer-layout">
       <div className="footer-wrapper">
@@ -12,14 +27,15 @@ const Footer = () => {
           <div className="top-footer text-center">
             <div className="footer-logo d-flex align-items-end justify-content-center">
               <div className="logo-item">
-                <a href="#">
+                <Link to="/">
                   <img src={logoBk} className="img-fluid" alt="" />
-                </a>
+                </Link>
               </div>
               <div className="logo-item">
-                <a href="#">
+                <Link to="/">
+                  {" "}
                   <img src={logoBKG} className="img-fluid" alt="" />
-                </a>
+                </Link>
               </div>
             </div>
             <h2>HỆ THỐNG ĐÀO TẠO CNTT QUỐC TẾ SDC </h2>
@@ -48,30 +64,17 @@ const Footer = () => {
                 <div className="mid-footer-item">
                   <h3>Liên hệ</h3>
                   <ul className="nav-f-contact">
-                    <li>
-                      <div className="row contact-row">
-                        <div className="contact-icon col-2 col-xl-3">
-                          <i className="fa-regular fa-map"></i>
-                        </div>
-                        <div className="contact-text col-10 col-xl-9">41 Lê Duẩn, Hải Châu 1, Hải Châu, Đà Nẵng.</div>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="row contact-row">
-                        <div className="contact-icon col-2 col-xl-3">
-                          <i className="fa-solid fa-phone"></i>
-                        </div>
-                        <div className="contact-text col-10 col-xl-9">Hotline: 0905333999</div>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="row contact-row">
-                        <div className="contact-icon col-2 col-xl-3">
-                          <i className="fa-regular fa-envelope-open"></i>
-                        </div>
-                        <div className="contact-text col-10 col-xl-9">Email: tuyensinh@sdc.edu.vn</div>
-                      </div>
-                    </li>
+                    {dataContact &&
+                      dataContact.map((contact, index) => (
+                        <li key={index}>
+                          <div className="row contact-row">
+                            <div className="contact-icon col-2 col-xl-3">
+                              <i className={`${index === 0 ? "fa-solid fa-phone" : index === 1 ? "fa-regular fa-map " : "fa-regular fa-envelope-open"} `}></i>
+                            </div>
+                            <div className="contact-text col-10 col-xl-9">{contact.value}</div>
+                          </div>
+                        </li>
+                      ))}
                   </ul>
                 </div>
               </div>
@@ -134,7 +137,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="bot-footer">
-          <p>Công Ty Cổ Phần Đào Tạo Và Chuyển Giao Công Nghệ Cao Bách Khoa</p>
+          <p>{dataFooter && dataFooter[12]?.value}</p>
         </div>
       </div>
     </footer>

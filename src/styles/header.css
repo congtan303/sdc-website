@@ -16,8 +16,6 @@
 }
 .top-header .logo-img img {
   display: inline-block;
-  width: 230px;
-  height: 30px;
   text-indent: -10000px;
 
 }
@@ -80,7 +78,7 @@ ul.sub-menu ul.sub-menu {
   border-left: 3px solid transparent;
 }
 .sub-menu li:hover > a {
-  border-left: 3px solid #fb8b1c;
+  border-left: 3px solid var(--orange);
 }
 .bot-header-menu li,
 .main-menu li {
@@ -99,7 +97,7 @@ ul.sub-menu ul.sub-menu {
   color: var(--color-white);
 }
 .bot-header-menu li:hover > a {
-  color: #fb8b1c;
+  color: var(--orange);
 }
 .bot-header-menu > li:last-child a {
   padding-right: 0;
@@ -152,7 +150,7 @@ ul.sub-menu ul.sub-menu {
   left: -4px;
   width: 40px;
   height: 4.5px;
-  background: #2a015b;
+  background: var(--pr-violet);
   transform: translateY(-8px);
   transition: 0.5s;
   border-radius: 2px;
@@ -168,7 +166,7 @@ ul.sub-menu ul.sub-menu {
   left: -4px;
   width: 40px;
   height: 4.5px;
-  background: #2a015b;
+  background: var(--pr-violet);
   transform: translateY(8px);
   box-shadow: 0 -8px 0 #333;
   transition: 0.5s;
@@ -268,7 +266,7 @@ ul.sub-menu ul.sub-menu {
   .mobi-menu li > i {
     cursor: pointer;
     position: absolute;
-    color: #2a015b;
+    color: var(--pr-violet);
     right: 30px;
     top: 10px;
     display: inline-block;

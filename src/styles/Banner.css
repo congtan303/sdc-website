@@ -24,21 +24,12 @@
 }
 
 .carousel .control-next.control-arrow:before {
-  border-left: 8px solid #fff;
+  border-left: 8px solid var(--color-white);
 }
-
-
 
 .section-banner .slick-slider .slick-list .slick-track,
 .section-banner .slick-slider .slick-list .slick-track .slick-slide div {
   height: 100%;
-}
-
-
-@media screen and (max-width: 992px) {
-  .section-banner .slick-slider .slick-list {
- 
-  }
 }
 
 @media screen and (max-width: 480px) {
@@ -52,7 +43,7 @@
   height: auto;
 }
 
-.section-banner .slick-slider .slick-prev{
+.section-banner .slick-slider .slick-prev {
   right: 35px;
 }
 
@@ -69,6 +60,6 @@
   font-weight: 900;
   content: "\f054";
   font-size: 56px;
-  color: #ddd;
 
+  color: #ddd;
 }

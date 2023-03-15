@@ -37,27 +37,35 @@ const BoxCommunity = () => {
     },
   ];
   const [dataStudent, SetDataStudent] = useState([]);
+  // API students
   useEffect(() => {
     axios.get("https://sdc.azurecloud.vn/api/students").then((res) => {
       SetDataStudent(res.data.data);
     });
-    // const ulslickSv = document.querySelector(".student .slick-dots");
-    // ulslickSv.setAttribute("data-label", "Giảng viên");
   }, []);
+  let quantityStudent = dataStudent.length;
+  if (quantityStudent >= 4) {
+    quantityStudent = 3;
+  } else if (quantityStudent < 4) {
+    quantityStudent = quantityStudent - 1;
+  } else if (quantityStudent <= 2) {
+    quantityStudent = 1;
+  }
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: quantityStudent,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 4000,
+    appendDots: (dots) => <ul data-label="Cựu học viên">{dots}</ul>,
     responsive: [
       {
         breakpoint: 991,
         settings: {
           dots: true,
-          slidesToShow: 3,
+          slidesToShow: quantityStudent - 1,
           slidesToScroll: 1,
           initialSlide: 2,
         },

@@ -4,7 +4,6 @@ input {
 }
 .bkap-value {
   height: 100%;
-
 }
 
 .slide-value {
@@ -31,7 +30,6 @@ input {
   align-items: center;
 }
 
-
 .inner {
   position: relative;
   height: 100%;
@@ -52,7 +50,7 @@ input {
 .inner .card {
   position: relative;
   height: 100%;
-  background-image: -webkit-linear-gradient(96deg,#2a015b 0,#7b2d8a 100%);
+  background-image: -webkit-linear-gradient(96deg, #2a015b 0, #7b2d8a 100%);
   padding: 15px;
   color: #fff;
 }
@@ -146,10 +144,9 @@ input {
 #s3:checked ~ .cards #slide1,
 #s4:checked ~ .cards #slide2,
 #s5:checked ~ .cards #slide3 {
-  box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.799);
+  box-shadow: 0 15px 35px 0 rgba(221, 209, 209, 0.5);
   transform: translate3d(0, -105%, -220px);
-  --current-color1: #eceaed;
-  --current-color2: #404457;
+
   /* LÀM TRƯỚC HỌC SAU */
 }
 
@@ -158,10 +155,9 @@ input {
 #s3:checked ~ .cards #slide2,
 #s4:checked ~ .cards #slide3,
 #s5:checked ~ .cards #slide4 {
-  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
+  box-shadow: 0 25px 50px 120px rgba(255, 255, 255, 0.25);
   transform: translate3d(0, -55%, -120px);
-  --current-color1: #eceaed;
-  --current-color2: #404457;
+
   /* HỌC LÀ LÀM ĐƯỢC VIỆC */
 }
 
@@ -170,10 +166,9 @@ input {
 #s3:checked ~ .cards #slide3,
 #s4:checked ~ .cards #slide4,
 #s5:checked ~ .cards #slide5 {
-  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 50%);
+  box-shadow: 0 25px 50px 150px rgba(255, 255, 255, 0.25);
   transform: translate3d(0, 0, 0);
-  --current-color1: #fad00c;
-  --current-color2: #eceaed;
+  transition: 0.4s ease all;
   /* VĂN BẰNG QUỐC TẾ */
 }
 
@@ -182,10 +177,9 @@ input {
 #s3:checked ~ .cards #slide4,
 #s4:checked ~ .cards #slide5,
 #s5:checked ~ .cards #slide1 {
-  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
+  box-shadow: 0 25px 50px 120px rgba(255, 255, 255, 0.25);
   transform: translate3d(0, 55%, -120px);
-  --current-color1: #eceaed;
-  --current-color2: #404457;
+
   /* TIỆN ÍCH HỖ TRỢ */
 }
 
@@ -194,10 +188,9 @@ input {
 #s3:checked ~ .cards #slide5,
 #s4:checked ~ .cards #slide1,
 #s5:checked ~ .cards #slide2 {
-  box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 45%);
+  box-shadow: 0 15px 35px 0 rgba(221, 209, 209, 0.5);
   transform: translate3d(0, 105%, -220px);
-  --current-color1: #eceaed;
-  --current-color2: #404457;
+
   /* DỊCH VỤ CHẤT LƯỢNG CAO */
 }
 
@@ -223,24 +216,24 @@ input {
     max-width: 50%;
   }
 
-  .slide-value{
+  .slide-value {
     padding: 0;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .slide-value{
+  .slide-value {
     margin-top: 128px;
   }
 
   .slider_container .container {
     max-width: 540px;
   }
-  
+
   .inner,
   .container,
   .inner label {
-    width: 100%
+    width: 100%;
   }
   .card-col-4 {
     display: none;
@@ -284,16 +277,7 @@ input {
 }
 
 @media screen and (max-width: 576px) {
-  .slide-value{
+  .slide-value {
     margin-top: 150px;
   }
 }
-
-@media screen and (max-width:310px) {
-  .slide-value {
-    margin-top: 174px;
-  }
-}
-
-
-
