@@ -13,11 +13,19 @@ const BoxPartners = () => {
       setPartners(response.data.data);
     });
   }, []);
+  let quantity = partners.length;
+  if (quantity >= 5) {
+    quantity = 5;
+  } else if (quantity <= 4) {
+    quantity = quantity - 1;
+  } else if (quantity <= 2) {
+    quantity = 1;
+  }
   const settings = {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 5,
+    slidesToShow: quantity,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 4000,
@@ -26,7 +34,7 @@ const BoxPartners = () => {
         breakpoint: 992,
         settings: {
           dots: false,
-          slidesToShow: 3,
+          slidesToShow: quantity - 1,
           slidesToScroll: 1,
           initialSlide: 2,
         },
@@ -35,7 +43,7 @@ const BoxPartners = () => {
         breakpoint: 767,
         settings: {
           dots: false,
-          slidesToShow: 2,
+          slidesToShow: quantity - 2,
           slidesToScroll: 1,
           initialSlide: 2,
         },
