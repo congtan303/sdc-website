@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../../styles/BoxTechnology.css'
 import axios from 'axios';
 import moment from 'moment/moment';
@@ -7,25 +7,9 @@ import moment from 'moment/moment';
 const tabs = ['Tin mới nhất', 'Tin công nghệ', 'Tin về BKAP']
 
 const BoxTechnology = () => {
-    const navigate = useNavigate()
     const [news, setNews] = useState([])
     const [type, setType] = useState('Tin mới nhất')
 
-    const handleNavigate = () => {
-        navigate(`/detail-news/${news[0]?.id}`)
-    }
-    const handleNavigate1 = () => {
-        navigate(`/detail-news/${news[1]?.id}`)
-    }
-    const handleNavigate2 = () => {
-        navigate(`/detail-news/${news[2]?.id}`)
-    }
-    const handleNavigate3 = () => {
-        navigate(`/detail-news/${news[3]?.id}`)
-    }
-    const handleNavigate4 = () => {
-        navigate(`/detail-news/${news[4]?.id}`)
-    }
 
     useEffect(() => {
         axios.get('https://sdc.azurecloud.vn/api/news')
@@ -33,8 +17,8 @@ const BoxTechnology = () => {
                 setNews(response.data.data.data)
             })
     }, [])
-  
-  
+
+
     return (
         <section className="blog-technology">
             <div className="container">
@@ -69,16 +53,16 @@ const BoxTechnology = () => {
 
                                     <div className="blog-item-title">
                                         <h3><a href="#">{news && news[0]?.title}</a></h3>
-                                        <p className="blog-item-time">{news && moment(news[0]?.created_at).format("DD/MM/YYYY") }</p>
+                                        <p className="blog-item-time">{news && moment(news[0]?.created_at).format("DD/MM/YYYY")}</p>
                                         <div className="blog-item-des">
                                             <p><strong>{news && news[0]?.summary}</strong></p>
                                         </div>
-                                        <div className="text-center" onClick={handleNavigate}>
-                                            <a href="" className="read-more">Chi tiết</a>
+                                        <div className="text-center">
+                                            <Link to={`/detail-news/${news[0]?.id}`} className="read-more">Chi tiết</Link>
                                         </div>
                                     </div>
                                 </div>
-                            </div> 
+                            </div>
                             <div className="col-blog-8 col-md-12 no-padding">
                                 <div className="row no-margin">
                                     <div className="col-lg-4 col-md-12 no-padding">
@@ -94,8 +78,8 @@ const BoxTechnology = () => {
                                                         <strong>{news && news[1]?.summary}</strong>
                                                     </p>
                                                 </div>
-                                                <div className="text-center" onClick={handleNavigate1}>
-                                                    <a href="#" className="read-more">Chi tiết</a>
+                                                <div className="text-center">
+                                                    <Link to={`/detail-news/${news[1]?.id}`} className="read-more">Chi tiết</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -113,8 +97,8 @@ const BoxTechnology = () => {
                                                         <strong>{news && news[2]?.summary}</strong>
                                                     </p>
                                                 </div>
-                                                <div className="text-center" onClick={handleNavigate2}>
-                                                    <a href="" className="read-more">Chi tiết</a>
+                                                <div className="text-center">
+                                                    <Link to={`/detail-news/${news[2]?.id}`} className="read-more">Chi tiết</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -132,8 +116,8 @@ const BoxTechnology = () => {
                                                         <strong>{news && news[3]?.summary}</strong>
                                                     </p>
                                                 </div>
-                                                <div className="text-center" onClick={handleNavigate3}>
-                                                    <a href="" className="read-more">Chi tiết</a>
+                                                <div className="text-center">
+                                                    <Link to={`/detail-news/${news[3]?.id}`} className="read-more">Chi tiết</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -149,9 +133,9 @@ const BoxTechnology = () => {
                                                 <div className="blog-item-des">
                                                     <p><strong>{news && news[4]?.summary}</strong></p>
                                                 </div>
-                                                <div className="text-center" onClick={handleNavigate4}>
-                                                    <a href="" className="read-more">Chi tiết</a>
-                                                </div>
+                                                <div className="text-center">
+                                            <Link to={`/detail-news/${news[4]?.id}`} className="read-more">Chi tiết</Link>
+                                        </div>
                                             </div>
                                         </div>
                                     </div>
@@ -166,7 +150,7 @@ const BoxTechnology = () => {
                 </div>
             </div>
         </section>
-        
+
     )
 }
 

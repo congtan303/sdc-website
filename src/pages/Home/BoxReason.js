@@ -38,8 +38,8 @@ const BoxReason = () => {
                     <div className="reason-item-col-7">
                       <h2 className="text-violet"></h2>
                       <h2 className="text-violet">
-                        {statist.title}
-                        <span>{statist.figures}</span>
+                      {statist.figures}
+                        <span>{statist.title}</span>
                       </h2>
                     </div>
                   </div>
