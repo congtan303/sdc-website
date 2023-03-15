@@ -229,6 +229,13 @@ input {
 }
 
 @media screen and (max-width: 768px) {
+  .bkap-reason .section-row{
+    display: block;
+  }
+
+  .bkap-reason  .section-row .section-col-3{
+    max-width: 100%;
+  }
   .slide-value {
     margin-top: 128px;
   }
@@ -287,5 +294,14 @@ input {
 @media screen and (max-width: 576px) {
   .slide-value {
     margin-top: 150px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section-title .title{
+    display: flex !important;
+  }
+  .section-title .title h2{
+    font-size: 22px;
   }
 }
