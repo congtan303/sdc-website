@@ -5,6 +5,8 @@ import Header from "../../../components/Header/Header";
 import Footer from "../../../components/Footer/Footer";
 import { Col, Container, Row } from "react-bootstrap";
 import iconBook from "../../../assets/image/BachKhoa/book-img.png";
+import iconBook1 from "../../../assets/image/BachKhoa/technogoly-img.png";
+import iconBook2 from "../../../assets/image/BachKhoa/data-img.png";
 const BannerBk = () => {
   return (
     <div>
@@ -40,7 +42,23 @@ const BannerBk = () => {
                 <div className="card-img">
                   <img src={iconBook} alt="iconBook" />
                 </div>
-                <h5>BACHKHOA-APTECH</h5>
+                <h4>BACHKHOA-APTECH</h4>
+              </div>
+            </Col>
+            <Col lg="4">
+              <div className="card-history">
+                <div className="card-img">
+                  <img src={iconBook1} alt="iconBook" />
+                </div>
+                <h4>BKSOFT</h4>
+              </div>
+            </Col>
+            <Col lg="4">
+              <div className="card-history">
+                <div className="card-img">
+                  <img src={iconBook2} alt="iconBook" />
+                </div>
+                <h4>BK-NEF</h4>
               </div>
             </Col>
           </Row>

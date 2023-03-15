@@ -48,13 +48,31 @@
 }
 .card-history .card-img {
   width: 150px;
-  background: red;
+  background: #ddd;
   border-radius: 50%;
+  margin: 20px 0;
 }
 .card-img img {
   width: 100%;
   padding: 30px;
 }
+
+/* LỊCH SỬ HÌNH THÀNH */
+.card-history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border: 2px solid #410e69;
+  border-radius: 16%;
+}
+.card-history h4 {
+  margin: 20px;
+  color: #410e69;
+  font-weight: 700;
+}
+
 @media (max-width: 991.98px) {
   .inner-header-title-caps h3 {
     margin-bottom: 0px;
