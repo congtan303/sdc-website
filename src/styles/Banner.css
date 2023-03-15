@@ -37,7 +37,7 @@
 
 @media screen and (max-width: 992px) {
   .section-banner .slick-slider .slick-list {
-  padding-top: 102px;
+ 
   }
 }
 
@@ -52,12 +52,16 @@
   height: auto;
 }
 
+.section-banner .slick-slider .slick-prev{
+  right: 35px;
+}
+
 .section-banner .slick-slider .slick-prev::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f053";
   font-size: 56px;
-  color: rgb(255, 255, 255);
+  color: #ddd;
 }
 
 .section-banner .slick-slider .slick-next::before {
@@ -65,6 +69,6 @@
   font-weight: 900;
   content: "\f054";
   font-size: 56px;
-  color: rgb(255, 255, 255);
+  color: #ddd;
 
 }

@@ -45,7 +45,7 @@ const ReadMore = () => {
         infinite: true,
         speed: 500,
         slidesToShow: 2,
-        slidesToScroll: 1
+        slidesToScroll: 1,
     }
     return (
         <div>
@@ -97,7 +97,7 @@ const ReadMore = () => {
                             <div className='tab-content'>
                                 <Slider {...settings} >
                                     {news && news.map(item => (
-                                        <div className='item' style={{ width: '545px' }} key={item.id}>
+                                        <div className='item' key={item.id}  >
                                             <div className='row'>
                                                 <div className='col-md-6 col-xs-12 p-0'>
                                                     <div className='bg-image-blog'>
@@ -105,6 +105,7 @@ const ReadMore = () => {
                                                     </div>
                                                 </div>
                                                 <div className='col-md-6 col-xs-12'>
+                                                    <div className='small-content-blog d-flex flex-column'>
                                                     <div className='content-small flex-auto'>
                                                         <span className='date-blog'>
                                                             <i className='fa fa-calendar-alt'></i>
@@ -113,12 +114,7 @@ const ReadMore = () => {
                                                         <h4>Chúc mừng bảo vệ đồ án thành công</h4>
                                                         <div className='sub__title'>
                                                             <p>
-                                                                <strong>Sáng 4/3 vừa qua các bạn lớp
-                                                                    káhjdhạdsạdjáhjshdh
-                                                                    dákjdhsạdhd
-                                                                    dáhkjdhsấd
-                                                                    dákjdhsidsadguýagdúygduyguga
-                                                                </strong>
+                                                                <strong>{item.summary}</strong>
                                                             </p>
                                                         </div>
                                                     </div>
@@ -131,6 +127,8 @@ const ReadMore = () => {
                                                             </p>
                                                         </a>
                                                     </div>
+                                                    </div>
+                                                   
                                                 </div>
                                             </div>
                                         </div>
@@ -159,11 +157,19 @@ const ReadMore = () => {
                                                             <h4 className='my-3'>{item.title}</h4>
                                                             <div className='des__sapo'>
                                                                 <p>
-                                                                    <strong>Trở thành chuyên gia Quản trị mạng lương từ 10 triệu đồng trở lên chỉ sau 96h. Đào tạo theo chuẩndsakhdosahdshdsahdsjdjskjdsj</strong>
+                                                                    <strong>{item.summary}</strong>
                                                                 </p>
                                                             </div>
                                                         </div>
-                                                        <div></div>
+                                                        <div className='read-more-blog'>
+                                                        <a href='/'>
+                                                            <span>Hay không?</span>
+                                                            <p>
+                                                                Đọc thêm này
+                                                                <i className='fa fa-angle-right'></i>
+                                                            </p>
+                                                        </a>
+                                                    </div>
                                                     </div>
                                                 </div>
                                             </div>

@@ -23,7 +23,7 @@ const Footer = () => {
               </div>
             </div>
             <h2>HỆ THỐNG ĐÀO TẠO CNTT QUỐC TẾ SDC </h2>
-            <div className="row justify-content-center">
+            <div className="row justify-content-center bottom-titleContact">
               <div className="col-md-4">
                 <div className="d-flex justify-content-around">
                   <span>
@@ -49,27 +49,27 @@ const Footer = () => {
                   <h3>Liên hệ</h3>
                   <ul className="nav-f-contact">
                     <li>
-                      <div className="row">
-                        <div className="col-2 col-xl-3">
+                      <div className="row contact-row">
+                        <div className="contact-icon col-2 col-xl-3">
                           <i className="fa-regular fa-map"></i>
                         </div>
-                        <div className="col-10 col-xl-9">41 Lê Duẩn, Hải Châu 1, Hải Châu, Đà Nẵng.</div>
+                        <div className="contact-text col-10 col-xl-9">41 Lê Duẩn, Hải Châu 1, Hải Châu, Đà Nẵng.</div>
                       </div>
                     </li>
                     <li>
-                      <div className="row">
-                        <div className="col-2 col-xl-3">
+                      <div className="row contact-row">
+                        <div className="contact-icon col-2 col-xl-3">
                           <i className="fa-solid fa-phone"></i>
                         </div>
-                        <div className="col-10 col-xl-9">Hotline: 0905333999</div>
+                        <div className="contact-text col-10 col-xl-9">Hotline: 0905333999</div>
                       </div>
                     </li>
                     <li>
-                      <div className="row">
-                        <div className="col-2 col-xl-3">
+                      <div className="row contact-row">
+                        <div className="contact-icon col-2 col-xl-3">
                           <i className="fa-regular fa-envelope-open"></i>
                         </div>
-                        <div className="col-10 col-xl-9">Email: tuyensinh@sdc.edu.vn</div>
+                        <div className="contact-text col-10 col-xl-9">Email: tuyensinh@sdc.edu.vn</div>
                       </div>
                     </li>
                   </ul>

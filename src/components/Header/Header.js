@@ -1,13 +1,11 @@
 import React, { useRef, useState, useEffect } from "react";
 import "../../styles/header.css";
 import { NavLink, Link } from "react-router-dom";
-
 import SubMenuParent from "../MegaMenu/SubMenuParent";
-
 import SubMenuParentDestop from "../MegaMenuDestop/SubMenuParentDestop";
-
 import MenuBottmParent from "../MenuBottomHeader/MenuBottmParent";
 import axios from "axios";
+import logo from '../../assets/image/logoSDC/logoSDC.jpg';
 
 const Header = () => {
   const menuRef = useRef(null);
@@ -34,6 +32,7 @@ const Header = () => {
     SetBottomMenu(cutbottomMenu);
   }, [datamenudestop]);
 
+
   // api chữ chạy
   const [marquees, setMarquees] = useState([])
   useEffect(()=> {
@@ -44,6 +43,8 @@ const Header = () => {
       })
   }, [])
 
+
+
   return (
     <header className="header">
       <div className="top-header">
@@ -51,9 +52,9 @@ const Header = () => {
           <div className="row">
             <div className="col-lg-3">
               <div className="logo" ref={logoRef}>
-                <h1>
-                  <Link to="/"> Bach Khoa Aptech </Link>
-                </h1>
+                <div className="logo-img">
+                    <img src={logo} />
+                </div>
                 <div className="menuToggle" onClick={toggleMenu}></div>
               </div>
               <div className="navbar-collapse menu_collapse" ref={menuRef}>
@@ -70,7 +71,6 @@ const Header = () => {
                 <ul className="main-menu">
                   {mainMenu &&
                     mainMenu.map((data, index) => {
-                   
                       return <SubMenuParentDestop data={data} key={index} />;
                     })}
                 </ul>
@@ -90,7 +90,7 @@ const Header = () => {
         <div className="marquee-text">
           <div className="marquee">
             {marquees && marquees.map(marquee => (
-              <span key={marquee.id}>{marquee.title}</span>
+              <span key={marquee.id}>{`${marquee.title} - `}</span>
             ))}
           </div>
         </div>

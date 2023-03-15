@@ -7,10 +7,10 @@ import imgReason4 from '../../../src/assets/image/bkap-reason-1/bkap-reason-4.pn
 import axios from 'axios';
 const BoxReason = () => {
   const [statistics, setStatistics] = useState([])
+  
   useEffect(() => {
     axios.get('https://sdc.azurecloud.vn/api/statist-number')
       .then(response => {
-        // console.log(response.data.data);
         setStatistics(response.data.data)
       })
   }, [])
