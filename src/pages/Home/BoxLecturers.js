@@ -97,7 +97,7 @@ const BoxLecturers = () => {
                 ))}
             </Slider>
 
-            <Slider className="preview-lecture slider-for" asNavFor={nav2} ref={slider1} slidesToShow={quantity} slidesToScroll={1} fade={true} speed={500} dots={true} cssEase={"linear"} {...nameTeacher}>
+            <Slider className="preview-lecture slider-for" asNavFor={nav2} ref={slider1} slidesToShow={1} slidesToScroll={1} fade={true} speed={500} dots={true} cssEase={"linear"} {...nameTeacher}>
               {dataTeacher &&
                 dataTeacher.map((data, index) => (
                   <div className="slider-for-item" key={index}>

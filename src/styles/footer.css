@@ -61,6 +61,9 @@
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+  .bottom-titleContact .footerContact {
+    padding: 0;
+  }
   .nav-f-contact .contact-icon i {
     font-size: 25px !important;
   }

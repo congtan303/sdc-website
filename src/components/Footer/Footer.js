@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Iframe from "react-iframe";
 import "../../styles/footer.css";
-import logoBk from "../../assets/image/logo/logo-bkap-edu.png";
-import logoBKG from "../../assets/image/logo/bkap-gr-250.png";
+import logoSDC from "../../assets/image/logoSDC/logoSDC.jpg";
+
 import { Link } from "react-router-dom";
 import axios from "axios";
 
@@ -28,22 +28,16 @@ const Footer = () => {
             <div className="footer-logo d-flex align-items-end justify-content-center">
               <div className="logo-item">
                 <Link to="/">
-                  <img src={logoBk} className="img-fluid" alt="" />
-                </Link>
-              </div>
-              <div className="logo-item">
-                <Link to="/">
-                  {" "}
-                  <img src={logoBKG} className="img-fluid" alt="" />
+                  <img src={logoSDC} className="img-fluid" alt="" />
                 </Link>
               </div>
             </div>
-            <h2>HỆ THỐNG ĐÀO TẠO CNTT QUỐC TẾ SDC </h2>
+            <h2>{dataFooter && dataFooter[12]?.value} </h2>
             <div className="row justify-content-center bottom-titleContact">
-              <div className="col-md-4">
+              <div className="col-md-6 footerContact">
                 <div className="d-flex justify-content-around">
                   <span>
-                    <i className="fa-solid fa-phone"></i> HOTLINE: <b>0968276996</b>
+                    <i className="fa-solid fa-phone"></i> HOTLINE: <b>{dataFooter && dataFooter[0]?.value}</b>
                   </span>
                   <span>
                     <i className="fa-brands fa-facebook-f"></i>
