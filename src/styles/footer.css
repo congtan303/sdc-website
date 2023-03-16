@@ -1,6 +1,8 @@
 /*----footer-----*/
 .footer-layout {
-  color: var(--text-footer-color);
+  /* color: var(--text-footer-color); */
+  color: var(--white);
+  background-image: linear-gradient(28deg, #2a015b 0, #7b2d8a 100%);
 }
 .footer-wrapper .top-footer {
   padding: 30px;
@@ -31,9 +33,14 @@
   font-size: 36px;
   color: var(--orange);
 }
+.bottom-titleContact .footerContact .footerContact-Icon {
+  color: var(--orange);
+  cursor: pointer;
+}
 .mid-footer-item ul li,
 .mid-footer-item ul li a {
-  color: var(--text-footer-color);
+  /* color: var(--text-footer-color); */
+  color: var(--white);
   padding: 5px 0;
 }
 .bot-footer p {

@@ -36,8 +36,8 @@ const BannerBk = () => {
               </div>
             </div>
           </Row>
-          <Row>
-            <Col lg="4">
+          <Row className="d-flex align-items-center justify-content-center">
+            <Col lg="4" md="4" sm="6">
               <div className="card-history">
                 <div className="card-img">
                   <img src={iconBook} alt="iconBook" />
@@ -45,7 +45,7 @@ const BannerBk = () => {
                 <h4>BACHKHOA-APTECH</h4>
               </div>
             </Col>
-            <Col lg="4">
+            <Col lg="4" md="4" sm="6">
               <div className="card-history">
                 <div className="card-img">
                   <img src={iconBook1} alt="iconBook" />
@@ -53,7 +53,7 @@ const BannerBk = () => {
                 <h4>BKSOFT</h4>
               </div>
             </Col>
-            <Col lg="4">
+            <Col lg="4" md="4" sm="6">
               <div className="card-history">
                 <div className="card-img">
                   <img src={iconBook2} alt="iconBook" />

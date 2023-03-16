@@ -32,7 +32,7 @@
   object-fit: contain;
   mix-blend-mode: color-burn;
   margin: 0 auto;
-  filter: grayscale(1);
+  filter: blur(1px);
   cursor: pointer;
 }
 
