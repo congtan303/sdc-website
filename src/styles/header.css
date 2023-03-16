@@ -190,15 +190,25 @@ ul.sub-menu ul.sub-menu {
   .header .top-header .container .row .col-lg-9 {
     padding: 0;
   }
+  .header .top-header .container .row .col-lg-3{
+    width: 100%;
+  }
 }
 
-@media screen and (max-width: 991.98px) {
+
+@media screen and (max-width: 992px) {
   header {
     position: fixed;
     top: 0;
     width: 100%;
     box-shadow: 1px 2px 10px rgb(0 0 0 / 60%);
     z-index: 99999;
+  }
+  .header .top-header .container .row .col-lg-9 {
+    display: none;
+  }
+  .header .top-header .container .row .col-lg-9 {
+    /* width: 100% !important; */
   }
   .bot-header-menu,
   .header nav {

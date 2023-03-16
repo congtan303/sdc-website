@@ -22,7 +22,7 @@ const Banner = () => {
     return (
       <div
         className={className}
-        style={{ ...style, display: "block", right: '35px'}}
+        style={{ ...style, display: "block", right: '40px'}}
         onClick={onClick}
       />
     );
