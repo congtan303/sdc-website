@@ -35,6 +35,7 @@ const Footer = () => {
             <h2>{dataFooter && dataFooter[12]?.value} </h2>
             <div className="row justify-content-center bottom-titleContact">
               <div className="col-md-6 footerContact">
+
                 <div className="d-flex justify-content-around">
                   <span>
                     <i className="fa-solid fa-phone"></i> HOTLINE: <b>{dataFooter && dataFooter[0]?.value}</b>
@@ -93,7 +94,7 @@ const Footer = () => {
                       </ul>
                     </div>
                   </div>
-                  <div className="col-md-6">
+                  <div className="col-md-6  ">
                     <div className="mid-footer-item">
                       <h3>CÁC KHÓA HỌC</h3>
                       <ul>

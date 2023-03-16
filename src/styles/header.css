@@ -190,9 +190,7 @@ ul.sub-menu ul.sub-menu {
   .header .top-header .container .row .col-lg-9 {
     padding: 0;
   }
-  .header .top-header .container .row .col-lg-3{
-    width: 100%;
-  }
+  
 }
 
 
@@ -209,6 +207,9 @@ ul.sub-menu ul.sub-menu {
   }
   .header .top-header .container .row .col-lg-9 {
     /* width: 100% !important; */
+  }
+  .header .top-header .container .row .col-lg-3{
+    width: 100%;
   }
   .bot-header-menu,
   .header nav {
