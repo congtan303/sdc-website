@@ -46,6 +46,7 @@
 .title-banner4 {
   color: var(--orange);
 }
+/* LỊCH SỬ HÌNH THÀNH */
 .card-history .card-img {
   width: 150px;
   background: #ddd;
@@ -57,7 +58,6 @@
   padding: 30px;
 }
 
-/* LỊCH SỬ HÌNH THÀNH */
 .card-history {
   display: flex;
   flex-direction: column;
@@ -66,11 +66,14 @@
   border: 1px solid black;
   border: 2px solid #410e69;
   border-radius: 16%;
+  margin-bottom: 20px;
 }
 .card-history h4 {
-  margin: 20px;
+  margin: 20px 0;
   color: #410e69;
   font-weight: 700;
+  width: 100%;
+  text-align: center;
 }
 
 @media (max-width: 991.98px) {
@@ -86,6 +89,12 @@
   .inner-header-title-caps p {
     font-size: 22px;
   }
+  /* LỊCH SỬ HÌNH THÀNH */
+  .card-history h4 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 768px) {
 }
 @media (max-width: 415.98px) {
   .inner-header-title-caps h3 {
