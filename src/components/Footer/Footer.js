@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Iframe from "react-iframe";
 import "../../styles/footer.css";
-import logoSDC from "../../assets/image/logoSDC/logoSDC.jpg";
+import logoSDC from "../../assets/image/logoSDC/logoSDCNewNew.png";
 
 import { Link } from "react-router-dom";
 import axios from "axios";
@@ -38,16 +38,16 @@ const Footer = () => {
               <Col lg="4" md="6" className="footerContact">
                 <div className="d-flex justify-content-around">
                   <span>
-                    <i className="fa-solid fa-phone"></i> HOTLINE: <b>{dataFooter && dataFooter[0]?.value}</b>
+                    <i className="footerContact-Icon fa-solid fa-phone"></i> HOTLINE: <b>{dataFooter && dataFooter[0]?.value}</b>
                   </span>
                   <span>
-                    <i className="fa-brands fa-facebook-f"></i>
+                    <i className="footerContact-Icon fa-brands fa-facebook-f"></i>
                   </span>
                   <span>
-                    <i className="fa-regular fa-envelope"></i>
+                    <i className="footerContact-Icon fa-regular fa-envelope"></i>
                   </span>
                   <span>
-                    <i className="fa-brands fa-youtube"></i>
+                    <i className="footerContact-Icon fa-brands fa-youtube"></i>
                   </span>
                 </div>
               </Col>
@@ -55,7 +55,7 @@ const Footer = () => {
           </div>
           <div className="mid-footer">
             <div className="row">
-              <div className="col-lg-12 col-xl-3">
+              <div className="col-lg-12 col-xl-4">
                 <div className="mid-footer-item">
                   <h3>Liên hệ</h3>
                   <ul className="nav-f-contact">
@@ -73,9 +73,9 @@ const Footer = () => {
                   </ul>
                 </div>
               </div>
-              <div className="col-lg-12 col-xl-5">
+              <div className="col-lg-12 col-xl-4">
                 <div className="row">
-                  <div className="col-md-6">
+                  <div className="col-md-12">
                     <div className="mid-footer-item">
                       <h3>VỀ SDC</h3>
                       <ul>
@@ -94,7 +94,7 @@ const Footer = () => {
                       </ul>
                     </div>
                   </div>
-                  <div className="col-md-6  ">
+                  {/* <div className="col-md-6">
                     <div className="mid-footer-item">
                       <h3>CÁC KHÓA HỌC</h3>
                       <ul>
@@ -112,7 +112,7 @@ const Footer = () => {
                         </li>
                       </ul>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div className="col-lg-12 col-xl-4 col-md-12">
@@ -131,9 +131,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="bot-footer">
+        {/* <div className="bot-footer">
           <p>{dataFooter && dataFooter[12]?.value}</p>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

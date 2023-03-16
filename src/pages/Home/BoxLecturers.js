@@ -111,8 +111,8 @@ const BoxLecturers = () => {
                                 <h4>{data.profession}</h4>
                                 <h3>{data.fullname}</h3>
                                 {/* <p></p> */}
-                                <p>{data.skills}</p>
-                                <p>{data.description}</p>
+                                <p>- {data.skills}</p>
+                                <p>- {data.description}</p>
                               </div>
                               <div className="lecture-item-col-6">
                                 <div className="lecture-img">
