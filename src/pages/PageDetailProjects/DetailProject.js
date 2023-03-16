@@ -13,10 +13,12 @@ import CardProject from "../../components/UI/CardProject/CardProject";
 const DetailProject = () => {
   const [dataDetailProject, SetDataDetailProject] = useState([]);
   useEffect(() => {
-    axios.get("https://sdc.azurecloud.vn/api/project-students/list-project-new").then((res) => {
-      SetDataDetailProject(res.data.data);
+    axios.get("https://sdc.azurecloud.vn/api/project-students?page=1").then((res) => {
+      SetDataDetailProject(res.data.data.data);
+      console.log(res.data.data.current_page);
     });
   }, []);
+
   return (
     <main>
       <Header />

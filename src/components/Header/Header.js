@@ -5,7 +5,7 @@ import SubMenuParent from "../MegaMenu/SubMenuParent";
 import SubMenuParentDestop from "../MegaMenuDestop/SubMenuParentDestop";
 import MenuBottmParent from "../MenuBottomHeader/MenuBottmParent";
 import axios from "axios";
-import logo from "../../assets/image/logoSDC/logoSDC.jpg";
+import logo from "../../assets/image/logoSDC/logoSDCNewNew.png";
 
 const Header = () => {
   const menuRef = useRef(null);
@@ -49,10 +49,9 @@ const Header = () => {
             <div className="col-lg-3">
               <div className="logo" ref={logoRef}>
                 <div className="logo-img">
-                  <Link to='/'>
+                  <Link to="/">
                     <img src={logo} alt="logo" />
                   </Link>
-
                 </div>
                 <div className="menuToggle" onClick={toggleMenu}></div>
               </div>
