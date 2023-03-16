@@ -83,6 +83,8 @@ hr{
 .item-post-sidebar .row .col-5  img {
     width: 100%;
     height: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
 }
 
 .item-post-sidebar h3{

@@ -40,7 +40,7 @@ const BoxValue = () => {
                 <label htmlFor={`s${index + 1}`} id={`slide${index + 1}`} key={index}>
                   <div className="card">
                     <div className="card-row">
-                      <div className="card-col-8">
+                      <div className="card-col-8 col-md-8">
                         <div className="card-row">
                           <div className="card-col-3">
                             <img src={benefit.icon_url} alt="lazy" />
@@ -56,7 +56,7 @@ const BoxValue = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="card-col-4">
+                      <div className="card-col-4 col-md-4">
                         <div className="value-item-img">
                           <img src={benefit.image_url} alt="" />
                         </div>

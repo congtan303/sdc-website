@@ -226,6 +226,11 @@
   overflow: hidden;
 }
 
+.box-shadow-item .img-log img {
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
 .box-more-blog .img-log {
   width: 100%;
 }
@@ -324,13 +329,19 @@
 
 /* read-more-blog */
 .read-more-blog {
-  padding: 8px;
+  /* padding: 8px; */
   margin-bottom: 9px;
 }
 .read-more-blog a p {
+  display: flex;
+  align-items: center;
   font-weight: 900;
   margin: 0;
   color: #fc3a52 !important;
+}
+.read-more-blog a p i {
+  margin-left: 4px;
+  margin-top: 2px;
 }
 
 @media screen and (min-width: 768px) {

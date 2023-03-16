@@ -7,6 +7,7 @@ import '../../styles/ReadMorePage.css'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import moment from 'moment/moment';
 
 const tabs = ['Tin mới nhất', 'Tin hot', 'Tin nhiều người đọc']
 const ReadMore = () => {
@@ -16,6 +17,7 @@ const ReadMore = () => {
         axios.get('https://sdc.azurecloud.vn/api/news')
             .then(response => {
                 setNews(response.data.data.data)
+                console.log(response.data.data.data);
             })
     }, [])
 
@@ -95,46 +97,7 @@ const ReadMore = () => {
                                 ))}
                             </ul>
                             <div className='tab-content'>
-                                <Slider {...settings} >
-                                    {news && news.map(item => (
-                                        <div className='item' key={item.id}  >
-                                            <div className='row'>
-                                                <div className='col-md-6 col-xs-12 p-0'>
-                                                    <div className='bg-image-blog'>
-                                                        <img src={item.image_urls} />
-                                                    </div>
-                                                </div>
-                                                <div className='col-md-6 col-xs-12'>
-                                                    <div className='small-content-blog d-flex flex-column'>
-                                                    <div className='content-small flex-auto'>
-                                                        <span className='date-blog'>
-                                                            <i className='fa fa-calendar-alt'></i>
-                                                            06/03/2023
-                                                        </span>
-                                                        <h4>Chúc mừng bảo vệ đồ án thành công</h4>
-                                                        <div className='sub__title'>
-                                                            <p>
-                                                                <strong>{item.summary}</strong>
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div className='read-more-blog'>
-                                                        <a href='/'>
-                                                            <span>Hay không?</span>
-                                                            <p>
-                                                                Đọc thêm này
-                                                                <i className='fa fa-angle-right'></i>
-                                                            </p>
-                                                        </a>
-                                                    </div>
-                                                    </div>
-                                                   
-                                                </div>
-                                            </div>
-                                        </div>
-                                    ))}
-
-                                </Slider>
+                                
                             </div>
                         </div>
                     </div>
@@ -153,8 +116,8 @@ const ReadMore = () => {
                                                 <div className='col-md-12 col-xs-12 '>
                                                     <div className='small-content-blog d-flex flex-column'>
                                                         <div className='content-small flex-auto'>
-                                                            <span className='date-blog'>13-03-2023</span>
                                                             <h4 className='my-3'>{item.title}</h4>
+                                                            <span className='date-blog'>{moment(item.created_at).format('DD/MM/YYYY')}</span>
                                                             <div className='des__sapo'>
                                                                 <p>
                                                                     <strong>{item.summary}</strong>
@@ -163,9 +126,9 @@ const ReadMore = () => {
                                                         </div>
                                                         <div className='read-more-blog'>
                                                         <a href='/'>
-                                                            <span>Hay không?</span>
+                                                            
                                                             <p>
-                                                                Đọc thêm này
+                                                                Xem thêm
                                                                 <i className='fa fa-angle-right'></i>
                                                             </p>
                                                         </a>

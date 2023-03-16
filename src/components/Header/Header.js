@@ -17,7 +17,8 @@ const Header = () => {
   };
   const [datamenudestop, SetDataMenuDestop] = useState([]);
   useEffect(() => {
-    axios.get("https://sdc.azurecloud.vn/api/menus").then((res) => {
+    axios.get("https://sdc.azurecloud.vn/api/menus")
+      .then((res) => {
       SetDataMenuDestop(res.data.data);
     });
   }, []);
@@ -38,6 +39,7 @@ const Header = () => {
     axios.get("https://sdc.azurecloud.vn/api/news/list-new").then((response) => {
       //  console.log(response.data.data);
       setMarquees(response.data.data);
+      console.log(response.data.data);
     });
   }, []);
 
@@ -89,7 +91,13 @@ const Header = () => {
           </ul>
         </div>
         <div className="marquee-text">
-          <div className="marquee">{marquees && marquees.map((marquee) => <span key={marquee.id}>{`${marquee.title} - `}</span>)}</div>
+          <div className="marquee">
+            {marquees && marquees.map((marquee) => (
+              <Link key={marquee.id} to={`/${marquee.slug}/${marquee.id}`}>
+                <span className="marquee-item" >{`${marquee.title}`} | </span>
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </header>

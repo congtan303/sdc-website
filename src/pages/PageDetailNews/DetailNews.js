@@ -9,7 +9,6 @@ import axios from 'axios'
 import Hotline from '../Hotline';
 const DetailNews = () => {
     let location = useLocation();
-    const navigate = useNavigate()
     let { id } = useParams()
     const [detailNews, setDetailNews] = useState({})
     // call API detailNews
@@ -26,6 +25,7 @@ const DetailNews = () => {
         axios.get('https://sdc.azurecloud.vn/api/news/')
             .then(response => {
                 setListNews(response.data.data.data)
+                console.log(response.data.data.data)
             })
     }, [])
 
@@ -101,7 +101,7 @@ const DetailNews = () => {
                                         <div className='widget-content'>
                                             <ul>
                                                 {listNews && listNews.map((item, index) => (
-                                                    <Link to={`/detail-news/${item.id}`} key={index} >
+                                                    <Link to={`/${item.slug}/${item.id}`} key={index} >
                                                         <li className='item-post-sidebar' >
                                                             <div className='row' >
                                                                 <div className='col-5' >
@@ -133,7 +133,7 @@ const DetailNews = () => {
                                         <div className='widget-content'>
                                             <ul>
                                                 {featuresNews && featuresNews.map((item, index) => (
-                                                    <Link to={`/detail-news/${item.id}`} key={index} >
+                                                    <Link to={`/${item.slug}/${item.id}`} key={index} >
                                                         <li className='item-post-sidebar' >
                                                             <div className='row'>
                                                                 <div className='col-5'>

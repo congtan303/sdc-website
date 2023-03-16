@@ -10,11 +10,11 @@ const Routers = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />}></Route>
-      <Route path="/trang-chu" element={<Home />}></Route>
+      <Route path="/:slug" element={<Home />}></Route>
       {/* <Route path='*' element={<NotFound />}></Route> */}
-      <Route path="/detail-news/:id" element={<DetailNews />}></Route>
+      <Route path="/:slug/:id" element={<DetailNews />}></Route>
       <Route path="/ve-bach-khoa-aptech" element={<Bachkhoa />}></Route>
-      <Route path="/xem-them" element={<ReadMore />}></Route>
+      <Route path="/tin-cong-nghe" element={<ReadMore />}></Route>
       <Route path="/list-project-new" element={<DetailProject />}></Route>
     </Routes>
   );

@@ -180,6 +180,28 @@ ul.sub-menu ul.sub-menu {
   display: none;
 }
 
+.marquee-text .marquee{
+  cursor: pointer;
+}
+.marquee-item:hover{
+  color: yellow;
+}
+
+.marquee-text .marquee a {
+  color: unset;
+}
+
+
+/* .marquee-item::after{
+  display: inline;
+  position: relative;
+  content: '|';
+  margin: 0 4px;
+  font-size: 21px;
+  
+} */
+
+
 @media screen and (min-width: 1200px) {
   .header .top-header .container .row {
     padding: 0;

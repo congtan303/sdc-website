@@ -12,20 +12,23 @@ const BoxTechnology = () => {
     const [categories, setCategories] = useState([])
     const [type, setType] = useState('Tin mới nhất')
 
+    const [categoryId, setCategoryId] = useState(37)
     // lấy data danh mục
     useEffect(() => {
         axios.get('https://sdc.azurecloud.vn/api/categories')
             .then(response => {
                 setCategories(response.data.data)
+                // console.log(response.data.data);
             })
     }, [])
     // lấy data bài viết
     useEffect(() => {
-        axios.get('https://sdc.azurecloud.vn/api/news')
+        axios.get(`https://sdc.azurecloud.vn/api/news?categoryId=${type}`)
             .then(response => {
                 setNews(response.data.data.data)
             })
-    }, [])
+           console.log(type);
+    }, [type])
 
 
     return (
@@ -45,9 +48,9 @@ const BoxTechnology = () => {
                         <li
                             className="nav-item"
                             key={category.id}
-                            onClick={() => setType(category.title)}
+                            onClick={() => setType(category.id)}
                         >
-                            <a className={type === category.title ? "nav-link active" : "nav-link "} >{category.title}</a>
+                            <a className={type === category.id ? "nav-link active" : "nav-link "} >{category.title}</a>
                         </li>
                     ))}
 
@@ -68,7 +71,7 @@ const BoxTechnology = () => {
                                             <p><strong>{news && news[0]?.summary}</strong></p>
                                         </div>
                                         <div className="text-center">
-                                            <Link to={`/detail-news/${news[0]?.id}`} className="read-more">Chi tiết</Link>
+                                            <Link to={`/${news[0]?.slug}/${news[0]?.id}`} className="read-more">Chi tiết</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -89,7 +92,7 @@ const BoxTechnology = () => {
                                                     </p>
                                                 </div>
                                                 <div className="text-center">
-                                                    <Link to={`/detail-news/${news[1]?.id}`} className="read-more">Chi tiết</Link>
+                                                    <Link to={`/${news[1]?.slug}/${news[1]?.id}`} className="read-more">Chi tiết</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -108,7 +111,7 @@ const BoxTechnology = () => {
                                                     </p>
                                                 </div>
                                                 <div className="text-center">
-                                                    <Link to={`/detail-news/${news[2]?.id}`} className="read-more">Chi tiết</Link>
+                                                    <Link to={`/${news[2]?.slug}/${news[2]?.id}`} className="read-more">Chi tiết</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -127,7 +130,7 @@ const BoxTechnology = () => {
                                                     </p>
                                                 </div>
                                                 <div className="text-center">
-                                                    <Link to={`/detail-news/${news[3]?.id}`} className="read-more">Chi tiết</Link>
+                                                    <Link to={`/${news[3]?.slug}/${news[3]?.id}`} className="read-more">Chi tiết</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -144,7 +147,7 @@ const BoxTechnology = () => {
                                                     <p><strong>{news && news[4]?.summary}</strong></p>
                                                 </div>
                                                 <div className="text-center">
-                                                    <Link to={`/detail-news/${news[4]?.id}`} className="read-more">Chi tiết</Link>
+                                                    <Link to={`/${news[4]?.slug}/${news[4]?.id}`} className="read-more">Chi tiết</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -156,7 +159,8 @@ const BoxTechnology = () => {
 
                 </div>
                 <div className="text-center">
-                    <Link to='/xem-them' className="load-more but-primary but-lg">Xem thêm</Link>
+                    {categories.map((category, index) => category.id === 35 ? <Link to={`/${category.slug}`} className="load-more but-primary but-lg" key={index}>Xem thêm</Link> : '')}
+                    
                 </div>
             </div>
         </section>
