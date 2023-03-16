@@ -17,6 +17,7 @@ const BoxLecturers = () => {
     setNav2(slider2.current);
     axios.get("https://sdc.azurecloud.vn/api/teachers").then((res) => {
       SetDataTeacher(res.data.data);
+      console.log(res.data.data);
     });
   }, []);
   let quantity = dataTeacher.length;
