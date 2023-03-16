@@ -10,9 +10,8 @@ import moment from 'moment/moment';
 const BoxTechnology = () => {
     const [news, setNews] = useState([])
     const [categories, setCategories] = useState([])
-    const [type, setType] = useState('Tin mới nhất')
+    const [type, setType] = useState(37)
 
-    const [categoryId, setCategoryId] = useState(37)
     // lấy data danh mục
     useEffect(() => {
         axios.get('https://sdc.azurecloud.vn/api/categories')
@@ -23,12 +22,12 @@ const BoxTechnology = () => {
     }, [])
     // lấy data bài viết
     useEffect(() => {
-        axios.get(`https://sdc.azurecloud.vn/api/news`)
+        axios.get(`https://sdc.azurecloud.vn/api/news?categoryId=${type}`)
             .then(response => {
                 setNews(response.data.data.data)
             })
-         
-    }, [])
+         console.log(type);
+    }, [type])
 
 
     return (
@@ -45,14 +44,13 @@ const BoxTechnology = () => {
             <div className="section__blog-content">
                 <ul className="nav nav-blogs" id="pills-tab" role="tablist">
                     {categories && categories.map(category => (
-                        
                         <li
                             className="nav-item"
                             key={category.id}
-                            onClick={() => setType(category.title)}
+                            onClick={() => setType(category.id )}
                         >
                         
-                            <a className={type === category.title ? "nav-link active" : "nav-link "} >{category.title}</a>
+                            <a className={type === category.id ? "nav-link active" : "nav-link "} >{category.title}</a>
                         </li>
 
                     ))}
