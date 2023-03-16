@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sdc-website/static/css/main.ceb3bb63.css",
-    "main.js": "/sdc-website/static/js/main.0eb5ab04.js",
+    "main.css": "/sdc-website/static/css/main.fe1f2e85.css",
+    "main.js": "/sdc-website/static/js/main.2bf951f1.js",
     "static/media/báo.jpeg": "/sdc-website/static/media/báo.3d124e02ad0853f18fc7.jpeg",
     "static/media/blog-3.jpg": "/sdc-website/static/media/blog-3.6a8aefd4a1c0e7bfbe76.jpg",
     "static/media/bannerBachKhoa.jpg": "/sdc-website/static/media/bannerBachKhoa.48992b18f5c4d859ae99.jpg",
@@ -9,26 +9,26 @@
     "static/media/bg-lecture.png": "/sdc-website/static/media/bg-lecture.7117146c9a10c32e6aa7.png",
     "static/media/student-hot-2.png": "/sdc-website/static/media/student-hot-2.98838b78b70e7865db6f.png",
     "static/media/student-hot-3.png": "/sdc-website/static/media/student-hot-3.59ab9e80462a2aaa0bd6.png",
-    "static/media/bkap-value-1.jpg": "/sdc-website/static/media/bkap-value-1.c84f0b66ad838d8aae2a.jpg",
     "static/media/student-hot-1.png": "/sdc-website/static/media/student-hot-1.50be699163e2d3a1338d.png",
-    "static/media/bkap-value-2.jpg": "/sdc-website/static/media/bkap-value-2.6bcdaf57cd7c2bcf5b3a.jpg",
     "static/media/student-hot-4.png": "/sdc-website/static/media/student-hot-4.6f8f1ecd21937262b6ca.png",
     "static/media/bkap-reason-3.png": "/sdc-website/static/media/bkap-reason-3.6a0b04f8c2879386bd3c.png",
     "static/media/bkap-reason-4.png": "/sdc-website/static/media/bkap-reason-4.45d4c61a8c6fd3bc6b08.png",
     "static/media/bkap-reason-2.png": "/sdc-website/static/media/bkap-reason-2.264c68fa8378e958706d.png",
+    "static/media/technogoly-img.png": "/sdc-website/static/media/technogoly-img.ab5108aa087104876cf3.png",
     "static/media/BK-DW-04.jpg": "/sdc-website/static/media/BK-DW-04.895f1ca795de9179e891.jpg",
     "static/media/bkap-reason-1.png": "/sdc-website/static/media/bkap-reason-1.32e556de525c61056b1e.png",
     "static/media/image-news-2.jpg": "/sdc-website/static/media/image-news-2.8002ff442d7cc5567128.jpg",
+    "static/media/data-img.png": "/sdc-website/static/media/data-img.25d24b48636d8ece4b75.png",
     "static/media/slick.svg": "/sdc-website/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/sdc-website/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/sdc-website/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "index.html": "/sdc-website/index.html",
     "static/media/slick.woff": "/sdc-website/static/media/slick.295183786cd8a1389865.woff",
-    "main.ceb3bb63.css.map": "/sdc-website/static/css/main.ceb3bb63.css.map",
-    "main.0eb5ab04.js.map": "/sdc-website/static/js/main.0eb5ab04.js.map"
+    "main.fe1f2e85.css.map": "/sdc-website/static/css/main.fe1f2e85.css.map",
+    "main.2bf951f1.js.map": "/sdc-website/static/js/main.2bf951f1.js.map"
   },
   "entrypoints": [
-    "static/css/main.ceb3bb63.css",
-    "static/js/main.0eb5ab04.js"
+    "static/css/main.fe1f2e85.css",
+    "static/js/main.2bf951f1.js"
   ]
 }
