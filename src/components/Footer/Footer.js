@@ -5,6 +5,7 @@ import logoSDC from "../../assets/image/logoSDC/logoSDC.jpg";
 
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { Col } from "react-bootstrap";
 
 const Footer = () => {
   // Api Configs
@@ -34,7 +35,7 @@ const Footer = () => {
             </div>
             <h2>{dataFooter && dataFooter[12]?.value} </h2>
             <div className="row justify-content-center bottom-titleContact">
-              <div className="col-md-6 footerContact">
+              <Col lg="4" md="6" className="footerContact">
                 <div className="d-flex justify-content-around">
                   <span>
                     <i className="fa-solid fa-phone"></i> HOTLINE: <b>{dataFooter && dataFooter[0]?.value}</b>
@@ -49,7 +50,7 @@ const Footer = () => {
                     <i className="fa-brands fa-youtube"></i>
                   </span>
                 </div>
-              </div>
+              </Col>
             </div>
           </div>
           <div className="mid-footer">

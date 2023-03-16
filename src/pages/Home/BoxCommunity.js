@@ -74,7 +74,7 @@ const BoxCommunity = () => {
         breakpoint: 767,
         settings: {
           dots: true,
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 2,
         },
