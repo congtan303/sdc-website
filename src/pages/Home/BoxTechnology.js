@@ -23,12 +23,12 @@ const BoxTechnology = () => {
     }, [])
     // lấy data bài viết
     useEffect(() => {
-        axios.get(`https://sdc.azurecloud.vn/api/news?categoryId=${type}`)
+        axios.get(`https://sdc.azurecloud.vn/api/news`)
             .then(response => {
                 setNews(response.data.data.data)
             })
-           console.log(type);
-    }, [type])
+         
+    }, [])
 
 
     return (
@@ -45,13 +45,16 @@ const BoxTechnology = () => {
             <div className="section__blog-content">
                 <ul className="nav nav-blogs" id="pills-tab" role="tablist">
                     {categories && categories.map(category => (
+                        
                         <li
                             className="nav-item"
                             key={category.id}
-                            onClick={() => setType(category.id)}
+                            onClick={() => setType(category.title)}
                         >
-                            <a className={type === category.id ? "nav-link active" : "nav-link "} >{category.title}</a>
+                        
+                            <a className={type === category.title ? "nav-link active" : "nav-link "} >{category.title}</a>
                         </li>
+
                     ))}
 
                 </ul>
